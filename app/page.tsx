@@ -4,7 +4,6 @@ import { flushSync } from 'react-dom';
 import { validateExploration } from '@/lib/explore-tool';
 import {
   ArrowUpRight,
-  Flag,
   Code2,
   Globe2,
   Mountain,
@@ -31,10 +30,10 @@ import {
   problems,
   REVIEW_DATE,
   statusAt,
-  statusColors,
 } from '@/lib/catalog';
+import { progressCopy, routeAt } from '@/lib/progress';
 import { languageNames, messages } from '@/lib/i18n';
-import { locales, type Locale, type Status } from '@/lib/types';
+import { locales, type Locale } from '@/lib/types';
 const REPO = 'https://github.com/HomoDeus/ai-summits';
 export default function Home() {
   const [locale, setLocale] = useState<Locale>('en'),
@@ -172,8 +171,8 @@ export default function Home() {
     return () => clearInterval(timer);
   }, [playing]);
   const milestone = current ? milestoneAt(current, year) : undefined;
-  const counts = { open: 0, partial: 0, achieved: 0 };
-  visible.forEach((p) => counts[statusAt(p, year)]++);
+  const copy = progressCopy[locale];
+  const route = current ? routeAt(current, year) : [];
   const choose = (id: string) => {
     setSelected(id);
   };
@@ -189,32 +188,23 @@ export default function Home() {
       </a>
       <header className="site-header">
         <a className="brand" href="#top">
-          <Mountain size={31} strokeWidth={1.3} />
+          <Mountain size={28} />
           <span>
             AI SUMMITS<small>{t.tagline}</small>
           </span>
         </a>
         <nav>
-          <a href="#index">{t.catalog}</a>
           <a href="#method">{t.about}</a>
-          <a
-            href={REPO}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={t.sourceCode}
-          >
-            <Code2 size={19} />
+          <a href={REPO} target="_blank" rel="noreferrer">
+            <Code2 size={17} />
+            <span>GitHub</span>
           </a>
-        </nav>
-        <div className="language">
-          <Globe2 size={16} />
           <Select
             value={locale}
-            onValueChange={(v) => {
-              if (locales.includes(v as Locale)) setLocale(v as Locale);
-            }}
+            onValueChange={(v) => v && setLocale(v as Locale)}
           >
-            <SelectTrigger aria-label={t.language}>
+            <SelectTrigger aria-label={t.language} className="language-select">
+              <Globe2 size={16} />
               <SelectValue>{languageNames[locale]}</SelectValue>
             </SelectTrigger>
             <SelectContent>
@@ -225,307 +215,267 @@ export default function Home() {
               ))}
             </SelectContent>
           </Select>
-        </div>
+        </nav>
       </header>
       <section className="intro">
         <div>
-          <div className="eyebrow">
-            {t.edition} <span>/</span> {t.disciplines.toUpperCase()}{' '}
-            {disciplines.length}
-          </div>
-          <h1>{t.title}</h1>
-          <p>{t.subtitle}</p>
+          <p className="eyebrow">THE OPEN FRONTIER ATLAS</p>
+          <h1>{copy.brief}</h1>
         </div>
-        <div className="intro-stat">
-          <strong>{problems.length.toString().padStart(2, '0')}</strong>
-          <span>
-            {t.problems}
-            <br />
-            {t.dateNote} · {REVIEW_DATE}
-          </span>
-        </div>
+        <p>
+          {problems.length} {copy.records}
+          <br />
+          {disciplines.length} {t.disciplines} · {REVIEW_DATE}
+        </p>
       </section>
-      <div className="toolbar">
-        <label className="search">
-          <Search size={17} />
-          <input
-            aria-label={t.searchLabel}
-            placeholder={t.search}
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-        </label>
-        <Select
-          value={discipline}
-          onValueChange={(v) => {
-            if (v) setDiscipline(v);
-          }}
-        >
-          <SelectTrigger aria-label={t.disciplines}>
-            <SelectValue>
-              {discipline === 'all'
-                ? t.all
-                : disciplines.find((d) => d.id === discipline)?.name[locale]}
-            </SelectValue>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">{t.all}</SelectItem>
-            {disciplines.map((d) => (
-              <SelectItem key={d.id} value={d.id}>
-                {d.name[locale]}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <Select
-          value={status}
-          onValueChange={(v) => {
-            if (v) setStatus(v);
-          }}
-        >
-          <SelectTrigger aria-label={t.anyStatus}>
-            <SelectValue>
-              {status === 'all' ? t.anyStatus : t[status as Status]}
-            </SelectValue>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">{t.anyStatus}</SelectItem>
-            {(['open', 'partial', 'achieved'] as const).map((s) => (
-              <SelectItem key={s} value={s}>
-                {t[s]}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <span className="result-count" aria-live="polite">
-          {visible.length} {t.results}
-        </span>
-      </div>
-      <div className="atlas-layout">
-        <section className="map-panel" aria-label={t.terrain}>
-          <div className="map-topline">
-            <span className="eyebrow">01 / {t.terrain}</span>
-            <span className="coordinates">
-              {String(year)} · {locale.toUpperCase()}
-            </span>
-          </div>
-          <Terrain
-            items={visible}
-            locale={locale}
-            year={year}
-            selected={current?.id ?? ''}
-            onSelect={choose}
-          />
-          {!visible.length && (
-            <div className="no-map">
-              <p>{t.noResults}</p>
-              <button onClick={clear}>{t.clear}</button>
-            </div>
-          )}
-          <div className="legend">
-            {(['achieved', 'partial', 'open'] as const).map((s) => (
-              <span key={s}>
-                <i style={{ background: statusColors[s] }} />
-                {t[s]} <b>{counts[s]}</b>
-              </span>
-            ))}
-          </div>
-          <p className="shape-note">{t.shapeNote}</p>
-          <div className="timeline">
-            <button
-              className="replay"
-              onClick={() => {
-                if (!playing && year === LAST_YEAR) setYear(FIRST_YEAR);
-                setPlaying((v) => !v);
-              }}
-              aria-label={playing ? t.pause : t.replay}
-            >
-              {playing ? <Pause size={18} /> : <Play size={18} />}
-              <span>{playing ? t.pause : t.replay}</span>
-            </button>
-            <div className="time-range">
-              <div>
-                <span>{FIRST_YEAR}</span>
-                <strong>{year}</strong>
-                <span>{LAST_YEAR}</span>
-              </div>
-              <Slider
-                aria-label={t.year}
-                value={[year]}
-                min={FIRST_YEAR}
-                max={LAST_YEAR}
-                step={1}
-                onValueChange={(value) => {
-                  setPlaying(false);
-                  setYear(Array.isArray(value) ? value[0] : value);
-                }}
+      <div className="workspace">
+        <aside className="browser" id="index">
+          <div className="browser-top">
+            <h2>{copy.explore}</h2>
+            <label className="search">
+              <Search size={18} />
+              <input
+                aria-label={t.searchLabel}
+                placeholder={t.search}
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
               />
-            </div>
-            <div className="time-stat">
-              <strong>{counts.partial + counts.achieved}</strong>
-              <span>{t.recorded}</span>
-            </div>
-          </div>
-        </section>
-        <aside className="details" aria-label={t.selected} aria-live="polite">
-          {current ? (
-            <>
-              <span className="eyebrow">
-                {t.peak}{' '}
-                {String(problems.indexOf(current) + 1).padStart(2, '0')}{' '}
-                <span>/</span>{' '}
-                {
-                  disciplines.find((d) => d.id === current.discipline)?.name[
-                    locale
-                  ]
-                }
-              </span>
-              <h2>{current.title[locale]}</h2>
-              <span
-                className="status"
-                style={{ color: statusColors[statusAt(current, year)] }}
-              >
-                <Flag size={13} />
-                {t[statusAt(current, year)]}
-              </span>
-              <h3>{t.question}</h3>
-              <p>{current.question[locale]}</p>
-              <div className="detail-rule" />
-              <h3>
-                {t.evidence} {milestone && <span>· {milestone.year}</span>}
-              </h3>
-              {milestone ? (
-                <>
-                  <p>{milestone.summary[locale]}</p>
-                  <div className="evidence-meta">
-                    <span>{milestone.system}</span>
-                    <span>{t[milestone.evidence]}</span>
-                  </div>
-                </>
-              ) : (
-                <p className="muted">{t.noMilestone}</p>
-              )}
-              <h3>{t.boundary}</h3>
-              <p className="boundary">{current.boundary[locale]}</p>
-              <h3>{t.sources}</h3>
-              <div className="sources">
-                {Array.from(
-                  new Map(
-                    [...current.sources, ...(milestone?.sources ?? [])].map(
-                      (s) => [s.url, s],
-                    ),
-                  ).values(),
-                ).map((s) => (
-                  <a key={s.url} href={s.url} target="_blank" rel="noreferrer">
-                    {s.title}
-                    <ArrowUpRight size={15} />
-                  </a>
+            </label>
+            <Select
+              value={discipline}
+              onValueChange={(v) => v && setDiscipline(v)}
+            >
+              <SelectTrigger aria-label={t.all}>
+                <SelectValue>
+                  {discipline === 'all'
+                    ? t.all
+                    : disciplines.find((d) => d.id === discipline)?.name[
+                        locale
+                      ]}
+                </SelectValue>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t.all}</SelectItem>
+                {disciplines.map((d) => (
+                  <SelectItem key={d.id} value={d.id}>
+                    {d.name[locale]}
+                  </SelectItem>
                 ))}
-              </div>
-              <small>
-                {t.reviewed} · {current.reviewed}
-              </small>
-            </>
-          ) : (
-            <p>{t.noResults}</p>
-          )}
-        </aside>
-      </div>
-      <p className="historical">{t.historical}</p>
-      <section id="index" className="index-section">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">02 / {t.catalog}</span>
-            <h2>{t.fullIndex}</h2>
+              </SelectContent>
+            </Select>
+            <div className="status-filters" aria-label={copy.filter}>
+              {(['all', 'partial', 'achieved', 'open'] as const).map((s) => (
+                <button
+                  key={s}
+                  aria-pressed={status === s}
+                  onClick={() => setStatus(s)}
+                >
+                  {s === 'all' ? copy.all : t[s]}
+                </button>
+              ))}
+            </div>
+            <small>
+              {visible.length} {t.results}
+            </small>
           </div>
-          <span>
-            {visible.length} / {problems.length}
-          </span>
-        </div>
-        <div className="problem-grid">
-          {visible.map((p) => {
-            const s = statusAt(p, year);
-            return (
-              <button
-                className={`problem-card ${p.id === current?.id ? 'selected' : ''}`}
-                key={p.id}
-                onClick={() => {
-                  choose(p.id);
-                  document.querySelector('.atlas-layout')?.scrollIntoView({
-                    behavior: window.matchMedia(
-                      '(prefers-reduced-motion: reduce)',
-                    ).matches
-                      ? 'instant'
-                      : 'smooth',
-                    block: 'start',
-                  });
-                }}
-                aria-label={`${t.inspect}: ${p.title[locale]}`}
-                aria-pressed={p.id === current?.id}
-              >
-                <div>
-                  <span className="card-number">
-                    {String(problems.indexOf(p) + 1).padStart(2, '0')}
-                  </span>
-                  <span className="card-domain">
+          <div className="challenge-list">
+            {visible.map((p) => {
+              const m = milestoneAt(p, year);
+              return (
+                <button
+                  key={p.id}
+                  className={`challenge ${current?.id === p.id ? 'selected' : ''}`}
+                  aria-pressed={current?.id === p.id}
+                  onClick={() => choose(p.id)}
+                >
+                  <span className="challenge-domain">
                     {
                       disciplines.find((d) => d.id === p.discipline)?.name[
                         locale
                       ]
                     }
                   </span>
-                  <ArrowUpRight size={16} />
-                </div>
-                <h3>{p.title[locale]}</h3>
-                <p>{p.question[locale]}</p>
-                <span
-                  className="card-status"
-                  style={{ color: statusColors[s] }}
-                >
-                  <i />
-                  {t[s]}{' '}
-                  {milestoneAt(p, year)?.year && (
-                    <b>· {milestoneAt(p, year)?.year}</b>
-                  )}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-        {!visible.length && (
-          <div className="empty">
-            <p>{t.noResults}</p>
-            <button onClick={clear}>{t.clear}</button>
+                  <strong>{p.title[locale]}</strong>
+                  <span className="challenge-result">
+                    <i className={statusAt(p, year)} />
+                    {m ? `${m.year} · ${m.headline[locale]}` : copy.none}
+                  </span>
+                </button>
+              );
+            })}
           </div>
-        )}
-      </section>
-      <section id="method" className="method">
+          {!visible.length && (
+            <div className="empty">
+              <p>{t.noResults}</p>
+              <button onClick={clear}>{t.clear}</button>
+            </div>
+          )}
+        </aside>
+        <section className="inspector" aria-label={copy.selected}>
+          {current ? (
+            <>
+              <div className="problem-heading">
+                <div className="eyebrow">
+                  {
+                    disciplines.find((d) => d.id === current.discipline)?.name[
+                      locale
+                    ]
+                  }
+                  <span className={`status-pill ${statusAt(current, year)}`}>
+                    {t[statusAt(current, year)]}
+                  </span>
+                </div>
+                <h2>{current.title[locale]}</h2>
+                <p>{current.question[locale]}</p>
+              </div>
+              <div className="progress-brief" aria-live="polite">
+                <div className="now">
+                  <span className="eyebrow">
+                    <span className="dot" />
+                    {copy.now}
+                    {milestone && <b>{milestone.year}</b>}
+                  </span>
+                  <h3>{milestone?.headline[locale] ?? copy.none}</h3>
+                  <p>{milestone?.summary[locale] ?? t.noMilestone}</p>
+                  {milestone && (
+                    <span className="evidence-label">
+                      {milestone.system} · {t[milestone.evidence]}
+                    </span>
+                  )}
+                </div>
+                <div className="next">
+                  <span className="eyebrow">
+                    {milestone?.status === 'achieved'
+                      ? copy.reached
+                      : copy.next}
+                    <ArrowUpRight size={17} />
+                  </span>
+                  <h3>{current.frontier[locale]}</h3>
+                  <p>{current.boundary[locale]}</p>
+                </div>
+              </div>
+              <div className="map-panel">
+                <div className="map-heading">
+                  <span>{copy.route}</span>
+                  <span>
+                    {year} / {LAST_YEAR}
+                  </span>
+                </div>
+                <Terrain problem={current} locale={locale} year={year} />
+                <p className="map-note">{copy.note}</p>
+                <div className="time-controls">
+                  <button
+                    aria-label={playing ? t.pause : t.replay}
+                    onClick={() => {
+                      if (year === LAST_YEAR) setYear(FIRST_YEAR);
+                      setPlaying(!playing);
+                    }}
+                  >
+                    {playing ? <Pause size={17} /> : <Play size={17} />}
+                  </button>
+                  <span>{copy.years}</span>
+                  <strong>{year}</strong>
+                  <Slider
+                    min={FIRST_YEAR}
+                    max={LAST_YEAR}
+                    step={1}
+                    value={[year]}
+                    aria-label={t.year}
+                    onValueChange={(v) => {
+                      setPlaying(false);
+                      setYear(Array.isArray(v) ? v[0] : v);
+                    }}
+                  />
+                  <button
+                    className="latest-year"
+                    onClick={() => {
+                      setYear(LAST_YEAR);
+                      setPlaying(false);
+                    }}
+                  >
+                    {LAST_YEAR}
+                  </button>
+                </div>
+              </div>
+              <section className="evidence-trail">
+                <div className="section-heading">
+                  <h3>{copy.history}</h3>
+                  <span>{copy.context}</span>
+                </div>
+                {route.length ? (
+                  route.map((m, i) => (
+                    <article
+                      className={`evidence-row ${i === route.length - 1 ? 'current' : ''}`}
+                      key={m.year}
+                    >
+                      <div className="evidence-year">
+                        {m.year}
+                        <span>
+                          {i === route.length - 1 ? copy.latest : copy.previous}
+                        </span>
+                      </div>
+                      <div>
+                        <h4>{m.headline[locale]}</h4>
+                        <p>{m.summary[locale]}</p>
+                        <div className="source-links">
+                          <span>
+                            {m.system} · {t[m.evidence]}
+                          </span>
+                          {m.sources.map((source) => (
+                            <a
+                              href={source.url}
+                              key={source.url}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {source.title}
+                              <ArrowUpRight size={14} />
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </article>
+                  ))
+                ) : (
+                  <p className="empty-history">{t.noMilestone}</p>
+                )}
+                <div className="context-links">
+                  <span>{t.question}</span>
+                  {current.sources.map((source) => (
+                    <a
+                      key={source.url}
+                      href={source.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {source.title}
+                      <ArrowUpRight size={14} />
+                    </a>
+                  ))}
+                </div>
+              </section>
+            </>
+          ) : (
+            <div className="empty">
+              <Mountain size={48} />
+              <h2>{t.noResults}</h2>
+              <button onClick={clear}>{t.clear}</button>
+            </div>
+          )}
+        </section>
+      </div>
+      <footer id="method">
         <div>
-          <span className="eyebrow">03 / {t.about}</span>
           <h2>{t.principles}</h2>
           <p>{t.method}</p>
-          <p className="muted">{t.scope}</p>
+          <p>
+            {t.scope} {t.historical}
+          </p>
         </div>
-        <div className="contribute">
-          <Mountain size={34} strokeWidth={1} />
-          <h3>{t.contribute}</h3>
-          <p>{t.contributionText}</p>
-          <a
-            href={`${REPO}/blob/main/CONTRIBUTING.md`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.contributeButton}
-            <ArrowUpRight size={16} />
-          </a>
-        </div>
-      </section>
-      <footer>
-        <span>
-          AI SUMMITS <span className="muted">/ 2026</span>
-        </span>
-        <a href={`${REPO}/blob/main/LICENSE`}>MIT License</a>
-        <span>{languageNames[locale]}</span>
+        <a href={REPO} target="_blank" rel="noreferrer">
+          {t.contributeButton}
+          <ArrowUpRight size={18} />
+        </a>
       </footer>
     </main>
   );

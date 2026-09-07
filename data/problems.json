@@ -24,7 +24,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "A general proof",
+      "zh-CN": "一般性证明",
+      "es": "Una demostración general"
+    }
   },
   {
     "id": "imo-2024",
@@ -40,9 +45,9 @@
       "es": "¿Puede la IA resolver problemas difíciles e inéditos de competiciones matemáticas?"
     },
     "boundary": {
-      "en": "The 2024 result used human formalization and different time limits. This is a historical benchmark milestone, not a claim about today’s best model or all mathematics.",
-      "zh-CN": "2024 年结果使用人工形式化及不同时间限制。这是历史基准里程碑，不代表当前最佳模型或整个数学领域。",
-      "es": "El resultado de 2024 utilizó formalización humana y otros límites de tiempo. Es un hito histórico, no una evaluación del mejor modelo actual ni de todas las matemáticas."
+      "en": "The 2024 system used formalization and different time conditions; the 2025 result used natural-language solutions under competition time limits. Neither establishes a general capacity to solve open research mathematics.",
+      "zh-CN": "2024 年系统依赖形式化且用时条件不同；2025 年成果使用自然语言解题并遵循比赛时限。两者都不代表已经具备解决开放数学研究问题的通用能力。",
+      "es": "El sistema de 2024 usó formalización y otros tiempos; el resultado de 2025 empleó lenguaje natural dentro del tiempo de competición. Ninguno demuestra una capacidad general para resolver problemas abiertos de investigación matemática."
     },
     "sources": [
       {
@@ -66,10 +71,42 @@
             "title": "Google DeepMind · IMO 2024",
             "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/"
           }
+        ],
+        "headline": {
+          "en": "Silver-medal score",
+          "zh-CN": "银牌分数",
+          "es": "Puntuación de plata"
+        }
+      },
+      {
+        "year": 2025,
+        "status": "partial",
+        "evidence": "competition",
+        "system": "Advanced Gemini Deep Think",
+        "headline": {
+          "en": "Gold-medal standard at IMO 2025",
+          "zh-CN": "IMO 2025 达到金牌标准",
+          "es": "Nivel de medalla de oro en IMO 2025"
+        },
+        "summary": {
+          "en": "Earned 35 of 42 points under the competition time limit, with solutions graded by IMO coordinators. This was a specialized system, not a claim of solving mathematics generally.",
+          "zh-CN": "在竞赛时间限制内取得 42 分中的 35 分，解答由 IMO 协调员评分。这是专用系统的成绩，不代表整体解决数学问题。",
+          "es": "Obtuvo 35 de 42 puntos dentro del tiempo de competición, con soluciones calificadas por coordinadores de la IMO. Fue un sistema especializado, no una solución general de las matemáticas."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · IMO 2025",
+            "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/"
+          }
         ]
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Reliable reasoning across new research problems",
+      "zh-CN": "在新的研究问题上可靠推理",
+      "es": "Razonamiento fiable en nuevos problemas de investigación"
+    }
   },
   {
     "id": "p-vs-np",
@@ -96,7 +133,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "A proof separating or equating P and NP",
+      "zh-CN": "证明 P 与 NP 相等或不等",
+      "es": "Demostrar si P y NP coinciden"
+    }
   },
   {
     "id": "matrix-multiplication",
@@ -138,10 +180,20 @@
             "title": "Google DeepMind · AlphaTensor",
             "url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Fewer operations for specific matrices",
+          "zh-CN": "特定矩阵的运算次数减少",
+          "es": "Menos operaciones para matrices concretas"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Resolve the general complexity of matrix multiplication",
+      "zh-CN": "解决矩阵乘法的一般复杂度",
+      "es": "Resolver la complejidad general de multiplicar matrices"
+    }
   },
   {
     "id": "go",
@@ -183,10 +235,20 @@
             "title": "Google DeepMind · AlphaGo",
             "url": "https://deepmind.google/research/alphago/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Lee Sedol defeated 4–1",
+          "zh-CN": "以 4:1 战胜李世石",
+          "es": "Victoria por 4–1 ante Lee Sedol"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "The stated match target is achieved",
+      "zh-CN": "所定义的比赛目标已达成",
+      "es": "El objetivo del encuentro está alcanzado"
+    }
   },
   {
     "id": "navier-stokes",
@@ -213,7 +275,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "A global existence or breakdown proof",
+      "zh-CN": "全局存在或发生奇异性的证明",
+      "es": "Demostrar existencia global o singularidades"
+    }
   },
   {
     "id": "dark-matter",
@@ -240,7 +307,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Identify the physical nature of dark matter",
+      "zh-CN": "确定暗物质的物理本质",
+      "es": "Identificar la naturaleza física de la materia oscura"
+    }
   },
   {
     "id": "exoplanets",
@@ -282,10 +354,20 @@
             "title": "NASA · Kepler-90i discovery",
             "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Kepler-90i discovered",
+          "zh-CN": "发现 Kepler-90i",
+          "es": "Descubrimiento de Kepler-90i"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Recover more weak signals with independent confirmation",
+      "zh-CN": "发现更多微弱信号并独立确认",
+      "es": "Recuperar más señales débiles con confirmación independiente"
+    }
   },
   {
     "id": "retrosynthesis",
@@ -327,10 +409,20 @@
             "title": "Segler et al. · Nature (2018)",
             "url": "https://www.nature.com/articles/nature25978"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Synthesis routes evaluated by chemists",
+          "zh-CN": "合成路线通过化学家评估",
+          "es": "Rutas evaluadas por químicos"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Validate proposed routes in laboratory synthesis",
+      "zh-CN": "通过实验合成验证规划路线",
+      "es": "Validar las rutas propuestas en el laboratorio"
+    }
   },
   {
     "id": "crystal-discovery",
@@ -372,10 +464,20 @@
             "title": "Google DeepMind · GNoME",
             "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Stable structures predicted computationally",
+          "zh-CN": "通过计算预测稳定结构",
+          "es": "Estructuras estables predichas por cálculo"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Synthesize candidates and verify useful properties",
+      "zh-CN": "合成候选材料并验证实用性能",
+      "es": "Sintetizar candidatos y verificar propiedades útiles"
+    }
   },
   {
     "id": "protein-structure",
@@ -417,10 +519,42 @@
             "title": "Google DeepMind · AlphaFold at CASP14",
             "url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/"
           }
+        ],
+        "headline": {
+          "en": "Folded protein structures predicted",
+          "zh-CN": "预测折叠后的蛋白质结构",
+          "es": "Predicción de estructuras proteicas plegadas"
+        }
+      },
+      {
+        "year": 2024,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "AlphaFold 3",
+        "headline": {
+          "en": "Biomolecular interactions predicted",
+          "zh-CN": "预测生物分子相互作用",
+          "es": "Predicción de interacciones biomoleculares"
+        },
+        "summary": {
+          "en": "Extended prediction to complexes involving proteins, DNA, RNA and small molecules. The paper reports remaining limitations in dynamics and accuracy for some targets.",
+          "zh-CN": "预测扩展至涉及蛋白质、DNA、RNA 和小分子的复合物。论文明确报告了动态过程和部分目标精度的局限。",
+          "es": "Amplió la predicción a complejos de proteínas, ADN, ARN y moléculas pequeñas. El artículo señala límites en dinámica y precisión para algunos objetivos."
+        },
+        "sources": [
+          {
+            "title": "Abramson et al. · Nature (2024)",
+            "url": "https://www.nature.com/articles/s41586-024-07487-w"
+          }
         ]
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Capture dynamics and validate difficult targets",
+      "zh-CN": "覆盖动态过程并验证困难目标",
+      "es": "Captar la dinámica y validar casos difíciles"
+    }
   },
   {
     "id": "origin-of-life",
@@ -447,7 +581,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Establish a path from chemistry to life",
+      "zh-CN": "确立从化学到生命的路径",
+      "es": "Establecer una ruta de la química a la vida"
+    }
   },
   {
     "id": "antibiotics",
@@ -489,10 +628,20 @@
             "title": "MIT · AI identifies halicin (2020)",
             "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Antibacterial activity in lab and mice",
+          "zh-CN": "实验室与小鼠中验证抗菌活性",
+          "es": "Actividad antibacteriana en laboratorio y ratones"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Establish safety and benefit in human clinical trials",
+      "zh-CN": "在人类临床试验中确立安全性和获益",
+      "es": "Establecer seguridad y beneficio en ensayos clínicos"
+    }
   },
   {
     "id": "alzheimers",
@@ -519,7 +668,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "A treatment that prevents or reverses disease",
+      "zh-CN": "预防或逆转疾病的治疗方法",
+      "es": "Un tratamiento que prevenga o revierta la enfermedad"
+    }
   },
   {
     "id": "connectomics",
@@ -561,10 +715,20 @@
             "title": "MICrONS Consortium · Nature (2025)",
             "url": "https://www.nature.com/articles/s41586-025-08790-w"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Wiring linked to activity in mouse cortex",
+          "zh-CN": "联系小鼠皮层的连接结构与活动",
+          "es": "Conexiones vinculadas a la actividad de la corteza"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Scale mapping and establish causal explanations",
+      "zh-CN": "扩大映射规模并建立因果解释",
+      "es": "Ampliar el mapa y establecer explicaciones causales"
+    }
   },
   {
     "id": "weather",
@@ -606,10 +770,42 @@
             "title": "Google DeepMind · GraphCast",
             "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/"
           }
+        ],
+        "headline": {
+          "en": "Ten-day forecasts beat the reference",
+          "zh-CN": "十天天气预报超越参考系统",
+          "es": "Pronósticos a diez días superiores a la referencia"
+        }
+      },
+      {
+        "year": 2024,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "GenCast",
+        "headline": {
+          "en": "Probabilistic forecasts up to 15 days",
+          "zh-CN": "最长十五天的概率预报",
+          "es": "Pronósticos probabilísticos hasta quince días"
+        },
+        "summary": {
+          "en": "Produced ensembles of weather forecasts to estimate possible outcomes and their uncertainty, advancing beyond a single deterministic forecast in the reported evaluations.",
+          "zh-CN": "通过集合预报估计可能结果及其不确定性，在报道的评估中超越单一确定性预报。",
+          "es": "Produjo conjuntos de pronósticos para estimar resultados posibles y su incertidumbre, avanzando más allá del pronóstico determinista único en las evaluaciones publicadas."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · GenCast (2024)",
+            "url": "https://deepmind.google/blog/gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-sota-accuracy/"
+          }
         ]
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Validate robustness across extremes and real operations",
+      "zh-CN": "验证极端天气与实际运行中的可靠性",
+      "es": "Validar robustez en extremos y operaciones reales"
+    }
   },
   {
     "id": "earthquakes",
@@ -636,7 +832,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Reliable time, location and magnitude prediction",
+      "zh-CN": "可靠预测时间、地点与震级",
+      "es": "Predecir de forma fiable tiempo, lugar y magnitud"
+    }
   },
   {
     "id": "plasma-control",
@@ -678,10 +879,20 @@
             "title": "DeepMind + EPFL · Plasma control",
             "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Plasma shapes controlled on TCV",
+          "zh-CN": "在 TCV 上控制等离子体形状",
+          "es": "Control de formas de plasma en TCV"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Integrate control into a viable fusion power system",
+      "zh-CN": "将控制集成进可行的聚变发电系统",
+      "es": "Integrar el control en un sistema de fusión viable"
+    }
   },
   {
     "id": "robot-generalization",
@@ -723,10 +934,20 @@
             "title": "Google DeepMind · RT-2",
             "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Unseen tasks demonstrated in evaluation",
+          "zh-CN": "评估中完成未见过的任务",
+          "es": "Tareas nuevas demostradas en la evaluación"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Reliable operation in unfamiliar real environments",
+      "zh-CN": "在陌生真实环境中可靠运行",
+      "es": "Operar de forma fiable en entornos reales nuevos"
+    }
   },
   {
     "id": "tax-policy",
@@ -768,10 +989,20 @@
             "title": "Salesforce Research · AI Economist",
             "url": "https://www.salesforce.com/blog/ai-economist-science-advances"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Better policies inside a simulated economy",
+          "zh-CN": "模拟经济中取得更优政策",
+          "es": "Mejores políticas en una economía simulada"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Validate benefits outside the simulator",
+      "zh-CN": "在模拟器之外验证获益",
+      "es": "Validar beneficios fuera del simulador"
+    }
   },
   {
     "id": "poverty",
@@ -798,7 +1029,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Sustained poverty reduction in the real world",
+      "zh-CN": "现实世界中持续减少贫困",
+      "es": "Reducción sostenida de la pobreza real"
+    }
   },
   {
     "id": "ancient-inscriptions",
@@ -840,10 +1076,20 @@
             "title": "Google DeepMind · Ithaca",
             "url": "https://deepmind.google/blog/predicting-the-past-with-ithaca/"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Restoration assisted on Greek inscriptions",
+          "zh-CN": "辅助修复古希腊铭文",
+          "es": "Ayuda para restaurar inscripciones griegas"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Validate hypotheses against historical evidence",
+      "zh-CN": "用历史证据验证修复假设",
+      "es": "Validar hipótesis frente a evidencia histórica"
+    }
   },
   {
     "id": "low-resource-translation",
@@ -885,10 +1131,20 @@
             "title": "NLLB Team · Nature (2024)",
             "url": "https://www.nature.com/articles/s41586-024-07335-x"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Translation evaluated across 200 languages",
+          "zh-CN": "评估覆盖 200 种语言的翻译",
+          "es": "Traducción evaluada en 200 lenguas"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Reliable translation across dialects and contexts",
+      "zh-CN": "跨方言和语境的可靠翻译",
+      "es": "Traducción fiable entre dialectos y contextos"
+    }
   },
   {
     "id": "crop-disease",
@@ -930,10 +1186,20 @@
             "title": "Mohanty et al. · Frontiers in Plant Science (2016)",
             "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01419/full"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Disease recognition on controlled photos",
+          "zh-CN": "受控照片上识别病害",
+          "es": "Reconocimiento en fotos controladas"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Robust recognition on real field photographs",
+      "zh-CN": "在真实田间照片上鲁棒识别",
+      "es": "Reconocimiento robusto en fotografías de campo"
+    }
   },
   {
     "id": "biodiversity",
@@ -960,7 +1226,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Demonstrable conservation outcomes",
+      "zh-CN": "可验证的生态保护成效",
+      "es": "Resultados demostrables de conservación"
+    }
   },
   {
     "id": "consciousness",
@@ -987,7 +1258,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Explain how subjective experience arises",
+      "zh-CN": "解释主观体验如何产生",
+      "es": "Explicar cómo surge la experiencia subjetiva"
+    }
   },
   {
     "id": "algorithmic-justice",
@@ -1014,7 +1290,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Justify decisions across competing fairness values",
+      "zh-CN": "在不同公平价值间论证决策正当性",
+      "es": "Justificar decisiones entre distintos valores de equidad"
+    }
   },
   {
     "id": "personalized-learning",
@@ -1056,10 +1337,20 @@
             "title": "Kestin et al. · Scientific Reports (2025)",
             "url": "https://www.nature.com/articles/s41598-025-97652-6"
           }
-        ]
+        ],
+        "headline": {
+          "en": "Higher immediate learning gains in one trial",
+          "zh-CN": "一次试验中更高的即时学习增益",
+          "es": "Mayor aprendizaje inmediato en un ensayo"
+        }
       }
     ],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Verify lasting learning across ages and subjects",
+      "zh-CN": "验证跨年龄和学科的持久学习效果",
+      "es": "Verificar aprendizaje duradero entre edades y materias"
+    }
   },
   {
     "id": "human-outcomes",
@@ -1086,7 +1377,12 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Reliable predictions beyond population averages",
+      "zh-CN": "超越群体平均的可靠个体预测",
+      "es": "Predicciones fiables más allá de promedios"
+    }
   },
   {
     "id": "aesthetic-value",
@@ -1113,6 +1409,11 @@
       }
     ],
     "milestones": [],
-    "reviewed": "2026-09-07"
+    "reviewed": "2026-09-07",
+    "frontier": {
+      "en": "Explain and justify aesthetic judgments",
+      "zh-CN": "解释并论证审美判断",
+      "es": "Explicar y justificar juicios estéticos"
+    }
   }
 ]

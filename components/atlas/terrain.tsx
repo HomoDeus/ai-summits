@@ -1,263 +1,250 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
-import { Minus, Plus, RotateCcw, RotateCw, LocateFixed } from 'lucide-react';
-import { problems as catalog, statusAt, statusColors } from '@/lib/catalog';
+import { useMemo, useState } from 'react';
+import { RotateCcw, RotateCw } from 'lucide-react';
+import { milestoneAt } from '@/lib/catalog';
 import { messages } from '@/lib/i18n';
+import { progressCopy, routeAt } from '@/lib/progress';
 import type { Locale, Problem } from '@/lib/types';
 
 type Point = { x: number; y: number; depth: number };
-type Peak = {
-  problem: Problem;
-  x: number;
-  z: number;
-  height: number;
-  number: number;
-};
-// Coordinates and heights are intentionally illustrative, never scientific scores.
-function arrange(items: Problem[]): Peak[] {
-  const columns = Math.ceil(Math.sqrt(items.length * 1.4));
-  const rows = Math.ceil(items.length / columns);
-  return items.map((problem, i) => ({
-    problem,
-    x: ((i % columns) - (columns - 1) / 2) * 3.5,
-    z: (Math.floor(i / columns) - (rows - 1) / 2) * 3.6,
-    height:
-      1.8 + ((catalog.findIndex((p) => p.id === problem.id) * 7) % 9) / 10,
-    number: catalog.findIndex((p) => p.id === problem.id) + 1,
-  }));
-}
+// This is an illustrative 3D projection. Geometry encodes no scientific score.
 export function Terrain({
-  items,
+  problem,
   locale,
   year,
-  selected,
-  onSelect,
 }: {
-  items: Problem[];
+  problem: Problem;
   locale: Locale;
   year: number;
-  selected: string;
-  onSelect: (id: string) => void;
 }) {
-  const [angle, setAngle] = useState(-0.22),
-    [zoom, setZoom] = useState(1);
-  const [markers, setMarkers] = useState<(Point & { peak: Peak })[]>([]);
-  const [unavailable, setUnavailable] = useState(false);
-  const canvas = useRef<HTMLCanvasElement>(null);
-  const drag = useRef<{ x: number; angle: number } | null>(null);
-  const t = messages[locale];
-  useEffect(() => {
-    const element = canvas.current;
-    if (!element) return;
-    const peaks = arrange(items);
-    let frame = 0;
-    const render = () => {
-      const width = element.clientWidth,
-        height = element.clientHeight;
-      const ratio = Math.min(window.devicePixelRatio || 1, 2);
-      element.width = width * ratio;
-      element.height = height * ratio;
-      const ctx = element.getContext('2d');
-      if (!ctx) {
-        setUnavailable(true);
-        return;
-      }
-      ctx.scale(ratio, ratio);
-      const spanX = Math.max(7, ...peaks.map((p) => Math.abs(p.x) + 2.5));
-      const spanZ = Math.max(5, ...peaks.map((p) => Math.abs(p.z) + 2.5));
-      const scale =
-        Math.min(width / (spanX * 2.7), height / (spanZ * 1.4 + 6)) * zoom;
-      const project = (x: number, y: number, z: number): Point => {
-        const rx = x * Math.cos(angle) - z * Math.sin(angle),
-          rz = x * Math.sin(angle) + z * Math.cos(angle);
-        return {
-          x: width / 2 + rx * scale,
-          y: height * 0.57 + rz * scale * 0.46 - y * scale * 0.88,
-          depth: rz,
-        };
+  const [angle, setAngle] = useState(-0.3);
+  const t = messages[locale],
+    copy = progressCopy[locale];
+  const route = routeAt(problem, year);
+  const reached = milestoneAt(problem, year)?.status === 'achieved';
+  const scene = useMemo(() => {
+    const surface = (x: number, z: number) => {
+      const main =
+        Math.max(0, 1 - Math.sqrt(x * x * 0.95 + z * z * 1.2) / 3.6) * 4.25;
+      const shoulder =
+        Math.max(0, 1 - Math.sqrt((x + 2.15) ** 2 + (z + 1.3) ** 2) / 2.3) *
+        2.15;
+      const ridge =
+        Math.max(0, 1 - Math.sqrt((x - 2.05) ** 2 + (z + 1.4) ** 2) / 2.4) *
+        1.8;
+      return Math.max(main, shoulder, ridge) + 0.035 * Math.sin(x * 9 + z * 4);
+    };
+    const project = (x: number, z: number): Point => {
+      const rx = x * Math.cos(angle) - z * Math.sin(angle),
+        rz = x * Math.sin(angle) + z * Math.cos(angle);
+      return {
+        x: 400 + rx * 68,
+        y: 365 + rz * 28 - surface(x, z) * 64,
+        depth: rz,
       };
-      const surface = (x: number, z: number) => {
-        let h = 0.04,
-          nearest = peaks[0],
-          distance = Infinity;
-        for (const peak of peaks) {
-          const d = (x - peak.x) ** 2 + (z - peak.z) ** 2;
-          h += peak.height * Math.exp(-d / 1.5);
-          if (d < distance) {
-            distance = d;
-            nearest = peak;
-          }
-        }
-        return { h, nearest };
-      };
-      const cells: {
-        points: Point[];
-        h: number;
-        peak?: Peak;
-        depth: number;
-        shade: number;
-      }[] = [];
-      const step = 0.42;
-      for (let z = -spanZ; z < spanZ; z += step)
-        for (let x = -spanX; x < spanX; x += step) {
-          const corners = [
-            [x, z],
-            [x + step, z],
-            [x + step, z + step],
-            [x, z + step],
-          ].map(([a, b]) => project(a, surface(a, b).h, b));
-          const s = surface(x + step / 2, z + step / 2);
-          const gradient = surface(x + step, z).h - surface(x, z).h;
-          cells.push({
-            points: corners,
-            h: s.h,
-            peak: s.nearest,
-            depth: project(x, 0, z).depth,
-            shade: gradient * 10,
+    };
+    const triangles: { points: string; depth: number; color: string }[] = [];
+    const step = 0.25;
+    for (let z = -3.75; z < 3.75; z += step)
+      for (let x = -4; x < 4; x += step) {
+        const a = [x, z],
+          b = [x + step, z],
+          c = [x + step, z + step],
+          d = [x, z + step];
+        for (const corners of [
+          [a, b, c],
+          [a, c, d],
+        ]) {
+          const points = corners.map(([px, pz]) => project(px, pz));
+          const h = surface(x + step / 2, z + step / 2);
+          const light = Math.max(
+            12,
+            Math.min(
+              68,
+              23 + h * 7 + (surface(x, z) - surface(x + step, z)) * 60,
+            ),
+          );
+          triangles.push({
+            points: points.map((p) => `${p.x},${p.y}`).join(' '),
+            depth: points.reduce((v, p) => v + p.depth, 0) / 3,
+            color: `hsl(${181 + h * 4} ${20 + h * 3}% ${light}%)`,
           });
         }
-      cells.sort((a, b) => a.depth - b.depth);
-      for (const cell of cells) {
-        const status = cell.peak ? statusAt(cell.peak.problem, year) : 'open';
-        const hue =
-          status === 'achieved' ? 153 : status === 'partial' ? 36 : 210;
-        const light = Math.max(8, Math.min(54, 13 + cell.h * 10 + cell.shade));
-        ctx.beginPath();
-        cell.points.forEach((p, i) =>
-          i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y),
-        );
-        ctx.closePath();
-        ctx.fillStyle = `hsl(${hue} ${status === 'open' ? 21 : 30}% ${light}%)`;
-        ctx.fill();
-        ctx.strokeStyle =
-          status === 'open'
-            ? '#96b6d32a'
-            : status === 'partial'
-              ? '#d4af6438'
-              : '#a8e9b638';
-        ctx.lineWidth = 0.55;
-        ctx.stroke();
       }
-      const positions = peaks.map((peak) => ({
-        ...project(peak.x, surface(peak.x, peak.z).h, peak.z),
-        peak,
-      }));
-      for (const marker of positions) {
-        const color = statusColors[statusAt(marker.peak.problem, year)];
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        ctx.moveTo(marker.x, marker.y);
-        ctx.lineTo(marker.x, marker.y - 22);
-        ctx.stroke();
-        if (statusAt(marker.peak.problem, year) !== 'open') {
-          ctx.beginPath();
-          ctx.moveTo(marker.x, marker.y - 22);
-          ctx.lineTo(marker.x + 12, marker.y - 18);
-          ctx.lineTo(marker.x, marker.y - 14);
-          ctx.fillStyle = color;
-          ctx.fill();
-        }
-        if (marker.peak.problem.id === selected) {
-          ctx.beginPath();
-          ctx.ellipse(marker.x, marker.y + 3, 17, 6, 0, 0, Math.PI * 2);
-          ctx.strokeStyle = color;
-          ctx.stroke();
-        }
-      }
-      setMarkers(positions);
+    triangles.sort((a, b) => a.depth - b.depth);
+    const routePoint = (fraction: number) => {
+      const x = -2.6 * (1 - fraction),
+        z = 2.2 * (1 - fraction);
+      return project(x, z);
     };
-    const schedule = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(render);
-    };
-    const observer = new ResizeObserver(schedule);
-    observer.observe(element);
-    schedule();
-    return () => {
-      observer.disconnect();
-      cancelAnimationFrame(frame);
-    };
-  }, [items, angle, zoom, year, selected]);
+    return { triangles, routePoint };
+  }, [angle]);
+  const milestones = route.map((m, i) => ({
+    m,
+    fraction: reached
+      ? (i + 1) / route.length
+      : 0.32 + ((i + 1) / (route.length + 1)) * 0.48,
+  }));
+  const stop = milestones.at(-1)?.fraction ?? 0;
+  const path = (from: number, to: number) =>
+    Array.from({ length: 41 }, (_, i) => {
+      const p = scene.routePoint(from + ((to - from) * i) / 40);
+      return `${i ? 'L' : 'M'}${p.x},${p.y - 3}`;
+    }).join(' ');
+  const summit = scene.routePoint(1);
   return (
     <div className="terrain-wrap">
-      <div
-        className="terrain-stage"
-        onPointerDown={(e) => {
-          if ((e.target as HTMLElement).closest('button')) return;
-          drag.current = { x: e.clientX, angle };
-          e.currentTarget.setPointerCapture(e.pointerId);
-        }}
-        onPointerMove={(e) => {
-          if (drag.current)
-            setAngle(drag.current.angle + (e.clientX - drag.current.x) * 0.005);
-        }}
-        onPointerUp={() => {
-          drag.current = null;
-        }}
-        onPointerCancel={() => {
-          drag.current = null;
-        }}
-      >
-        <canvas ref={canvas} aria-hidden="true" />
-        <p className="sr-only">{t.terrainDescription}</p>
-        {unavailable && <p className="terrain-error">{t.mapUnavailable}</p>}
-        {markers.map(({ x, y, peak }) => (
-          <button
-            key={peak.problem.id}
-            className={`peak-marker ${selected === peak.problem.id ? 'active' : ''}`}
-            style={{
-              left: x,
-              top: y - 28,
-              color: statusColors[statusAt(peak.problem, year)],
-            }}
-            aria-pressed={selected === peak.problem.id}
-            aria-label={`${t.peak} ${peak.number}: ${peak.problem.title[locale]}`}
-            title={peak.problem.title[locale]}
-            onClick={() => onSelect(peak.problem.id)}
-          >
-            <span>{String(peak.number).padStart(2, '0')}</span>
-            <b>{peak.problem.title[locale]}</b>
-          </button>
+      <p className="sr-only">
+        {copy.route}: {problem.title[locale]}. {copy.note}
+      </p>
+      <svg className="terrain" viewBox="0 0 1000 480" aria-hidden="true">
+        <defs>
+          <radialGradient id="terrain-glow">
+            <stop stopColor="#226c73" stopOpacity=".25" />
+            <stop offset="1" stopColor="#0c202c" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <ellipse
+          cx="395"
+          cy="330"
+          rx="370"
+          ry="140"
+          fill="url(#terrain-glow)"
+        />
+        {[0, 1, 2, 3].map((i) => (
+          <ellipse
+            key={i}
+            cx="395"
+            cy="370"
+            rx={175 + i * 48}
+            ry={45 + i * 18}
+            fill="none"
+            stroke="#6babb8"
+            strokeOpacity=".09"
+          />
         ))}
-      </div>
-      <div className="terrain-controls">
-        <span>{t.instructions}</span>
-        <div>
-          <button
-            aria-label={t.rotateLeft}
-            onClick={() => setAngle((v) => v - 0.2)}
-          >
-            <RotateCcw size={16} />
-          </button>
-          <button
-            aria-label={t.rotateRight}
-            onClick={() => setAngle((v) => v + 0.2)}
-          >
-            <RotateCw size={16} />
-          </button>
-          <button
-            aria-label={t.zoomOut}
-            onClick={() => setZoom((v) => Math.max(0.6, v - 0.15))}
-          >
-            <Minus size={16} />
-          </button>
-          <button
-            aria-label={t.zoomIn}
-            onClick={() => setZoom((v) => Math.min(1.6, v + 0.15))}
-          >
-            <Plus size={16} />
-          </button>
-          <button
-            aria-label={t.reset}
-            onClick={() => {
-              setAngle(-0.22);
-              setZoom(1);
-            }}
-          >
-            <LocateFixed size={16} />
-          </button>
+        {scene.triangles.map((triangle, i) => (
+          <polygon
+            key={i}
+            points={triangle.points}
+            fill={triangle.color}
+            stroke={triangle.color}
+            strokeWidth=".5"
+          />
+        ))}
+        {!reached && (
+          <path
+            d={path(stop, 1)}
+            fill="none"
+            stroke="#d2e2e5"
+            strokeWidth="2"
+            strokeDasharray="5 7"
+            opacity=".8"
+          />
+        )}
+        {stop > 0 && (
+          <>
+            <path
+              d={path(0, stop)}
+              fill="none"
+              stroke="#5df6c1"
+              strokeWidth="12"
+              opacity=".13"
+            />
+            <path
+              d={path(0, stop)}
+              fill="none"
+              stroke="#80ffd0"
+              strokeWidth="3"
+            />
+          </>
+        )}
+        {!reached && (
+          <>
+            <circle
+              cx={summit.x}
+              cy={summit.y - 3}
+              r="7"
+              fill="#123440"
+              stroke="#e7f3f4"
+              strokeWidth="2"
+            />
+            <path
+              d={`M${summit.x + 10},${summit.y - 3} L650,78 L685,78`}
+              fill="none"
+              stroke="#a5c5ce"
+              strokeOpacity=".5"
+            />
+          </>
+        )}
+        {milestones.map(({ m, fraction }, i) => {
+          const p = scene.routePoint(fraction);
+          const labelY = reached ? 90 : 330 - i * 115;
+          return (
+            <g key={m.year}>
+              <path
+                d={`M${p.x + 10},${p.y - 3} L650,${labelY} L685,${labelY}`}
+                fill="none"
+                stroke="#7affd0"
+                strokeOpacity=".4"
+              />
+              <circle
+                cx={p.x}
+                cy={p.y - 3}
+                r="15"
+                fill="#80ffd0"
+                opacity=".13"
+              />
+              <circle
+                cx={p.x}
+                cy={p.y - 3}
+                r="6"
+                fill="#93ffd6"
+                stroke="#133b43"
+                strokeWidth="2"
+              />
+            </g>
+          );
+        })}
+      </svg>
+      {!reached && (
+        <div className="route-label goal" style={{ top: '11%' }}>
+          <span>
+            <i />
+            {copy.unproven}
+          </span>
+          <strong>{problem.frontier[locale]}</strong>
         </div>
+      )}
+      {milestones.map(({ m }, i) => (
+        <div
+          className="route-label"
+          key={m.year}
+          style={{
+            top: `${(((reached ? 90 : 330 - i * 115) - 24) / 480) * 100}%`,
+          }}
+        >
+          <span>
+            <i />
+            {m.year} · {i === milestones.length - 1 ? copy.now : copy.proven}
+          </span>
+          <strong>{m.headline[locale]}</strong>
+        </div>
+      ))}
+      {!route.length && <div className="no-route">{copy.none}</div>}
+      <div className="terrain-controls">
+        <button
+          onClick={() => setAngle((v) => Math.max(-0.65, v - 0.15))}
+          aria-label={t.rotateLeft}
+        >
+          <RotateCcw size={16} />
+        </button>
+        <button
+          onClick={() => setAngle((v) => Math.min(0.1, v + 0.15))}
+          aria-label={t.rotateRight}
+        >
+          <RotateCw size={16} />
+        </button>
       </div>
     </div>
   );

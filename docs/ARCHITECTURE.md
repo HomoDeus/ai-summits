@@ -6,8 +6,9 @@ The application is a static React site built with Vinext and Vite. No API key, d
 - `data/disciplines.json`: editorial discipline groups and translations.
 - `lib/types.ts`: shared schema types and supported locales.
 - `lib/catalog.ts`: pure filtering, milestone selection and URL validation.
+- `lib/progress.ts`: localized progress labels and chronological, year-filtered routes.
 - `lib/i18n.ts`: English, Simplified Chinese and Spanish interface strings.
-- `components/atlas/terrain.tsx`: procedural height-field projection onto Canvas 2D, with HTML buttons for keyboard-accessible peaks. It is a rotatable 3D geometric projection, not a WebGL renderer.
+- `components/atlas/terrain.tsx`: procedural height-field projection rendered as SVG triangles. A solid route connects dated milestones; a dashed route leads to the unestablished frontier. Geometry is illustrative, with no numeric completion score. Rotation buttons and the separate challenge list are keyboard accessible.
 - `app/page.tsx`: filters, selected record, timeline and accessible text index.
 
 The language, selected peak and year are encoded in query parameters. English is the initial and fallback language. Filtering is local; nothing is sent to a service. Missing or invalid URL values receive safe defaults. HTML metadata and the initial server-rendered document are English; switching language updates the document language and title on the client. Per-language SEO routes are not implemented.

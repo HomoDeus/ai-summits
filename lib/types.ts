@@ -19,6 +19,7 @@ export interface Milestone {
   evidence: Evidence;
   system: string;
   summary: Text;
+  headline: Text;
   sources: Source[];
 }
 export interface Problem {
@@ -27,6 +28,7 @@ export interface Problem {
   title: Text;
   question: Text;
   boundary: Text;
+  frontier: Text;
   sources: Source[];
   milestones: Milestone[];
   reviewed: string;

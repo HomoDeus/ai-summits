@@ -12,7 +12,7 @@ Explore a rotatable mountain map of known problems across the sciences and human
 
 - **30 problems across 23 disciplines:** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology, philosophy, law and justice, education, psychology, and arts and aesthetics.
 - English by default, with complete Simplified Chinese and Spanish interface and record translations.
-- Rotatable terrain, keyboard-accessible numbered peaks, search, discipline/status filters and a text index.
+- A focused 3D ascent for each challenge, with clear “Where we are” and “What is still ahead” summaries, search, discipline/status filters and a keyboard-accessible challenge list.
 - Year-by-year replay of selected milestones, with shareable language, peak and year query parameters.
 - Original-source links, explicit human/AI attribution and clearly stated limits for each recorded advance.
 

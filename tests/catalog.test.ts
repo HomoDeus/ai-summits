@@ -8,6 +8,7 @@ import {
   problems,
   statusAt,
 } from '../lib/catalog.ts';
+import { progressCopy, routeAt } from '../lib/progress.ts';
 import { messages } from '../lib/i18n.ts';
 import { locales, type Problem } from '../lib/types.ts';
 
@@ -26,7 +27,7 @@ void test('catalog IDs, sources and all three translations are complete', () => 
     assert.ok(!ids.has(p.id));
     ids.add(p.id);
     assert.ok(domains.has(p.discipline), `Unknown discipline: ${p.discipline}`);
-    [p.title, p.question, p.boundary].forEach(checkText);
+    [p.title, p.question, p.boundary, p.frontier].forEach(checkText);
     assert.match(p.reviewed, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(Number.isFinite(Date.parse(p.reviewed)));
     assert.ok(p.sources.length > 0);
@@ -63,6 +64,7 @@ void test('catalog IDs, sources and all three translations are complete', () => 
       assert.ok(m.system.trim());
       assert.ok(m.sources.length > 0);
       checkText(m.summary);
+      checkText(m.headline);
     }
   }
   for (const d of disciplines)
@@ -172,4 +174,32 @@ void test('shareable URL values are validated and English is the default', () =>
   );
   for (const year of ['2014', '2027', '2020.5', 'NaN', ''])
     assert.equal(parseView(`?year=${year}`).year, 2026);
+});
+
+void test('ascent uses dated evidence, without invented intermediate stages', () => {
+  const protein = problems.find((p) => p.id === 'protein-structure')!;
+  assert.deepEqual(routeAt(protein, 2019), []);
+  assert.deepEqual(
+    routeAt(protein, 2020).map((m) => m.year),
+    [2020],
+  );
+  assert.deepEqual(
+    routeAt(protein, 2024).map((m) => m.year),
+    [2020, 2024],
+  );
+  assert.equal(milestoneAt(protein, 2024)?.system, 'AlphaFold 3');
+  assert.deepEqual(
+    routeAt(
+      problems.find((p) => p.id === 'riemann')!,
+      2026,
+    ),
+    [],
+  );
+  for (const locale of locales) {
+    assert.deepEqual(
+      Object.keys(progressCopy[locale]).sort(),
+      Object.keys(progressCopy.en).sort(),
+    );
+    assert.ok(Object.values(progressCopy[locale]).every((v) => v.trim()));
+  }
 });
