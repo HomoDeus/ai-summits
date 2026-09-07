@@ -1,0 +1,25 @@
+name: Suggest a problem or milestone
+description: Propose a sourced challenge, breakthrough, or correction.
+title: '[Evidence] '
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Specific problem or target
+      description: What precisely would count as solving it?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and date
+      description: Link original research or an authoritative source. Distinguish publication date from event date.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: AI contribution and limits
+      description: What did humans contribute? What remains unresolved?
+    validations:
+      required: true

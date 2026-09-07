@@ -1,0 +1,154 @@
+[
+  {
+    "id": "mathematics",
+    "name": {
+      "en": "Mathematics",
+      "zh-CN": "数学",
+      "es": "Matemáticas"
+    }
+  },
+  {
+    "id": "computing",
+    "name": {
+      "en": "Computer science",
+      "zh-CN": "计算机科学",
+      "es": "Informática"
+    }
+  },
+  {
+    "id": "physics",
+    "name": {
+      "en": "Physics",
+      "zh-CN": "物理学",
+      "es": "Física"
+    }
+  },
+  {
+    "id": "astronomy",
+    "name": {
+      "en": "Astronomy",
+      "zh-CN": "天文学",
+      "es": "Astronomía"
+    }
+  },
+  {
+    "id": "chemistry",
+    "name": {
+      "en": "Chemistry",
+      "zh-CN": "化学",
+      "es": "Química"
+    }
+  },
+  {
+    "id": "materials",
+    "name": {
+      "en": "Materials science",
+      "zh-CN": "材料科学",
+      "es": "Ciencia de materiales"
+    }
+  },
+  {
+    "id": "biology",
+    "name": {
+      "en": "Biology",
+      "zh-CN": "生物学",
+      "es": "Biología"
+    }
+  },
+  {
+    "id": "medicine",
+    "name": {
+      "en": "Medicine",
+      "zh-CN": "医学",
+      "es": "Medicina"
+    }
+  },
+  {
+    "id": "neuroscience",
+    "name": {
+      "en": "Neuroscience",
+      "zh-CN": "神经科学",
+      "es": "Neurociencia"
+    }
+  },
+  {
+    "id": "earth",
+    "name": {
+      "en": "Earth science",
+      "zh-CN": "地球科学",
+      "es": "Ciencias de la Tierra"
+    }
+  },
+  {
+    "id": "energy",
+    "name": {
+      "en": "Energy engineering",
+      "zh-CN": "能源工程",
+      "es": "Ingeniería energética"
+    }
+  },
+  {
+    "id": "robotics",
+    "name": {
+      "en": "Robotics",
+      "zh-CN": "机器人学",
+      "es": "Robótica"
+    }
+  },
+  {
+    "id": "economics",
+    "name": {
+      "en": "Economics",
+      "zh-CN": "经济学",
+      "es": "Economía"
+    }
+  },
+  {
+    "id": "society",
+    "name": {
+      "en": "Social sciences",
+      "zh-CN": "社会科学",
+      "es": "Ciencias sociales"
+    }
+  },
+  {
+    "id": "humanities",
+    "name": {
+      "en": "History & archaeology",
+      "zh-CN": "历史与考古",
+      "es": "Historia y arqueología"
+    }
+  },
+  {
+    "id": "language",
+    "name": {
+      "en": "Linguistics",
+      "zh-CN": "语言学",
+      "es": "Lingüística"
+    }
+  },
+  {
+    "id": "agriculture",
+    "name": {
+      "en": "Agricultural science",
+      "zh-CN": "农业科学",
+      "es": "Ciencias agrícolas"
+    }
+  },
+  {
+    "id": "ecology",
+    "name": {
+      "en": "Ecology",
+      "zh-CN": "生态学",
+      "es": "Ecología"
+    }
+  },
+  {
+    "id": "philosophy",
+    "name": {
+      "en": "Philosophy",
+      "zh-CN": "哲学",
+      "es": "Filosofía"
+    }
+  }
+]

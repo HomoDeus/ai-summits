@@ -1,0 +1,992 @@
+[
+  {
+    "id": "riemann",
+    "discipline": "mathematics",
+    "title": {
+      "en": "Riemann hypothesis",
+      "zh-CN": "黎曼猜想",
+      "es": "Hipótesis de Riemann"
+    },
+    "question": {
+      "en": "Do all nontrivial zeros of the Riemann zeta function have real part 1/2?",
+      "zh-CN": "黎曼 ζ 函数的所有非平凡零点，实部是否都是 1/2？",
+      "es": "¿Todos los ceros no triviales de la función zeta de Riemann tienen parte real 1/2?"
+    },
+    "boundary": {
+      "en": "Numerical checks are not a general proof. The problem remains on Clay’s unsolved list.",
+      "zh-CN": "数值验证不等于一般性证明。该问题仍在 Clay 未解决问题目录中。",
+      "es": "Las comprobaciones numéricas no son una demostración general. Sigue en la lista de problemas abiertos de Clay."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "imo-2024",
+    "discipline": "mathematics",
+    "title": {
+      "en": "Olympiad-level reasoning",
+      "zh-CN": "奥赛级数学推理",
+      "es": "Razonamiento de olimpiada"
+    },
+    "question": {
+      "en": "Can AI solve difficult, previously unseen competition mathematics problems?",
+      "zh-CN": "AI 能否解答未见过的高难度数学竞赛试题？",
+      "es": "¿Puede la IA resolver problemas difíciles e inéditos de competiciones matemáticas?"
+    },
+    "boundary": {
+      "en": "The 2024 result used human formalization and different time limits. This is a historical benchmark milestone, not a claim about today’s best model or all mathematics.",
+      "zh-CN": "2024 年结果使用人工形式化及不同时间限制。这是历史基准里程碑，不代表当前最佳模型或整个数学领域。",
+      "es": "El resultado de 2024 utilizó formalización humana y otros límites de tiempo. Es un hito histórico, no una evaluación del mejor modelo actual ni de todas las matemáticas."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · IMO 2024",
+        "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2024,
+        "status": "partial",
+        "evidence": "competition",
+        "system": "AlphaProof + AlphaGeometry 2",
+        "summary": {
+          "en": "Solved four of six IMO 2024 problems, reaching the silver-medal score threshold.",
+          "zh-CN": "解出 IMO 2024 的六道题中的四道，达到银牌分数线。",
+          "es": "Resolvieron cuatro de los seis problemas de la IMO 2024 y alcanzaron la puntuación de medalla de plata."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · IMO 2024",
+            "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "p-vs-np",
+    "discipline": "computing",
+    "title": {
+      "en": "P versus NP",
+      "zh-CN": "P 与 NP 问题",
+      "es": "P frente a NP"
+    },
+    "question": {
+      "en": "Is every problem whose answer can be checked quickly also quickly solvable?",
+      "zh-CN": "所有能快速验证答案的问题，是否也能快速求解？",
+      "es": "¿Todo problema cuya respuesta puede verificarse rápidamente también puede resolverse rápidamente?"
+    },
+    "boundary": {
+      "en": "Solving hard instances does not prove a complexity-class equivalence. No AI solution is recorded here.",
+      "zh-CN": "解出困难实例不等于证明复杂度类的关系。此处未收录 AI 解答。",
+      "es": "Resolver casos difíciles no demuestra una equivalencia entre clases de complejidad. No se registra aquí una solución de IA."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "matrix-multiplication",
+    "discipline": "computing",
+    "title": {
+      "en": "Faster matrix multiplication",
+      "zh-CN": "更快的矩阵乘法",
+      "es": "Multiplicación de matrices más rápida"
+    },
+    "question": {
+      "en": "Can AI discover exact matrix multiplication algorithms using fewer operations?",
+      "zh-CN": "AI 能否发现运算次数更少的精确矩阵乘法算法？",
+      "es": "¿Puede la IA descubrir algoritmos exactos de multiplicación de matrices con menos operaciones?"
+    },
+    "boundary": {
+      "en": "Improvements concern particular sizes and number systems, not the final asymptotic complexity of matrix multiplication.",
+      "zh-CN": "改进针对特定规模和数域，不代表解决了矩阵乘法的最终渐近复杂度。",
+      "es": "Las mejoras se refieren a tamaños y sistemas numéricos concretos, no a la complejidad asintótica definitiva."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · AlphaTensor",
+        "url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2022,
+        "status": "partial",
+        "evidence": "proof",
+        "system": "AlphaTensor",
+        "summary": {
+          "en": "Discovered provably correct algorithms improving particular matrix multiplication constructions.",
+          "zh-CN": "发现了可证明正确、改进特定矩阵乘法构造的算法。",
+          "es": "Descubrió algoritmos demostrablemente correctos que mejoran construcciones concretas de multiplicación de matrices."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · AlphaTensor",
+            "url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "go",
+    "discipline": "computing",
+    "title": {
+      "en": "Defeating an elite Go player",
+      "zh-CN": "击败顶尖围棋棋手",
+      "es": "Vencer a un jugador de élite de go"
+    },
+    "question": {
+      "en": "Can an AI beat a world-class professional in a formal Go match?",
+      "zh-CN": "AI 能否在正式围棋比赛中击败世界顶尖职业棋手？",
+      "es": "¿Puede una IA vencer a un profesional de talla mundial en un encuentro formal de go?"
+    },
+    "boundary": {
+      "en": "The match objective was achieved. Go itself has not been mathematically solved.",
+      "zh-CN": "对弈目标已达成。围棋本身并未被数学意义上完全求解。",
+      "es": "Se alcanzó el objetivo del encuentro. El juego del go no está resuelto matemáticamente."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · AlphaGo",
+        "url": "https://deepmind.google/research/alphago/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2016,
+        "status": "achieved",
+        "evidence": "competition",
+        "system": "AlphaGo",
+        "summary": {
+          "en": "Defeated Lee Sedol 4–1 in their five-game match.",
+          "zh-CN": "在五番棋中以 4:1 战胜李世石。",
+          "es": "Venció a Lee Sedol por 4–1 en un encuentro de cinco partidas."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · AlphaGo",
+            "url": "https://deepmind.google/research/alphago/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "navier-stokes",
+    "discipline": "physics",
+    "title": {
+      "en": "Navier–Stokes regularity",
+      "zh-CN": "Navier–Stokes 光滑性",
+      "es": "Regularidad de Navier–Stokes"
+    },
+    "question": {
+      "en": "Do smooth solutions to the three-dimensional incompressible fluid equations always exist globally?",
+      "zh-CN": "三维不可压缩流体方程是否始终存在全局光滑解？",
+      "es": "¿Existen siempre soluciones suaves globales para las ecuaciones de fluidos incompresibles en tres dimensiones?"
+    },
+    "boundary": {
+      "en": "Better fluid simulations do not settle the existence and smoothness theorem.",
+      "zh-CN": "更好的流体仿真无法替代存在性与光滑性的数学证明。",
+      "es": "Mejores simulaciones de fluidos no resuelven el teorema de existencia y regularidad."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "dark-matter",
+    "discipline": "astronomy",
+    "title": {
+      "en": "The nature of dark matter",
+      "zh-CN": "暗物质的本质",
+      "es": "La naturaleza de la materia oscura"
+    },
+    "question": {
+      "en": "What accounts for the gravitational effects attributed to dark matter?",
+      "zh-CN": "被归因于暗物质的引力效应，究竟来自什么？",
+      "es": "¿Qué produce los efectos gravitatorios atribuidos a la materia oscura?"
+    },
+    "boundary": {
+      "en": "Mapping gravitational effects does not identify a dark-matter particle or establish its underlying nature.",
+      "zh-CN": "绘制引力效应地图不等于识别暗物质粒子或确定其本质。",
+      "es": "Cartografiar efectos gravitatorios no identifica una partícula de materia oscura ni establece su naturaleza."
+    },
+    "sources": [
+      {
+        "title": "NASA · What Is Dark Matter?",
+        "url": "https://spaceplace.nasa.gov/dark-matter/en/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "exoplanets",
+    "discipline": "astronomy",
+    "title": {
+      "en": "Finding hidden exoplanets",
+      "zh-CN": "寻找隐藏的系外行星",
+      "es": "Encontrar exoplanetas ocultos"
+    },
+    "question": {
+      "en": "Can weak planetary signals be recovered from large astronomical archives?",
+      "zh-CN": "能否从海量天文档案中找出微弱的行星信号？",
+      "es": "¿Pueden recuperarse señales planetarias débiles en grandes archivos astronómicos?"
+    },
+    "boundary": {
+      "en": "Discovering individual planets does not complete the census of planets or establish extraterrestrial life.",
+      "zh-CN": "发现个别行星不等于完成行星普查，也不代表发现地外生命。",
+      "es": "Descubrir planetas individuales no completa su censo ni demuestra la existencia de vida extraterrestre."
+    },
+    "sources": [
+      {
+        "title": "NASA · Kepler-90i discovery",
+        "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2017,
+        "status": "partial",
+        "evidence": "discovery",
+        "system": "Neural network + astronomers",
+        "summary": {
+          "en": "A neural network helped researchers discover Kepler-90i in archived Kepler observations.",
+          "zh-CN": "神经网络帮助研究人员在开普勒历史观测中发现 Kepler-90i。",
+          "es": "Una red neuronal ayudó a descubrir Kepler-90i en observaciones archivadas de Kepler."
+        },
+        "sources": [
+          {
+            "title": "NASA · Kepler-90i discovery",
+            "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "retrosynthesis",
+    "discipline": "chemistry",
+    "title": {
+      "en": "Planning chemical synthesis",
+      "zh-CN": "化学合成路线规划",
+      "es": "Planificar síntesis químicas"
+    },
+    "question": {
+      "en": "Can AI find workable routes from available precursors to a target molecule?",
+      "zh-CN": "AI 能否从可用原料出发，为目标分子找到可行的合成路线？",
+      "es": "¿Puede la IA encontrar rutas viables desde precursores disponibles hasta una molécula objetivo?"
+    },
+    "boundary": {
+      "en": "A plausible route on paper is not proof of laboratory yield, safety or economical manufacturing.",
+      "zh-CN": "纸面路线合理，不等于已验证实验产率、安全性或量产经济性。",
+      "es": "Una ruta plausible sobre el papel no demuestra rendimiento experimental, seguridad ni viabilidad industrial."
+    },
+    "sources": [
+      {
+        "title": "Segler et al. · Nature (2018)",
+        "url": "https://www.nature.com/articles/nature25978"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2018,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "Neural networks + tree search",
+        "summary": {
+          "en": "Combined neural reaction models with search to plan organic syntheses evaluated by chemists.",
+          "zh-CN": "结合神经网络反应模型与搜索，规划了由化学家评估的有机合成路线。",
+          "es": "Combinó modelos neuronales de reacciones con búsqueda para planificar síntesis orgánicas evaluadas por químicos."
+        },
+        "sources": [
+          {
+            "title": "Segler et al. · Nature (2018)",
+            "url": "https://www.nature.com/articles/nature25978"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "crystal-discovery",
+    "discipline": "materials",
+    "title": {
+      "en": "Discovering stable crystals",
+      "zh-CN": "发现稳定晶体",
+      "es": "Descubrir cristales estables"
+    },
+    "question": {
+      "en": "Can we efficiently search the enormous space of possible crystal structures?",
+      "zh-CN": "能否高效搜索极其庞大的潜在晶体结构空间？",
+      "es": "¿Podemos explorar eficientemente el enorme espacio de estructuras cristalinas posibles?"
+    },
+    "boundary": {
+      "en": "Computational stability predictions do not establish synthesizability or useful performance in a device.",
+      "zh-CN": "计算预测的稳定性不等于可合成性，也不等于器件性能已得到验证。",
+      "es": "La estabilidad predicha no garantiza que un material pueda sintetizarse ni que funcione en un dispositivo."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · GNoME",
+        "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2023,
+        "status": "partial",
+        "evidence": "simulation",
+        "system": "GNoME",
+        "summary": {
+          "en": "Expanded the set of predicted stable crystal structures using learning and computational screening.",
+          "zh-CN": "通过机器学习和计算筛选，大幅扩展了预测稳定晶体的集合。",
+          "es": "Amplió el conjunto de estructuras cristalinas predichas como estables mediante aprendizaje y cribado computacional."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · GNoME",
+            "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "protein-structure",
+    "discipline": "biology",
+    "title": {
+      "en": "Protein structure prediction",
+      "zh-CN": "蛋白质结构预测",
+      "es": "Predicción de estructuras proteicas"
+    },
+    "question": {
+      "en": "Can a protein’s three-dimensional structure be predicted from its amino-acid sequence?",
+      "zh-CN": "能否从氨基酸序列预测蛋白质的三维结构？",
+      "es": "¿Puede predecirse la estructura tridimensional de una proteína a partir de su secuencia de aminoácidos?"
+    },
+    "boundary": {
+      "en": "High-accuracy structure prediction does not explain every folding pathway, dynamic state or biological function.",
+      "zh-CN": "高精度结构预测不等于解释所有折叠路径、动态状态或生物功能。",
+      "es": "Predecir estructuras con precisión no explica todas las rutas de plegamiento, estados dinámicos ni funciones biológicas."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · AlphaFold at CASP14",
+        "url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2020,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "AlphaFold 2",
+        "summary": {
+          "en": "Achieved a major advance in accuracy in the blind CASP14 structure-prediction assessment.",
+          "zh-CN": "在 CASP14 盲测中取得结构预测精度的重大突破。",
+          "es": "Logró un gran avance de precisión en la evaluación ciega de predicción estructural CASP14."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · AlphaFold at CASP14",
+            "url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "origin-of-life",
+    "discipline": "biology",
+    "title": {
+      "en": "The origin of life",
+      "zh-CN": "生命的起源",
+      "es": "El origen de la vida"
+    },
+    "question": {
+      "en": "How did nonliving chemistry give rise to the first evolving living systems?",
+      "zh-CN": "非生命化学物质如何形成最初能够演化的生命系统？",
+      "es": "¿Cómo dio lugar la química no viva a los primeros sistemas vivos capaces de evolucionar?"
+    },
+    "boundary": {
+      "en": "Candidate reactions or simulated pathways do not establish the historical origin of life on Earth.",
+      "zh-CN": "候选反应或模拟路径无法确立地球生命起源的真实历史。",
+      "es": "Las reacciones candidatas o rutas simuladas no establecen el origen histórico de la vida terrestre."
+    },
+    "sources": [
+      {
+        "title": "NASA · How did life first emerge on Earth?",
+        "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-life-first-emerge-on-earth/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "antibiotics",
+    "discipline": "medicine",
+    "title": {
+      "en": "New antibiotics against resistance",
+      "zh-CN": "对抗耐药性的新抗生素",
+      "es": "Nuevos antibióticos contra la resistencia"
+    },
+    "question": {
+      "en": "Can AI identify compounds active against antibiotic-resistant bacteria?",
+      "zh-CN": "AI 能否找出对耐药细菌有效的化合物？",
+      "es": "¿Puede la IA identificar compuestos activos contra bacterias resistentes a antibióticos?"
+    },
+    "boundary": {
+      "en": "Laboratory and animal results are not clinical approval or a solution to antimicrobial resistance.",
+      "zh-CN": "实验室和动物实验结果不等于临床批准，也不代表解决了抗菌药物耐药性。",
+      "es": "Los resultados de laboratorio y en animales no equivalen a aprobación clínica ni resuelven la resistencia antimicrobiana."
+    },
+    "sources": [
+      {
+        "title": "MIT · AI identifies halicin (2020)",
+        "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2020,
+        "status": "partial",
+        "evidence": "experiment",
+        "system": "MIT deep-learning screen",
+        "summary": {
+          "en": "Identified halicin as an antibacterial candidate, followed by laboratory and mouse experiments.",
+          "zh-CN": "筛选出具有抗菌潜力的 halicin，并开展实验室和小鼠实验。",
+          "es": "Identificó la halicina como candidata antibacteriana, seguida de experimentos de laboratorio y en ratones."
+        },
+        "sources": [
+          {
+            "title": "MIT · AI identifies halicin (2020)",
+            "url": "https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "alzheimers",
+    "discipline": "medicine",
+    "title": {
+      "en": "Curing Alzheimer’s disease",
+      "zh-CN": "治愈阿尔茨海默病",
+      "es": "Curar la enfermedad de Alzheimer"
+    },
+    "question": {
+      "en": "Can we prevent or reverse the disease processes that cause Alzheimer’s dementia?",
+      "zh-CN": "能否预防或逆转导致阿尔茨海默病痴呆的疾病过程？",
+      "es": "¿Podemos prevenir o revertir los procesos que causan la demencia de Alzheimer?"
+    },
+    "boundary": {
+      "en": "Treatments can help symptoms or slow decline in some patients; that does not amount to a cure.",
+      "zh-CN": "治疗可以改善症状或减缓部分患者的衰退，但不等于治愈。",
+      "es": "Los tratamientos pueden aliviar síntomas o ralentizar el deterioro en algunos pacientes; eso no equivale a curación."
+    },
+    "sources": [
+      {
+        "title": "US National Institute on Aging · Treatment",
+        "url": "https://www.nia.nih.gov/health/how-alzheimers-disease-treated"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "connectomics",
+    "discipline": "neuroscience",
+    "title": {
+      "en": "Mapping neural circuits",
+      "zh-CN": "绘制神经回路",
+      "es": "Cartografiar circuitos neuronales"
+    },
+    "question": {
+      "en": "Can we connect detailed brain wiring to the activity and function of neurons?",
+      "zh-CN": "能否把精细的脑连接结构与神经元活动和功能对应起来？",
+      "es": "¿Podemos relacionar las conexiones cerebrales detalladas con la actividad y función neuronal?"
+    },
+    "boundary": {
+      "en": "A small volume of mouse cortex is not a complete human brain or a full explanation of cognition.",
+      "zh-CN": "小鼠皮层的一小块体积，不等于完整人脑，也不等于完全解释认知。",
+      "es": "Un pequeño volumen de corteza de ratón no es un cerebro humano completo ni una explicación total de la cognición."
+    },
+    "sources": [
+      {
+        "title": "MICrONS Consortium · Nature (2025)",
+        "url": "https://www.nature.com/articles/s41586-025-08790-w"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2025,
+        "status": "partial",
+        "evidence": "experiment",
+        "system": "MICrONS consortium + machine learning",
+        "summary": {
+          "en": "Linked dense functional recordings to reconstructed circuitry in a volume of mouse visual cortex.",
+          "zh-CN": "把密集的功能记录与小鼠视觉皮层局部重建的神经回路相联系。",
+          "es": "Relacionó registros funcionales densos con circuitos reconstruidos de un volumen de corteza visual de ratón."
+        },
+        "sources": [
+          {
+            "title": "MICrONS Consortium · Nature (2025)",
+            "url": "https://www.nature.com/articles/s41586-025-08790-w"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "weather",
+    "discipline": "earth",
+    "title": {
+      "en": "Medium-range weather forecasting",
+      "zh-CN": "中期天气预报",
+      "es": "Predicción meteorológica a medio plazo"
+    },
+    "question": {
+      "en": "Can global weather be forecast accurately and quickly up to ten days ahead?",
+      "zh-CN": "能否快速、准确地预测未来十天的全球天气？",
+      "es": "¿Puede predecirse el tiempo global con rapidez y precisión hasta diez días antes?"
+    },
+    "boundary": {
+      "en": "Historical benchmark gains do not imply perfect extreme-event forecasts or the end of numerical weather models.",
+      "zh-CN": "历史基准上的优势不代表极端天气预报完美，也不代表数值天气模型已无用。",
+      "es": "Las mejoras en pruebas históricas no implican predicciones perfectas de fenómenos extremos ni hacen innecesarios los modelos numéricos."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · GraphCast",
+        "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2023,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "GraphCast",
+        "summary": {
+          "en": "Outperformed the HRES reference on most evaluated forecast targets in the reported comparison.",
+          "zh-CN": "在报道的对比中，大多数评估预报目标优于 HRES 参考系统。",
+          "es": "Superó al sistema de referencia HRES en la mayoría de los objetivos evaluados en la comparación publicada."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · GraphCast",
+            "url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "earthquakes",
+    "discipline": "earth",
+    "title": {
+      "en": "Predicting major earthquakes",
+      "zh-CN": "预测重大地震",
+      "es": "Predecir grandes terremotos"
+    },
+    "question": {
+      "en": "Can the time, location and magnitude of a major earthquake be predicted reliably in advance?",
+      "zh-CN": "能否提前可靠地预测重大地震的时间、地点和震级？",
+      "es": "¿Pueden predecirse de forma fiable la hora, el lugar y la magnitud de un gran terremoto?"
+    },
+    "boundary": {
+      "en": "Probabilistic hazard forecasts and alerts after rupture begins are different from advance earthquake prediction.",
+      "zh-CN": "概率性风险预报及破裂开始后的预警，与提前预测地震不同。",
+      "es": "Las estimaciones probabilísticas de riesgo y las alertas tras comenzar la ruptura son distintas de la predicción anticipada."
+    },
+    "sources": [
+      {
+        "title": "USGS · Can you predict earthquakes?",
+        "url": "https://www.usgs.gov/faqs/can-you-predict-earthquakes"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "plasma-control",
+    "discipline": "energy",
+    "title": {
+      "en": "Controlling fusion plasma",
+      "zh-CN": "控制聚变等离子体",
+      "es": "Controlar el plasma de fusión"
+    },
+    "question": {
+      "en": "Can learning systems control the changing shape of plasma in a tokamak?",
+      "zh-CN": "学习系统能否控制托卡马克中不断变化的等离子体形状？",
+      "es": "¿Pueden los sistemas de aprendizaje controlar la forma cambiante del plasma en un tokamak?"
+    },
+    "boundary": {
+      "en": "The experiment validates magnetic control, not a commercially viable fusion power plant.",
+      "zh-CN": "实验验证的是磁控制，不是具有商业可行性的聚变电站。",
+      "es": "El experimento valida el control magnético, no una central de fusión comercialmente viable."
+    },
+    "sources": [
+      {
+        "title": "DeepMind + EPFL · Plasma control",
+        "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2022,
+        "status": "partial",
+        "evidence": "experiment",
+        "system": "Deep reinforcement learning + EPFL",
+        "summary": {
+          "en": "Demonstrated learned magnetic control of plasma configurations on the TCV tokamak.",
+          "zh-CN": "在 TCV 托卡马克上演示了通过学习进行的等离子体磁控制。",
+          "es": "Demostró el control magnético aprendido de configuraciones de plasma en el tokamak TCV."
+        },
+        "sources": [
+          {
+            "title": "DeepMind + EPFL · Plasma control",
+            "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "robot-generalization",
+    "discipline": "robotics",
+    "title": {
+      "en": "Robots that generalize",
+      "zh-CN": "能够泛化的机器人",
+      "es": "Robots capaces de generalizar"
+    },
+    "question": {
+      "en": "Can a robot carry out unfamiliar instructions with objects and situations it has not trained on?",
+      "zh-CN": "机器人能否面对训练中未见的物体和场景，执行陌生指令？",
+      "es": "¿Puede un robot ejecutar instrucciones nuevas con objetos y situaciones no vistos durante el entrenamiento?"
+    },
+    "boundary": {
+      "en": "Improvement on tested tasks does not establish reliable autonomy in arbitrary homes or workplaces.",
+      "zh-CN": "测试任务上的改进，不代表已能在任意家庭或工作场所可靠自主运行。",
+      "es": "Mejorar en tareas evaluadas no demuestra autonomía fiable en cualquier hogar o lugar de trabajo."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · RT-2",
+        "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2023,
+        "status": "partial",
+        "evidence": "experiment",
+        "system": "RT-2",
+        "summary": {
+          "en": "Transferred web-trained vision-language knowledge into robotic actions on evaluated tasks.",
+          "zh-CN": "在评估任务中，将网络训练的视觉语言知识迁移到机器人动作。",
+          "es": "Transfirió conocimiento visual y lingüístico aprendido de la web a acciones robóticas en tareas evaluadas."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · RT-2",
+            "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "tax-policy",
+    "discipline": "economics",
+    "title": {
+      "en": "Designing better tax policies",
+      "zh-CN": "设计更好的税收政策",
+      "es": "Diseñar mejores políticas fiscales"
+    },
+    "question": {
+      "en": "Can policy design improve welfare while accounting for people’s changing incentives?",
+      "zh-CN": "政策设计能否在考虑人们激励变化的同时改善福利？",
+      "es": "¿Puede el diseño de políticas mejorar el bienestar considerando los incentivos cambiantes de las personas?"
+    },
+    "boundary": {
+      "en": "Results depend on a simulated economy and a chosen welfare objective. They are not proof of superior national tax policy.",
+      "zh-CN": "结果依赖模拟经济和选定的福利目标，不能证明现实国家税制更优。",
+      "es": "Los resultados dependen de una economía simulada y de un objetivo de bienestar elegido. No prueban la superioridad de una política fiscal nacional."
+    },
+    "sources": [
+      {
+        "title": "Salesforce Research · AI Economist",
+        "url": "https://www.salesforce.com/blog/ai-economist-science-advances"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2022,
+        "status": "partial",
+        "evidence": "simulation",
+        "system": "AI Economist",
+        "summary": {
+          "en": "Used two-level reinforcement learning to optimize tax policies under specified simulated welfare objectives.",
+          "zh-CN": "使用双层强化学习，在指定模拟福利目标下优化税收政策。",
+          "es": "Utilizó aprendizaje por refuerzo de dos niveles para optimizar políticas fiscales con objetivos de bienestar simulados."
+        },
+        "sources": [
+          {
+            "title": "Salesforce Research · AI Economist",
+            "url": "https://www.salesforce.com/blog/ai-economist-science-advances"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "poverty",
+    "discipline": "society",
+    "title": {
+      "en": "Ending persistent poverty",
+      "zh-CN": "消除持续性贫困",
+      "es": "Acabar con la pobreza persistente"
+    },
+    "question": {
+      "en": "How can societies durably reduce poverty while sharing prosperity?",
+      "zh-CN": "社会如何在共享繁荣的同时，持久地减少贫困？",
+      "es": "¿Cómo pueden las sociedades reducir la pobreza de forma duradera y compartir la prosperidad?"
+    },
+    "boundary": {
+      "en": "This is a social and institutional challenge, not a single benchmark. Better prediction does not by itself deliver equitable outcomes.",
+      "zh-CN": "这是社会与制度性挑战，不是单项基准。更好的预测本身不会自动带来公平结果。",
+      "es": "Es un reto social e institucional, no una única prueba. Una mejor predicción no produce por sí sola resultados equitativos."
+    },
+    "sources": [
+      {
+        "title": "World Bank · Poverty, Prosperity, and Planet 2024",
+        "url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "ancient-inscriptions",
+    "discipline": "humanities",
+    "title": {
+      "en": "Restoring ancient inscriptions",
+      "zh-CN": "修复古代铭文",
+      "es": "Restaurar inscripciones antiguas"
+    },
+    "question": {
+      "en": "Can damaged inscriptions be restored, dated and placed in their historical setting?",
+      "zh-CN": "能否恢复残缺铭文、确定年代，并放回其历史背景？",
+      "es": "¿Pueden restaurarse y fecharse inscripciones dañadas y situarlas en su contexto histórico?"
+    },
+    "boundary": {
+      "en": "Suggested restorations are hypotheses for historians to evaluate, not recovered ground truth or a solution to all undeciphered scripts.",
+      "zh-CN": "建议的修复是供历史学家评估的假设，不是恢复出的绝对真相，也不代表破译了所有未知文字。",
+      "es": "Las restauraciones propuestas son hipótesis para historiadores, no verdades recuperadas ni una solución a todas las escrituras sin descifrar."
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind · Ithaca",
+        "url": "https://deepmind.google/blog/predicting-the-past-with-ithaca/"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2022,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "Ithaca + historians",
+        "summary": {
+          "en": "Assisted restoration and attribution of ancient Greek inscriptions in a published evaluation.",
+          "zh-CN": "在公开评估中，辅助恢复古希腊铭文并判断其时空归属。",
+          "es": "Ayudó a restaurar y atribuir inscripciones griegas antiguas en una evaluación publicada."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · Ithaca",
+            "url": "https://deepmind.google/blog/predicting-the-past-with-ithaca/"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "low-resource-translation",
+    "discipline": "language",
+    "title": {
+      "en": "Translation across low-resource languages",
+      "zh-CN": "低资源语言翻译",
+      "es": "Traducción de lenguas con pocos recursos"
+    },
+    "question": {
+      "en": "Can useful machine translation reach languages with very little parallel training text?",
+      "zh-CN": "实用机器翻译能否覆盖平行训练文本极少的语言？",
+      "es": "¿Puede la traducción automática útil llegar a lenguas con muy pocos textos paralelos de entrenamiento?"
+    },
+    "boundary": {
+      "en": "Coverage and benchmark gains do not guarantee faithful translation of every dialect, cultural context or high-stakes text.",
+      "zh-CN": "覆盖率和基准成绩不保证每种方言、文化语境或高风险文本都能忠实翻译。",
+      "es": "La cobertura y las mejoras en pruebas no garantizan traducciones fieles en todos los dialectos, contextos culturales o textos de alto riesgo."
+    },
+    "sources": [
+      {
+        "title": "NLLB Team · Nature (2024)",
+        "url": "https://www.nature.com/articles/s41586-024-07335-x"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2024,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "NLLB-200",
+        "summary": {
+          "en": "Published a multilingual translation approach spanning 200 languages, including low-resource languages.",
+          "zh-CN": "发表覆盖 200 种语言的多语翻译方法，包含低资源语言。",
+          "es": "Publicó un método de traducción multilingüe que abarca 200 lenguas, incluidas lenguas con pocos recursos."
+        },
+        "sources": [
+          {
+            "title": "NLLB Team · Nature (2024)",
+            "url": "https://www.nature.com/articles/s41586-024-07335-x"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "crop-disease",
+    "discipline": "agriculture",
+    "title": {
+      "en": "Recognizing crop disease",
+      "zh-CN": "识别作物病害",
+      "es": "Reconocer enfermedades de cultivos"
+    },
+    "question": {
+      "en": "Can affordable image-based tools identify plant diseases outside a specialist laboratory?",
+      "zh-CN": "低成本图像工具能否在专业实验室之外识别植物病害？",
+      "es": "¿Pueden herramientas de imagen asequibles identificar enfermedades vegetales fuera de un laboratorio especializado?"
+    },
+    "boundary": {
+      "en": "Strong accuracy on controlled leaf photographs did not carry over equally to images from other conditions. Field robustness remains a separate test.",
+      "zh-CN": "受控叶片照片上的高精度未同样迁移到其他条件的图片。田间鲁棒性需要单独验证。",
+      "es": "La alta precisión en fotos controladas de hojas no se trasladó por igual a otras condiciones. La robustez en el campo requiere pruebas propias."
+    },
+    "sources": [
+      {
+        "title": "Mohanty et al. · Frontiers in Plant Science (2016)",
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01419/full"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2016,
+        "status": "partial",
+        "evidence": "benchmark",
+        "system": "Deep learning on PlantVillage",
+        "summary": {
+          "en": "Demonstrated plant-disease classification on a controlled image dataset and documented generalization limitations.",
+          "zh-CN": "在受控图像数据集上演示植物病害分类，并记录泛化局限。",
+          "es": "Demostró clasificación de enfermedades vegetales en imágenes controladas y documentó límites de generalización."
+        },
+        "sources": [
+          {
+            "title": "Mohanty et al. · Frontiers in Plant Science (2016)",
+            "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01419/full"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "biodiversity",
+    "discipline": "ecology",
+    "title": {
+      "en": "Halting biodiversity loss",
+      "zh-CN": "遏止生物多样性丧失",
+      "es": "Frenar la pérdida de biodiversidad"
+    },
+    "question": {
+      "en": "How can we prevent extinctions while sustaining ecosystems and human livelihoods?",
+      "zh-CN": "如何在维持生态系统与人类生计的同时阻止物种灭绝？",
+      "es": "¿Cómo podemos evitar extinciones manteniendo los ecosistemas y los medios de vida humanos?"
+    },
+    "boundary": {
+      "en": "Detecting species or forecasting risks is not the same as achieving conservation outcomes. No end-to-end AI solution is recorded.",
+      "zh-CN": "识别物种或预测风险不等于实现保护成效。这里未收录端到端的 AI 解决方案。",
+      "es": "Detectar especies o prever riesgos no equivale a lograr resultados de conservación. No se registra una solución integral de IA."
+    },
+    "sources": [
+      {
+        "title": "IPBES · Global Assessment",
+        "url": "https://www.ipbes.net/global-assessment"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "consciousness",
+    "discipline": "philosophy",
+    "title": {
+      "en": "Explaining conscious experience",
+      "zh-CN": "解释意识体验",
+      "es": "Explicar la experiencia consciente"
+    },
+    "question": {
+      "en": "Why and how do physical processes give rise to subjective experience?",
+      "zh-CN": "物理过程为何、又如何产生主观体验？",
+      "es": "¿Por qué y cómo dan lugar los procesos físicos a la experiencia subjetiva?"
+    },
+    "boundary": {
+      "en": "Behavioral performance and neural correlations do not settle competing philosophical accounts of subjective experience.",
+      "zh-CN": "行为表现和神经相关性无法裁定关于主观体验的不同哲学解释。",
+      "es": "El comportamiento y los correlatos neuronales no resuelven las distintas explicaciones filosóficas de la experiencia subjetiva."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Consciousness",
+        "url": "https://plato.stanford.edu/entries/consciousness/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  }
+]
