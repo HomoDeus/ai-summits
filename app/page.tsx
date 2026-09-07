@@ -228,6 +228,63 @@ export default function Home() {
           {disciplines.length} {t.disciplines} · {REVIEW_DATE}
         </p>
       </section>
+      <div className="map-panel">
+        <div className="map-heading">
+          <span>{t.terrain}</span>
+          <div className="world-legend">
+            {(['open', 'partial', 'achieved'] as const).map((s) => (
+              <span key={s} className={s}>
+                <i />
+                {t[s]}
+              </span>
+            ))}
+          </div>
+        </div>
+        <Terrain
+          locale={locale}
+          year={year}
+          selected={effectiveSelected}
+          matches={visible.map((p) => p.id)}
+          onSelect={(id) => {
+            clear();
+            choose(id);
+          }}
+        />
+        <p className="map-note">{copy.note}</p>
+        <div className="time-controls">
+          <button
+            aria-label={playing ? t.pause : t.replay}
+            onClick={() => {
+              if (year === LAST_YEAR) setYear(FIRST_YEAR);
+              setPlaying(!playing);
+            }}
+          >
+            {playing ? <Pause size={17} /> : <Play size={17} />}
+          </button>
+          <span>{copy.years}</span>
+          <strong>{year}</strong>
+          <Slider
+            min={FIRST_YEAR}
+            max={LAST_YEAR}
+            step={1}
+            value={[year]}
+            aria-label={t.year}
+            onValueChange={(v) => {
+              setPlaying(false);
+              setYear(Array.isArray(v) ? v[0] : v);
+            }}
+          />
+          <button
+            className="latest-year"
+            onClick={() => {
+              setYear(LAST_YEAR);
+              setPlaying(false);
+            }}
+          >
+            {LAST_YEAR}
+          </button>
+        </div>
+      </div>
       <div className="workspace">
         <aside className="browser" id="index">
           <div className="browser-top">
@@ -311,7 +368,7 @@ export default function Home() {
             </div>
           )}
         </aside>
-        <section className="inspector" aria-label={copy.selected}>
+        <section className="inspector" id="details" aria-label={copy.selected}>
           {current ? (
             <>
               <div className="problem-heading">
@@ -352,49 +409,6 @@ export default function Home() {
                   </span>
                   <h3>{current.frontier[locale]}</h3>
                   <p>{current.boundary[locale]}</p>
-                </div>
-              </div>
-              <div className="map-panel">
-                <div className="map-heading">
-                  <span>{copy.route}</span>
-                  <span>
-                    {year} / {LAST_YEAR}
-                  </span>
-                </div>
-                <Terrain problem={current} locale={locale} year={year} />
-                <p className="map-note">{copy.note}</p>
-                <div className="time-controls">
-                  <button
-                    aria-label={playing ? t.pause : t.replay}
-                    onClick={() => {
-                      if (year === LAST_YEAR) setYear(FIRST_YEAR);
-                      setPlaying(!playing);
-                    }}
-                  >
-                    {playing ? <Pause size={17} /> : <Play size={17} />}
-                  </button>
-                  <span>{copy.years}</span>
-                  <strong>{year}</strong>
-                  <Slider
-                    min={FIRST_YEAR}
-                    max={LAST_YEAR}
-                    step={1}
-                    value={[year]}
-                    aria-label={t.year}
-                    onValueChange={(v) => {
-                      setPlaying(false);
-                      setYear(Array.isArray(v) ? v[0] : v);
-                    }}
-                  />
-                  <button
-                    className="latest-year"
-                    onClick={() => {
-                      setYear(LAST_YEAR);
-                      setPlaying(false);
-                    }}
-                  >
-                    {LAST_YEAR}
-                  </button>
                 </div>
               </div>
               <section className="evidence-trail">

@@ -890,3 +890,222 @@ footer > a {
     transition: none !important;
   }
 }
+
+/* The shared atlas remains visible independently of filtering and selection. */
+main > .map-panel {
+  margin: 0 40px 24px;
+  border: 1px solid #294552;
+  border-radius: 14px;
+}
+.world-map {
+  position: relative;
+  background: #0e2330;
+  overflow: hidden;
+}
+.world-svg {
+  display: block;
+  width: 100%;
+  height: clamp(580px, 62vw, 850px);
+  touch-action: none;
+  cursor: grab;
+}
+.world-svg:active {
+  cursor: grabbing;
+}
+.world-peak {
+  width: 100%;
+  display: block;
+  border: 1px solid transparent;
+  background: #102733d9;
+  color: #e0edf1;
+  border-radius: 8px;
+  padding: 5px 6px;
+  text-align: center;
+  cursor: pointer;
+  font:
+    20px/1.2 'Segoe UI',
+    'PingFang SC',
+    sans-serif;
+}
+.world-peak strong {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+.world-peak span {
+  display: block;
+  font-size: 15px;
+  margin-top: 6px;
+}
+.world-peak:hover,
+.world-peak.active {
+  background: #224651;
+}
+.mountain-hit {
+  cursor: pointer;
+}
+.world-legend {
+  display: flex;
+  gap: 20px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.world-legend span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.world-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #91a6bc;
+}
+.world-legend .partial i {
+  background: #efb66c;
+}
+.world-legend .achieved i {
+  background: #89e6b1;
+}
+.world-tools {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.world-tools button {
+  padding: 10px;
+  border: 1px solid #41616e;
+  background: #163440;
+  color: #c4e3eb;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+}
+.world-tools span {
+  font: 10px monospace;
+  color: #90b2c0;
+  margin-left: 5px;
+}
+.world-selection {
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+  width: 330px;
+  background: #132e3bf2;
+  border: 1px solid #3b626d;
+  border-radius: 10px;
+  padding: 14px 17px;
+  box-shadow: 0 10px 30px #0002;
+}
+.world-selection > a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #e2f1f3;
+}
+.world-selection p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #b7cdd5;
+  margin-top: 7px;
+}
+.world-selection b {
+  font-weight: 500;
+  color: #7bccac;
+  margin-right: 9px;
+}
+.world-selection p:last-child b {
+  color: #a1b4bd;
+}
+.challenge-list {
+  max-height: 620px;
+}
+@media (max-width: 1100px) {
+  main > .map-panel {
+    margin: 0 22px 24px;
+  }
+  .world-selection {
+    width: 295px;
+  }
+}
+@media (max-width: 760px) {
+  main > .map-panel {
+    margin: 0 12px 18px;
+  }
+  .world-svg {
+    height: 460px;
+  }
+  .world-selection {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 0 12px 12px;
+    width: auto;
+  }
+  .world-tools {
+    top: 12px;
+    bottom: auto;
+    left: 12px;
+  }
+  .world-legend {
+    gap: 8px;
+    font-size: 8px;
+  }
+  .world-legend i {
+    width: 5px;
+    height: 5px;
+  }
+  .world-peak strong {
+    font-size: 23px;
+  }
+  .world-peak span {
+    font-size: 18px;
+  }
+  .world-map {
+    padding-top: 36px;
+  }
+  .map-heading {
+    gap: 10px;
+  }
+  .world-tools button {
+    padding: 7px;
+  }
+}
+
+.world-selection {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: auto;
+  margin: 0 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.3fr;
+  gap: 20px;
+  align-items: start;
+}
+.world-selection > a {
+  margin: 0;
+}
+.world-selection p {
+  margin: 0;
+}
+.world-tools {
+  bottom: 100px;
+}
+@media (max-width: 760px) {
+  .world-selection {
+    display: block;
+    margin: 0 12px 12px;
+  }
+  .world-selection p {
+    margin-top: 8px;
+  }
+  .world-tools {
+    bottom: auto;
+    top: 12px;
+  }
+}
