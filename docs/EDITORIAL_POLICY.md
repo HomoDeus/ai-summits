@@ -1,6 +1,6 @@
 # Evidence and editorial policy
 
-AI Summits is a curated, community-editable atlas. It mixes research questions, practical challenges and clearly scoped benchmark targets; they are not comparable units of difficulty. The initial 30 entries span 23 editorial discipline groups, not a universal taxonomy or complete census.
+AI Summits is a curated, community-editable atlas. It mixes research questions, practical challenges and clearly scoped benchmark targets; they are not comparable units of difficulty. The 115 entries span 23 editorial discipline groups, not a universal taxonomy or complete census.
 
 ## Status
 
@@ -28,7 +28,7 @@ Named peaks link to exact records and remain in fixed, adjoining discipline prov
 
 Named peak height uses equal weights for two provisional editorial estimates: difficulty and importance, each on a 1–5 scale. Difficulty ranges from routine (1), advanced (2), specialist (3), research frontier (4), to foundational unresolved challenge (5). Importance ranges from narrow (1), local (2), field-wide (3), cross-field (4), to broad scientific or societal impact (5). These are subjective, revisable navigation aids, not community consensus or objective cross-disciplinary rankings. `height = 55 + 26 × (average rating − 1)` in editorial map units, converted to `4 + height / 8` for the 3D summit elevation. The individual ratings and rubric are visible in the map. Scores refer to the stated challenge, not its latest AI result, and do not rewind with time.
 
-Human and AI-assisted climbers use the same categorical route: no dated record at the base with a question mark, partial result at an illustrative intermediate camp, achieved bounded target at the summit with a checked flag. They are not quantitative progress or speed comparisons. Human research can use tools; AI results can involve human contributions. Different methods (such as experimental structure determination and prediction) are explicitly identified in the evidence descriptions. Human coverage is currently limited to three example records. Missing human records do not imply no human progress. Both actors obey the selected cutoff year. A summit flag requires an eligible `achieved` record for that actor; partial results never receive a flag.
+Human and AI-assisted climbers use the same categorical route: no dated record at the base with a question mark, partial result at an illustrative intermediate camp, achieved bounded target at the summit with a checked flag. They are not quantitative progress or speed comparisons. Human research can use tools; AI results can involve human contributions. Different methods (such as experimental structure determination and prediction) are explicitly identified in the evidence descriptions. Human coverage is currently limited to five example records. Missing human records do not imply no human progress. Both actors obey the selected cutoff year. A summit flag requires an eligible `achieved` record for that actor; partial results never receive a flag.
 
 ## Updating the collection
 

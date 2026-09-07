@@ -1628,5 +1628,3261 @@
       "importance": 3
     },
     "humanMilestones": []
+  },
+  {
+    "id": "hodge",
+    "discipline": "mathematics",
+    "title": {
+      "en": "Hodge conjecture",
+      "zh-CN": "霍奇猜想",
+      "es": "Conjetura de Hodge"
+    },
+    "question": {
+      "en": "Can we prove that rational Hodge classes on smooth complex projective varieties are algebraic?",
+      "zh-CN": "能否证明光滑复射影簇上的有理霍奇类是代数的？",
+      "es": "¿Es posible demostrar que las clases de Hodge racionales de variedades proyectivas complejas lisas son algebraicas?"
+    },
+    "frontier": {
+      "en": "Prove that rational Hodge classes on smooth complex projective varieties are algebraic",
+      "zh-CN": "证明光滑复射影簇上的有理霍奇类是代数的",
+      "es": "Demostrar que las clases de Hodge racionales de variedades proyectivas complejas lisas son algebraicas"
+    },
+    "boundary": {
+      "en": "A proof must cover the full statement and withstand expert scrutiny. Examples and numerical evidence do not settle it.",
+      "zh-CN": "证明必须覆盖完整命题并经受专家审查；实例和数值证据不能解决一般性命题。",
+      "es": "Una demostración debe cubrir el enunciado completo y superar el examen experto; los ejemplos numéricos no bastan."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "birch-swinnerton-dyer",
+    "discipline": "mathematics",
+    "title": {
+      "en": "Birch–Swinnerton-Dyer conjecture",
+      "zh-CN": "贝赫与斯维讷通-戴尔猜想",
+      "es": "Conjetura de Birch y Swinnerton-Dyer"
+    },
+    "question": {
+      "en": "Can we prove the relation between an elliptic curve's rational-point rank and its L-function at one?",
+      "zh-CN": "能否证明椭圆曲线有理点的秩与其 L 函数在 1 处的关系？",
+      "es": "¿Es posible demostrar la relación entre el rango de puntos racionales de una curva elíptica y su función L en uno?"
+    },
+    "frontier": {
+      "en": "Prove the relation between an elliptic curve's rational-point rank and its L-function at one",
+      "zh-CN": "证明椭圆曲线有理点的秩与其 L 函数在 1 处的关系",
+      "es": "Demostrar la relación entre el rango de puntos racionales de una curva elíptica y su función L en uno"
+    },
+    "boundary": {
+      "en": "A proof must cover the full statement and withstand expert scrutiny. Examples and numerical evidence do not settle it.",
+      "zh-CN": "证明必须覆盖完整命题并经受专家审查；实例和数值证据不能解决一般性命题。",
+      "es": "Una demostración debe cubrir el enunciado completo y superar el examen experto; los ejemplos numéricos no bastan."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "poincare",
+    "discipline": "mathematics",
+    "title": {
+      "en": "Poincaré conjecture",
+      "zh-CN": "庞加莱猜想",
+      "es": "Conjetura de Poincaré"
+    },
+    "question": {
+      "en": "Can we establish that every closed simply connected three-manifold is homeomorphic to the three-sphere?",
+      "zh-CN": "能否证明每个闭的单连通三维流形都同胚于三维球面？",
+      "es": "¿Es posible establecer que toda variedad tridimensional cerrada y simplemente conexa es homeomorfa a la esfera tridimensional?"
+    },
+    "frontier": {
+      "en": "Human proof established; no AI proof milestone recorded here",
+      "zh-CN": "人类证明已成立；本站尚未收录 AI 证明里程碑",
+      "es": "Demostración humana establecida, sin hito de demostración de IA registrado aquí"
+    },
+    "boundary": {
+      "en": "A proof must cover the full statement and withstand expert scrutiny. Examples and numerical evidence do not settle it.",
+      "zh-CN": "证明必须覆盖完整命题并经受专家审查；实例和数值证据不能解决一般性命题。",
+      "es": "Una demostración debe cubrir el enunciado completo y superar el examen experto; los ejemplos numéricos no bastan."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Poincaré conjecture",
+        "url": "https://www.claymath.org/millennium/poincare-conjecture/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": [
+      {
+        "year": 2003,
+        "status": "achieved",
+        "headline": {
+          "en": "Perelman proves the conjecture",
+          "zh-CN": "佩雷尔曼证明猜想",
+          "es": "Perelman demuestra la conjetura"
+        },
+        "summary": {
+          "en": "Perelman’s 2002–2003 preprints supplied the proof, subsequently checked by the mathematical community. This is a human achievement, not an AI result.",
+          "zh-CN": "佩雷尔曼在 2002–2003 年的预印本中给出证明，随后由数学界核验。这是人类成果，并非 AI 成果。",
+          "es": "Las prepublicaciones de Perelman de 2002–2003 aportaron la prueba, verificada posteriormente por la comunidad matemática. Es un logro humano, no de IA."
+        },
+        "sources": [
+          {
+            "title": "Clay Mathematics Institute · Poincaré conjecture",
+            "url": "https://www.claymath.org/millennium/poincare-conjecture/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "small-sort",
+    "discipline": "computing",
+    "title": {
+      "en": "Faster small sorting routines",
+      "zh-CN": "小规模排序优化",
+      "es": "Rutinas pequeñas de ordenación más rápidas"
+    },
+    "question": {
+      "en": "Can we discover and verify faster small sorting routines across architectures and input distributions?",
+      "zh-CN": "能否发现并验证跨架构、跨输入分布的更快小规模排序程序？",
+      "es": "¿Es posible descubrir y verificar rutinas pequeñas de ordenación más rápidas entre arquitecturas y distribuciones de entrada?"
+    },
+    "frontier": {
+      "en": "Discover and verify faster small sorting routines across architectures and input distributions",
+      "zh-CN": "发现并验证跨架构、跨输入分布的更快小规模排序程序",
+      "es": "Descubrir y verificar rutinas pequeñas de ordenación más rápidas entre arquitecturas y distribuciones de entrada"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "Nature · Faster sorting algorithms discovered using deep reinforcement learning",
+        "url": "https://www.nature.com/articles/s41586-023-06004-9"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [
+      {
+        "year": 2023,
+        "status": "partial",
+        "headline": {
+          "en": "AlphaDev discovers faster routines",
+          "zh-CN": "AlphaDev 发现更快的排序程序",
+          "es": "AlphaDev descubre rutinas más rápidas"
+        },
+        "summary": {
+          "en": "Reinforcement learning discovered improved assembly routines for small sorting tasks. Gains depend on the routine and evaluation conditions, not a proof of universally optimal sorting.",
+          "zh-CN": "强化学习为小规模排序发现了改进的汇编程序。收益取决于具体程序及评估条件，并非普遍最优排序的证明。",
+          "es": "El aprendizaje por refuerzo descubrió rutinas de ensamblador mejoradas para ordenación pequeña. Las ganancias dependen de la rutina y evaluación, sin demostrar optimalidad universal."
+        },
+        "sources": [
+          {
+            "title": "Nature · Faster sorting algorithms discovered using deep reinforcement learning",
+            "url": "https://www.nature.com/articles/s41586-023-06004-9"
+          }
+        ],
+        "system": "AlphaDev",
+        "evidence": "benchmark"
+      }
+    ],
+    "humanMilestones": []
+  },
+  {
+    "id": "quantum-error-correction",
+    "discipline": "computing",
+    "title": {
+      "en": "Scalable quantum error correction",
+      "zh-CN": "可扩展量子纠错",
+      "es": "Corrección cuántica de errores escalable"
+    },
+    "question": {
+      "en": "Can we maintain useful logical qubits as fault-tolerant computations grow in size and duration?",
+      "zh-CN": "能否在容错计算规模和时长增长时维持可用的逻辑量子比特？",
+      "es": "¿Es posible mantener cúbits lógicos útiles al aumentar la escala y duración de los cálculos tolerantes a fallos?"
+    },
+    "frontier": {
+      "en": "Maintain useful logical qubits as fault-tolerant computations grow in size and duration",
+      "zh-CN": "在容错计算规模和时长增长时维持可用的逻辑量子比特",
+      "es": "Mantener cúbits lógicos útiles al aumentar la escala y duración de los cálculos tolerantes a fallos"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "Nature · Quantum error correction below the surface code threshold",
+        "url": "https://www.nature.com/articles/s41586-024-08449-y"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": [
+      {
+        "year": 2024,
+        "status": "partial",
+        "headline": {
+          "en": "Below-threshold quantum error correction",
+          "zh-CN": "低于阈值的量子纠错",
+          "es": "Corrección cuántica por debajo del umbral"
+        },
+        "summary": {
+          "en": "The Willow experiment demonstrated logical-error suppression as surface-code size increased. This hardware result does not establish a complete fault-tolerant quantum computer.",
+          "zh-CN": "Willow 实验展示了随表面码规模增加而降低逻辑错误率。该硬件成果不等于完整的容错量子计算机。",
+          "es": "El experimento Willow mostró supresión de errores lógicos al aumentar el tamaño del código de superficie. No establece un ordenador cuántico tolerante a fallos completo."
+        },
+        "sources": [
+          {
+            "title": "Nature · Quantum error correction below the surface code threshold",
+            "url": "https://www.nature.com/articles/s41586-024-08449-y"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yang-mills",
+    "discipline": "physics",
+    "title": {
+      "en": "Yang–Mills mass gap",
+      "zh-CN": "杨–米尔斯质量间隙",
+      "es": "Brecha de masa de Yang–Mills"
+    },
+    "question": {
+      "en": "Can we construct a rigorous four-dimensional quantum Yang–Mills theory with a positive mass gap?",
+      "zh-CN": "能否严格构造具有正质量间隙的四维量子杨–米尔斯理论？",
+      "es": "¿Es posible construir una teoría cuántica rigurosa de Yang–Mills en cuatro dimensiones con brecha de masa positiva?"
+    },
+    "frontier": {
+      "en": "Construct a rigorous four-dimensional quantum Yang–Mills theory with a positive mass gap",
+      "zh-CN": "严格构造具有正质量间隙的四维量子杨–米尔斯理论",
+      "es": "Construir una teoría cuántica rigurosa de Yang–Mills en cuatro dimensiones con brecha de masa positiva"
+    },
+    "boundary": {
+      "en": "A proof must cover the full statement and withstand expert scrutiny. Examples and numerical evidence do not settle it.",
+      "zh-CN": "证明必须覆盖完整命题并经受专家审查；实例和数值证据不能解决一般性命题。",
+      "es": "Una demostración debe cubrir el enunciado completo y superar el examen experto; los ejemplos numéricos no bastan."
+    },
+    "sources": [
+      {
+        "title": "Clay Mathematics Institute · Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "quantum-gravity",
+    "discipline": "physics",
+    "title": {
+      "en": "Quantum gravity",
+      "zh-CN": "量子引力",
+      "es": "Gravedad cuántica"
+    },
+    "question": {
+      "en": "Can we reconcile gravity and quantum mechanics with experimentally testable predictions?",
+      "zh-CN": "能否用可实验检验的预言统一引力与量子力学？",
+      "es": "¿Es posible conciliar gravedad y mecánica cuántica mediante predicciones comprobables experimentalmente?"
+    },
+    "frontier": {
+      "en": "Reconcile gravity and quantum mechanics with experimentally testable predictions",
+      "zh-CN": "用可实验检验的预言统一引力与量子力学",
+      "es": "Conciliar gravedad y mecánica cuántica mediante predicciones comprobables experimentalmente"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "CERN · The Standard Model",
+        "url": "https://home.web.cern.ch/science/physics/standard-model/"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "matter-asymmetry",
+    "discipline": "physics",
+    "title": {
+      "en": "Matter–antimatter asymmetry",
+      "zh-CN": "物质与反物质不对称",
+      "es": "Asimetría materia-antimateria"
+    },
+    "question": {
+      "en": "Can we explain the observed cosmic excess of matter with quantitatively sufficient mechanisms?",
+      "zh-CN": "能否用定量上足够的机制解释宇宙中物质相对反物质的过剩？",
+      "es": "¿Es posible explicar el exceso cósmico de materia con mecanismos cuantitativamente suficientes?"
+    },
+    "frontier": {
+      "en": "Explain the observed cosmic excess of matter with quantitatively sufficient mechanisms",
+      "zh-CN": "用定量上足够的机制解释宇宙中物质相对反物质的过剩",
+      "es": "Explicar el exceso cósmico de materia con mecanismos cuantitativamente suficientes"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "CERN · Antimatter",
+        "url": "https://home.cern/science/physics/antimatter/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "standard-model-completion",
+    "discipline": "physics",
+    "title": {
+      "en": "Beyond the Standard Model",
+      "zh-CN": "超越标准模型",
+      "es": "Más allá del modelo estándar"
+    },
+    "question": {
+      "en": "Can we find experimentally confirmed physics that explains phenomena outside the Standard Model?",
+      "zh-CN": "能否找到经实验确认、能解释标准模型之外现象的新物理？",
+      "es": "¿Es posible encontrar física confirmada experimentalmente que explique fenómenos fuera del modelo estándar?"
+    },
+    "frontier": {
+      "en": "Find experimentally confirmed physics that explains phenomena outside the Standard Model",
+      "zh-CN": "找到经实验确认、能解释标准模型之外现象的新物理",
+      "es": "Encontrar física confirmada experimentalmente que explique fenómenos fuera del modelo estándar"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "CERN · The Standard Model",
+        "url": "https://home.web.cern.ch/science/physics/standard-model/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "exoplanet-biosignatures",
+    "discipline": "astronomy",
+    "title": {
+      "en": "Life beyond Earth",
+      "zh-CN": "地外生命证据",
+      "es": "Vida fuera de la Tierra"
+    },
+    "question": {
+      "en": "Can we distinguish biological atmospheric signatures from nonbiological look-alikes on exoplanets?",
+      "zh-CN": "能否区分系外行星大气的生物信号与非生物过程造成的相似信号？",
+      "es": "¿Es posible distinguir señales atmosféricas biológicas de imitaciones abióticas en exoplanetas?"
+    },
+    "frontier": {
+      "en": "Distinguish biological atmospheric signatures from nonbiological look-alikes on exoplanets",
+      "zh-CN": "区分系外行星大气的生物信号与非生物过程造成的相似信号",
+      "es": "Distinguir señales atmosféricas biológicas de imitaciones abióticas en exoplanetas"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NASA · Exoplanets: big questions",
+        "url": "https://science.nasa.gov/exoplanets/big-questions/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "galaxy-formation",
+    "discipline": "astronomy",
+    "title": {
+      "en": "Galaxy formation across cosmic time",
+      "zh-CN": "星系形成与演化",
+      "es": "Formación galáctica a lo largo del tiempo cósmico"
+    },
+    "question": {
+      "en": "Can we explain galaxy populations across epochs with consistent star-formation and feedback physics?",
+      "zh-CN": "能否用一致的恒星形成与反馈物理解释不同时代的星系群体？",
+      "es": "¿Es posible explicar poblaciones galácticas de distintas épocas con física coherente de formación estelar y retroalimentación?"
+    },
+    "frontier": {
+      "en": "Explain galaxy populations across epochs with consistent star-formation and feedback physics",
+      "zh-CN": "用一致的恒星形成与反馈物理解释不同时代的星系群体",
+      "es": "Explicar poblaciones galácticas de distintas épocas con física coherente de formación estelar y retroalimentación"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NASA · Astrophysics science questions",
+        "url": "https://science.nasa.gov/astrophysics/science-questions/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "dark-energy",
+    "discipline": "astronomy",
+    "title": {
+      "en": "Dark energy",
+      "zh-CN": "暗能量",
+      "es": "Energía oscura"
+    },
+    "question": {
+      "en": "Can we determine the physical cause of accelerated cosmic expansion from discriminating observations?",
+      "zh-CN": "能否通过具有区分力的观测确定宇宙加速膨胀的物理原因？",
+      "es": "¿Es posible determinar la causa física de la expansión cósmica acelerada mediante observaciones discriminantes?"
+    },
+    "frontier": {
+      "en": "Determine the physical cause of accelerated cosmic expansion from discriminating observations",
+      "zh-CN": "通过具有区分力的观测确定宇宙加速膨胀的物理原因",
+      "es": "Determinar la causa física de la expansión cósmica acelerada mediante observaciones discriminantes"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NASA · Astrophysics science questions",
+        "url": "https://science.nasa.gov/astrophysics/science-questions/"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "green-ammonia",
+    "discipline": "chemistry",
+    "title": {
+      "en": "Low-carbon ammonia synthesis",
+      "zh-CN": "低碳合成氨",
+      "es": "Síntesis de amoníaco baja en carbono"
+    },
+    "question": {
+      "en": "Can we make ammonia from renewable inputs at industrial scale with low energy use?",
+      "zh-CN": "能否以低能耗在工业规模上利用可再生投入生产氨？",
+      "es": "¿Es posible producir amoníaco con insumos renovables a escala industrial y bajo consumo energético?"
+    },
+    "frontier": {
+      "en": "Make ammonia from renewable inputs at industrial scale with low energy use",
+      "zh-CN": "以低能耗在工业规模上利用可再生投入生产氨",
+      "es": "Producir amoníaco con insumos renovables a escala industrial y bajo consumo energético"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "ARPA-E · Renewables-based catalytic ammonia production",
+        "url": "https://arpa-e.energy.gov/programs-and-initiatives/search-all-projects/renewables-based-catalytic-ammonia-production"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "solar-fuels",
+    "discipline": "chemistry",
+    "title": {
+      "en": "Solar fuel catalysts",
+      "zh-CN": "太阳能燃料催化",
+      "es": "Catalizadores para combustibles solares"
+    },
+    "question": {
+      "en": "Can we convert sunlight into storable fuels with durable, efficient and abundant catalysts?",
+      "zh-CN": "能否用耐久、高效且原料丰富的催化剂把阳光转化为可储存燃料？",
+      "es": "¿Es posible convertir luz solar en combustibles almacenables con catalizadores duraderos, eficientes y abundantes?"
+    },
+    "frontier": {
+      "en": "Convert sunlight into storable fuels with durable, efficient and abundant catalysts",
+      "zh-CN": "用耐久、高效且原料丰富的催化剂把阳光转化为可储存燃料",
+      "es": "Convertir luz solar en combustibles almacenables con catalizadores duraderos, eficientes y abundantes"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Catalysts",
+        "url": "https://www.energy.gov/science/doe-explainscatalysts"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "plastic-recycling",
+    "discipline": "chemistry",
+    "title": {
+      "en": "Closed-loop plastic recycling",
+      "zh-CN": "塑料闭环回收",
+      "es": "Reciclaje de plásticos en circuito cerrado"
+    },
+    "question": {
+      "en": "Can we recover reusable feedstocks from mixed plastics without repeated quality loss?",
+      "zh-CN": "能否从混合塑料中回收可再利用原料并避免反复循环造成品质下降？",
+      "es": "¿Es posible recuperar materias primas reutilizables de plásticos mezclados sin pérdidas repetidas de calidad?"
+    },
+    "frontier": {
+      "en": "Recover reusable feedstocks from mixed plastics without repeated quality loss",
+      "zh-CN": "从混合塑料中回收可再利用原料并避免反复循环造成品质下降",
+      "es": "Recuperar materias primas reutilizables de plásticos mezclados sin pérdidas repetidas de calidad"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Transforming plastics recycling with discovery science",
+        "url": "https://www.energy.gov/science/articles/transforming-plastics-recycling-discovery-science"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "carbon-dioxide-catalysis",
+    "discipline": "chemistry",
+    "title": {
+      "en": "Selective carbon dioxide conversion",
+      "zh-CN": "二氧化碳选择性转化",
+      "es": "Conversión selectiva de dióxido de carbono"
+    },
+    "question": {
+      "en": "Can we convert carbon dioxide into useful multicarbon products with efficient and stable selectivity?",
+      "zh-CN": "能否高效、稳定且有选择性地将二氧化碳转化为有用的多碳产物？",
+      "es": "¿Es posible convertir dióxido de carbono en productos multicarbonados útiles con selectividad eficiente y estable?"
+    },
+    "frontier": {
+      "en": "Convert carbon dioxide into useful multicarbon products with efficient and stable selectivity",
+      "zh-CN": "高效、稳定且有选择性地将二氧化碳转化为有用的多碳产物",
+      "es": "Convertir dióxido de carbono en productos multicarbonados útiles con selectividad eficiente y estable"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Tandem catalyst converts carbon dioxide to multicarbon products",
+        "url": "https://www.energy.gov/science/bes/articles/new-tandem-catalyst-converts-carbon-dioxide-valuable-multicarbon-products-more"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "ambient-superconductor",
+    "discipline": "materials",
+    "title": {
+      "en": "Ambient-pressure room-temperature superconductivity",
+      "zh-CN": "常压室温超导",
+      "es": "Superconductividad ambiental a temperatura ambiente"
+    },
+    "question": {
+      "en": "Can we verify reproducible superconductivity at room temperature and ambient pressure?",
+      "zh-CN": "能否验证可重复的常温常压超导现象？",
+      "es": "¿Es posible verificar superconductividad reproducible a temperatura ambiente y presión atmosférica?"
+    },
+    "frontier": {
+      "en": "Verify reproducible superconductivity at room temperature and ambient pressure",
+      "zh-CN": "验证可重复的常温常压超导现象",
+      "es": "Verificar superconductividad reproducible a temperatura ambiente y presión atmosférica"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Superconductivity",
+        "url": "https://www.energy.gov/science/doe-explainssuperconductivity"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "solid-state-batteries",
+    "discipline": "materials",
+    "title": {
+      "en": "Dendrite-resistant solid-state batteries",
+      "zh-CN": "抗枝晶固态电池",
+      "es": "Baterías de estado sólido resistentes a dendritas"
+    },
+    "question": {
+      "en": "Can we prevent short circuits and interface degradation during practical fast-charge battery cycling?",
+      "zh-CN": "能否在实用快充循环中防止电池短路与界面退化？",
+      "es": "¿Es posible evitar cortocircuitos y degradación de interfaces durante ciclos prácticos de carga rápida?"
+    },
+    "frontier": {
+      "en": "Prevent short circuits and interface degradation during practical fast-charge battery cycling",
+      "zh-CN": "在实用快充循环中防止电池短路与界面退化",
+      "es": "Evitar cortocircuitos y degradación de interfaces durante ciclos prácticos de carga rápida"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Batteries annual progress report",
+        "url": "https://www.energy.gov/sites/default/files/2018/05/f51/Batteries_FY2017_APR_Final_Part3of3.pdf"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "corrosion-resistant-materials",
+    "discipline": "materials",
+    "title": {
+      "en": "Corrosion in harsh environments",
+      "zh-CN": "极端环境耐腐蚀材料",
+      "es": "Corrosión en entornos extremos"
+    },
+    "question": {
+      "en": "Can we predict and prevent long-term corrosion under coupled chemical and mechanical stresses?",
+      "zh-CN": "能否预测并防止化学与机械应力耦合下的长期腐蚀？",
+      "es": "¿Es posible predecir y evitar corrosión duradera bajo esfuerzos químicos y mecánicos acoplados?"
+    },
+    "frontier": {
+      "en": "Predict and prevent long-term corrosion under coupled chemical and mechanical stresses",
+      "zh-CN": "预测并防止化学与机械应力耦合下的长期腐蚀",
+      "es": "Predecir y evitar corrosión duradera bajo esfuerzos químicos y mecánicos acoplados"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Corrosion analysis of materials",
+        "url": "https://www.energy.gov/cmei/h2awsm/corrosion-analysis-materials"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "fusion-materials",
+    "discipline": "materials",
+    "title": {
+      "en": "Radiation-resistant fusion materials",
+      "zh-CN": "抗辐照聚变材料",
+      "es": "Materiales de fusión resistentes a radiación"
+    },
+    "question": {
+      "en": "Can we preserve structural integrity and heat transport under sustained fusion-neutron exposure?",
+      "zh-CN": "能否在持续聚变中子辐照下维持结构完整性与传热性能？",
+      "es": "¿Es posible preservar integridad estructural y transporte térmico bajo exposición sostenida a neutrones de fusión?"
+    },
+    "frontier": {
+      "en": "Preserve structural integrity and heat transport under sustained fusion-neutron exposure",
+      "zh-CN": "在持续聚变中子辐照下维持结构完整性与传热性能",
+      "es": "Preservar integridad estructural y transporte térmico bajo exposición sostenida a neutrones de fusión"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "ARPA-E · CHADWICK fusion materials program",
+        "url": "https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/chadwick"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "variant-function",
+    "discipline": "biology",
+    "title": {
+      "en": "From genetic variants to function",
+      "zh-CN": "从基因变异到功能",
+      "es": "De variantes genéticas a función"
+    },
+    "question": {
+      "en": "Can we predict causal effects of genetic variants across cell types and biological contexts?",
+      "zh-CN": "能否预测基因变异在不同细胞类型与生物背景中的因果效应？",
+      "es": "¿Es posible predecir efectos causales de variantes genéticas entre tipos celulares y contextos biológicos?"
+    },
+    "frontier": {
+      "en": "Predict causal effects of genetic variants across cell types and biological contexts",
+      "zh-CN": "预测基因变异在不同细胞类型与生物背景中的因果效应",
+      "es": "Predecir efectos causales de variantes genéticas entre tipos celulares y contextos biológicos"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NHGRI · Impact of Genomic Variation on Function Consortium",
+        "url": "https://www.genome.gov/Funded-Programs-Projects/Impact-of-Genomic-Variation-on-Function-Consortium"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "gene-regulation",
+    "discipline": "biology",
+    "title": {
+      "en": "Gene regulatory networks",
+      "zh-CN": "基因调控网络",
+      "es": "Redes de regulación génica"
+    },
+    "question": {
+      "en": "Can we reconstruct regulatory networks that predict cellular responses to unseen perturbations?",
+      "zh-CN": "能否重建能预测细胞对未见扰动反应的调控网络？",
+      "es": "¿Es posible reconstruir redes reguladoras que predigan respuestas celulares a perturbaciones inéditas?"
+    },
+    "frontier": {
+      "en": "Reconstruct regulatory networks that predict cellular responses to unseen perturbations",
+      "zh-CN": "重建能预测细胞对未见扰动反应的调控网络",
+      "es": "Reconstruir redes reguladoras que predigan respuestas celulares a perturbaciones inéditas"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NHGRI · Impact of Genomic Variation on Function Consortium",
+        "url": "https://www.genome.gov/Funded-Programs-Projects/Impact-of-Genomic-Variation-on-Function-Consortium"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "aging-mechanisms",
+    "discipline": "biology",
+    "title": {
+      "en": "Causal mechanisms of aging",
+      "zh-CN": "衰老的因果机制",
+      "es": "Mecanismos causales del envejecimiento"
+    },
+    "question": {
+      "en": "Can we separate causes from consequences of aging and validate interventions across organisms?",
+      "zh-CN": "能否区分衰老的原因与后果并跨生物体验证干预？",
+      "es": "¿Es posible separar causas y consecuencias del envejecimiento y validar intervenciones entre organismos?"
+    },
+    "frontier": {
+      "en": "Separate causes from consequences of aging and validate interventions across organisms",
+      "zh-CN": "区分衰老的原因与后果并跨生物体验证干预",
+      "es": "Separar causas y consecuencias del envejecimiento y validar intervenciones entre organismos"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NIA · Biology of aging",
+        "url": "https://www.nia.nih.gov/about/budget/biology-aging"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "metastasis",
+    "discipline": "medicine",
+    "title": {
+      "en": "Preventing cancer metastasis",
+      "zh-CN": "阻止癌症转移",
+      "es": "Prevención de metástasis"
+    },
+    "question": {
+      "en": "Can we prevent metastatic spread and recurrence across diverse tumor types?",
+      "zh-CN": "能否在多种肿瘤中防止转移扩散和复发？",
+      "es": "¿Es posible prevenir diseminación metastásica y recaída en diversos tipos de tumor?"
+    },
+    "frontier": {
+      "en": "Prevent metastatic spread and recurrence across diverse tumor types",
+      "zh-CN": "在多种肿瘤中防止转移扩散和复发",
+      "es": "Prevenir diseminación metastásica y recaída en diversos tipos de tumor"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NCI · Tumor metastasis research",
+        "url": "https://www.cancer.gov/about-nci/organization/dcb/research-portfolio/tumor-metastasis"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "hiv-cure",
+    "discipline": "medicine",
+    "title": {
+      "en": "A broadly applicable HIV cure",
+      "zh-CN": "广泛适用的 HIV 治愈",
+      "es": "Cura del VIH ampliamente aplicable"
+    },
+    "question": {
+      "en": "Can we eliminate or durably control viral reservoirs without lifelong antiretroviral therapy?",
+      "zh-CN": "能否清除或持久控制病毒储存库而无需终身抗逆转录病毒治疗？",
+      "es": "¿Es posible eliminar o controlar de forma duradera reservorios virales sin tratamiento antirretroviral de por vida?"
+    },
+    "frontier": {
+      "en": "Eliminate or durably control viral reservoirs without lifelong antiretroviral therapy",
+      "zh-CN": "清除或持久控制病毒储存库而无需终身抗逆转录病毒治疗",
+      "es": "Eliminar o controlar de forma duradera reservorios virales sin tratamiento antirretroviral de por vida"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIH · Research toward an HIV cure",
+        "url": "https://www.oar.nih.gov/hiv-policy-and-research/research-priorities-overview/research-toward-hiv-cure"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "universal-influenza-vaccine",
+    "discipline": "medicine",
+    "title": {
+      "en": "Universal influenza vaccine",
+      "zh-CN": "通用流感疫苗",
+      "es": "Vacuna universal contra la gripe"
+    },
+    "question": {
+      "en": "Can we provide durable protection against diverse influenza strains across age groups?",
+      "zh-CN": "能否为不同年龄群体提供针对多种流感毒株的持久保护？",
+      "es": "¿Es posible proporcionar protección duradera contra diversas cepas de gripe en distintos grupos de edad?"
+    },
+    "frontier": {
+      "en": "Provide durable protection against diverse influenza strains across age groups",
+      "zh-CN": "为不同年龄群体提供针对多种流感毒株的持久保护",
+      "es": "Proporcionar protección duradera contra diversas cepas de gripe en distintos grupos de edad"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIH · Strategic plan for a universal influenza vaccine",
+        "url": "https://www.nih.gov/news-events/news-releases/niaid-unveils-strategic-plan-developing-universal-influenza-vaccine"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "neural-code",
+    "discipline": "neuroscience",
+    "title": {
+      "en": "Decoding the neural code",
+      "zh-CN": "解读神经编码",
+      "es": "Descifrar el código neuronal"
+    },
+    "question": {
+      "en": "Can we explain how neural population activity represents information across tasks and brain regions?",
+      "zh-CN": "能否解释神经群体活动如何跨任务、跨脑区表征信息？",
+      "es": "¿Es posible explicar cómo la actividad de poblaciones neuronales representa información entre tareas y regiones cerebrales?"
+    },
+    "frontier": {
+      "en": "Explain how neural population activity represents information across tasks and brain regions",
+      "zh-CN": "解释神经群体活动如何跨任务、跨脑区表征信息",
+      "es": "Explicar cómo la actividad de poblaciones neuronales representa información entre tareas y regiones cerebrales"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NIH · BRAIN 2025 scientific vision",
+        "url": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-2025-scientific-vision"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "memory-mechanisms",
+    "discipline": "neuroscience",
+    "title": {
+      "en": "How memories are stored",
+      "zh-CN": "记忆如何储存",
+      "es": "Cómo se almacenan los recuerdos"
+    },
+    "question": {
+      "en": "Can we link lasting memories to causal changes in cells, synapses and circuits?",
+      "zh-CN": "能否将持久记忆与细胞、突触及回路的因果变化关联起来？",
+      "es": "¿Es posible vincular recuerdos duraderos a cambios causales en células, sinapsis y circuitos?"
+    },
+    "frontier": {
+      "en": "Link lasting memories to causal changes in cells, synapses and circuits",
+      "zh-CN": "将持久记忆与细胞、突触及回路的因果变化关联起来",
+      "es": "Vincular recuerdos duraderos a cambios causales en células, sinapsis y circuitos"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NIH · BRAIN 2025 scientific vision",
+        "url": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-2025-scientific-vision"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "causal-brain-control",
+    "discipline": "neuroscience",
+    "title": {
+      "en": "Precise causal brain interventions",
+      "zh-CN": "精准脑回路干预",
+      "es": "Intervenciones cerebrales causales precisas"
+    },
+    "question": {
+      "en": "Can we manipulate defined circuits with predictable behavioral effects and minimal off-target effects?",
+      "zh-CN": "能否操控特定回路并获得可预测的行为效应及尽量小的脱靶影响？",
+      "es": "¿Es posible manipular circuitos definidos con efectos conductuales predecibles y mínimos efectos no deseados?"
+    },
+    "frontier": {
+      "en": "Manipulate defined circuits with predictable behavioral effects and minimal off-target effects",
+      "zh-CN": "操控特定回路并获得可预测的行为效应及尽量小的脱靶影响",
+      "es": "Manipular circuitos definidos con efectos conductuales predecibles y mínimos efectos no deseados"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "NIH · BRAIN 2025 scientific vision",
+        "url": "https://www.braininitiative.nih.gov/vision/nih-brain-initiative-reports/brain-2025-scientific-vision"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "speech-neuroprosthesis",
+    "discipline": "neuroscience",
+    "title": {
+      "en": "Restoring speech from neural signals",
+      "zh-CN": "从神经信号恢复语言交流",
+      "es": "Restaurar el habla mediante señales neuronales"
+    },
+    "question": {
+      "en": "Can we restore dependable open-vocabulary communication from neural signals across users and daily settings?",
+      "zh-CN": "能否从神经信号恢复跨用户、日常环境下可靠的开放词汇交流？",
+      "es": "¿Es posible restaurar comunicación fiable de vocabulario abierto a partir de señales neuronales entre usuarios y entornos cotidianos?"
+    },
+    "frontier": {
+      "en": "Restore dependable open-vocabulary communication from neural signals across users and daily settings",
+      "zh-CN": "从神经信号恢复跨用户、日常环境下可靠的开放词汇交流",
+      "es": "Restaurar comunicación fiable de vocabulario abierto a partir de señales neuronales entre usuarios y entornos cotidianos"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "Nature · A high-performance speech neuroprosthesis",
+        "url": "https://www.nature.com/articles/s41586-023-06377-x"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [
+      {
+        "year": 2023,
+        "status": "partial",
+        "headline": {
+          "en": "Neural decoding enables speech communication",
+          "zh-CN": "神经解码支持语言交流",
+          "es": "La decodificación neuronal permite comunicación"
+        },
+        "summary": {
+          "en": "A speech neuroprosthesis decoded attempted speech in a participant with paralysis using a trained neural decoder. General reliability across people and everyday use remains a separate target.",
+          "zh-CN": "语音神经假体利用训练后的神经解码器，解码了一位瘫痪参与者尝试说话时的信号。跨人群和日常使用的普遍可靠性仍是独立目标。",
+          "es": "Una neuroprótesis decodificó intentos de habla de una persona con parálisis mediante un decodificador neuronal entrenado. La fiabilidad general entre personas y en uso cotidiano sigue siendo otro objetivo."
+        },
+        "sources": [
+          {
+            "title": "Nature · A high-performance speech neuroprosthesis",
+            "url": "https://www.nature.com/articles/s41586-023-06377-x"
+          }
+        ],
+        "system": "Speech neural decoder",
+        "evidence": "experiment"
+      }
+    ],
+    "humanMilestones": []
+  },
+  {
+    "id": "cloud-feedback",
+    "discipline": "earth",
+    "title": {
+      "en": "Cloud feedback and climate sensitivity",
+      "zh-CN": "云反馈与气候敏感度",
+      "es": "Retroalimentación de nubes y sensibilidad climática"
+    },
+    "question": {
+      "en": "Can we constrain cloud responses enough to narrow uncertainty in future warming?",
+      "zh-CN": "能否充分约束云的响应以缩小未来增温的不确定性？",
+      "es": "¿Es posible acotar la respuesta de las nubes para reducir incertidumbre sobre el calentamiento futuro?"
+    },
+    "frontier": {
+      "en": "Constrain cloud responses enough to narrow uncertainty in future warming",
+      "zh-CN": "充分约束云的响应以缩小未来增温的不确定性",
+      "es": "Acotar la respuesta de las nubes para reducir incertidumbre sobre el calentamiento futuro"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "IPCC AR6 · Earth energy budget, climate feedbacks and climate sensitivity",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "ice-sheet-stability",
+    "discipline": "earth",
+    "title": {
+      "en": "Ice-sheet instability",
+      "zh-CN": "冰盖失稳",
+      "es": "Inestabilidad de mantos de hielo"
+    },
+    "question": {
+      "en": "Can we predict ice-sheet tipping behavior and its timing and contribution to sea-level rise?",
+      "zh-CN": "能否预测冰盖临界失稳行为、发生时间及对海平面上升的贡献？",
+      "es": "¿Es posible predecir umbrales de inestabilidad de mantos de hielo, su momento y contribución al nivel del mar?"
+    },
+    "frontier": {
+      "en": "Predict ice-sheet tipping behavior and its timing and contribution to sea-level rise",
+      "zh-CN": "预测冰盖临界失稳行为、发生时间及对海平面上升的贡献",
+      "es": "Predecir umbrales de inestabilidad de mantos de hielo, su momento y contribución al nivel del mar"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "IPCC AR6 · Ocean, cryosphere and sea level change",
+        "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "flood-forecasting",
+    "discipline": "earth",
+    "title": {
+      "en": "Flood forecasts without river gauges",
+      "zh-CN": "无测站流域洪水预报",
+      "es": "Pronósticos de inundación sin aforos"
+    },
+    "question": {
+      "en": "Can we deliver reliable extreme-flood warnings in ungauged watersheds across climates?",
+      "zh-CN": "能否在不同气候区的无测站流域提供可靠的极端洪水预警？",
+      "es": "¿Es posible emitir alertas fiables de inundaciones extremas en cuencas sin aforos y climas diversos?"
+    },
+    "frontier": {
+      "en": "Deliver reliable extreme-flood warnings in ungauged watersheds across climates",
+      "zh-CN": "在不同气候区的无测站流域提供可靠的极端洪水预警",
+      "es": "Emitir alertas fiables de inundaciones extremas en cuencas sin aforos y climas diversos"
+    },
+    "boundary": {
+      "en": "Progress requires independently checked evidence within a specified regime. A successful model alone does not establish the underlying explanation.",
+      "zh-CN": "进展需要在明确适用范围内得到独立核验的证据；模型表现好本身并不证明其解释成立。",
+      "es": "El avance exige evidencia contrastada de forma independiente en un régimen definido; un buen modelo no establece por sí solo la explicación."
+    },
+    "sources": [
+      {
+        "title": "Nature · Global prediction of extreme floods in ungauged watersheds",
+        "url": "https://www.nature.com/articles/s41586-024-07145-1"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [
+      {
+        "year": 2024,
+        "status": "partial",
+        "headline": {
+          "en": "AI forecasts floods in ungauged watersheds",
+          "zh-CN": "AI 预测无测站流域洪水",
+          "es": "IA pronostica inundaciones en cuencas sin aforos"
+        },
+        "summary": {
+          "en": "The study demonstrated improved flood prediction in ungauged watersheds against a global operational reference. Forecast skill is not a guarantee for every river, event or warning response.",
+          "zh-CN": "研究展示了相对全球业务参考系统改进的无测站流域洪水预测。预报技巧并不保证每条河流、每次事件或预警响应都有效。",
+          "es": "El estudio demostró mejores predicciones en cuencas sin aforos frente a una referencia operativa global. La habilidad predictiva no garantiza cada río, evento o respuesta a alertas."
+        },
+        "sources": [
+          {
+            "title": "Nature · Global prediction of extreme floods in ungauged watersheds",
+            "url": "https://www.nature.com/articles/s41586-024-07145-1"
+          }
+        ],
+        "system": "Google flood forecasting model",
+        "evidence": "benchmark"
+      }
+    ],
+    "humanMilestones": []
+  },
+  {
+    "id": "tritium-breeding",
+    "discipline": "energy",
+    "title": {
+      "en": "A self-sufficient fusion fuel cycle",
+      "zh-CN": "自持聚变燃料循环",
+      "es": "Ciclo autosuficiente de combustible de fusión"
+    },
+    "question": {
+      "en": "Can we breed, extract and recycle enough tritium to sustain a practical fusion power plant?",
+      "zh-CN": "能否增殖、提取和回收足量氚以维持实用聚变电站？",
+      "es": "¿Es posible producir, extraer y reciclar suficiente tritio para sostener una central de fusión práctica?"
+    },
+    "frontier": {
+      "en": "Breed, extract and recycle enough tritium to sustain a practical fusion power plant",
+      "zh-CN": "增殖、提取和回收足量氚以维持实用聚变电站",
+      "es": "Producir, extraer y reciclar suficiente tritio para sostener una central de fusión práctica"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Deuterium-tritium fusion fuel",
+        "url": "https://www.energy.gov/science/doe-explainsdeuterium-tritium-fusion-fuel"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "clean-hydrogen",
+    "discipline": "energy",
+    "title": {
+      "en": "Affordable clean hydrogen",
+      "zh-CN": "可负担的清洁氢能",
+      "es": "Hidrógeno limpio asequible"
+    },
+    "question": {
+      "en": "Can we produce low-emission hydrogen at competitive cost including energy and infrastructure?",
+      "zh-CN": "能否计入能源与基础设施后以有竞争力的成本生产低排放氢？",
+      "es": "¿Es posible producir hidrógeno de bajas emisiones a coste competitivo incluyendo energía e infraestructura?"
+    },
+    "frontier": {
+      "en": "Produce low-emission hydrogen at competitive cost including energy and infrastructure",
+      "zh-CN": "计入能源与基础设施后以有竞争力的成本生产低排放氢",
+      "es": "Producir hidrógeno de bajas emisiones a coste competitivo incluyendo energía e infraestructura"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Hydrogen Shot introduction",
+        "url": "https://www.energy.gov/cmei/fuels/articles/hydrogen-shot-introduction"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "long-duration-storage",
+    "discipline": "energy",
+    "title": {
+      "en": "Long-duration energy storage",
+      "zh-CN": "长时储能",
+      "es": "Almacenamiento energético de larga duración"
+    },
+    "question": {
+      "en": "Can we store renewable electricity across prolonged supply gaps at affordable system cost?",
+      "zh-CN": "能否以可负担的系统成本储存可再生电力以应对长时间供给缺口？",
+      "es": "¿Es posible almacenar electricidad renovable durante brechas prolongadas de suministro a coste sistémico asequible?"
+    },
+    "frontier": {
+      "en": "Store renewable electricity across prolonged supply gaps at affordable system cost",
+      "zh-CN": "以可负担的系统成本储存可再生电力以应对长时间供给缺口",
+      "es": "Almacenar electricidad renovable durante brechas prolongadas de suministro a coste sistémico asequible"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Energy Storage Grand Challenge",
+        "url": "https://www.energy.gov/energy-storage-grand-challenge/energy-storage-grand-challenge"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "fusion-electricity",
+    "discipline": "energy",
+    "title": {
+      "en": "Reliable net fusion electricity",
+      "zh-CN": "稳定净聚变发电",
+      "es": "Electricidad neta de fusión fiable"
+    },
+    "question": {
+      "en": "Can we deliver sustained net electricity after accounting for all plant energy consumption?",
+      "zh-CN": "能否计入全厂能耗后持续提供净电力输出？",
+      "es": "¿Es posible entregar electricidad neta sostenida contabilizando todo el consumo energético de la planta?"
+    },
+    "frontier": {
+      "en": "Deliver sustained net electricity after accounting for all plant energy consumption",
+      "zh-CN": "计入全厂能耗后持续提供净电力输出",
+      "es": "Entregar electricidad neta sostenida contabilizando todo el consumo energético de la planta"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "DOE · Fusion energy",
+        "url": "https://www.energy.gov/topics/fusion-energy"
+      }
+    ],
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "robot-dexterity",
+    "discipline": "robotics",
+    "title": {
+      "en": "General-purpose robotic dexterity",
+      "zh-CN": "通用机器人灵巧操作",
+      "es": "Destreza robótica de propósito general"
+    },
+    "question": {
+      "en": "Can we handle unfamiliar fragile and deformable objects with reliable tactile adaptation?",
+      "zh-CN": "能否通过可靠的触觉适应操作陌生、易碎和可变形物体？",
+      "es": "¿Es posible manipular objetos desconocidos, frágiles y deformables con adaptación táctil fiable?"
+    },
+    "frontier": {
+      "en": "Handle unfamiliar fragile and deformable objects with reliable tactile adaptation",
+      "zh-CN": "通过可靠的触觉适应操作陌生、易碎和可变形物体",
+      "es": "Manipular objetos desconocidos, frágiles y deformables con adaptación táctil fiable"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "Science Robotics · The grand challenges of science robotics",
+        "url": "https://doi.org/10.1126/scirobotics.aar7650"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "soft-robotics",
+    "discipline": "robotics",
+    "title": {
+      "en": "Controllable soft robots",
+      "zh-CN": "可控软体机器人",
+      "es": "Robots blandos controlables"
+    },
+    "question": {
+      "en": "Can we combine soft-body compliance with precise sensing, actuation and control outside the lab?",
+      "zh-CN": "能否在实验室外结合软体柔顺性与精准感知、驱动及控制？",
+      "es": "¿Es posible combinar adaptabilidad corporal blanda con percepción, actuación y control precisos fuera del laboratorio?"
+    },
+    "frontier": {
+      "en": "Combine soft-body compliance with precise sensing, actuation and control outside the lab",
+      "zh-CN": "在实验室外结合软体柔顺性与精准感知、驱动及控制",
+      "es": "Combinar adaptabilidad corporal blanda con percepción, actuación y control precisos fuera del laboratorio"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "Science Robotics · The grand challenges of science robotics",
+        "url": "https://doi.org/10.1126/scirobotics.aar7650"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "long-horizon-robots",
+    "discipline": "robotics",
+    "title": {
+      "en": "Long-horizon autonomous work",
+      "zh-CN": "长程自主机器人作业",
+      "es": "Trabajo autónomo de largo horizonte"
+    },
+    "question": {
+      "en": "Can we complete extended tasks while recovering from unexpected failures without constant supervision?",
+      "zh-CN": "能否在无需持续监督的情况下完成长程任务并从意外故障中恢复？",
+      "es": "¿Es posible completar tareas prolongadas recuperándose de fallos inesperados sin supervisión constante?"
+    },
+    "frontier": {
+      "en": "Complete extended tasks while recovering from unexpected failures without constant supervision",
+      "zh-CN": "在无需持续监督的情况下完成长程任务并从意外故障中恢复",
+      "es": "Completar tareas prolongadas recuperándose de fallos inesperados sin supervisión constante"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "Science Robotics · The grand challenges of science robotics",
+        "url": "https://doi.org/10.1126/scirobotics.aar7650"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "human-robot-safety",
+    "discipline": "robotics",
+    "title": {
+      "en": "Verifiable human–robot safety",
+      "zh-CN": "可验证的人机协作安全",
+      "es": "Seguridad verificable entre humanos y robots"
+    },
+    "question": {
+      "en": "Can we verify safe robot behavior around people under uncertain sensing and changing environments?",
+      "zh-CN": "能否在感知不确定与环境变化时验证机器人在人群周围行为的安全性？",
+      "es": "¿Es posible verificar conducta robótica segura junto a personas con percepción incierta y entornos cambiantes?"
+    },
+    "frontier": {
+      "en": "Verify safe robot behavior around people under uncertain sensing and changing environments",
+      "zh-CN": "在感知不确定与环境变化时验证机器人在人群周围行为的安全性",
+      "es": "Verificar conducta robótica segura junto a personas con percepción incierta y entornos cambiantes"
+    },
+    "boundary": {
+      "en": "A laboratory demonstration is a milestone; reliable operation, scale, cost and real-world validation remain separate requirements.",
+      "zh-CN": "实验室演示可以是里程碑，但可靠运行、规模、成本和真实环境验证仍是独立要求。",
+      "es": "Una demostración de laboratorio es un hito; fiabilidad, escala, coste y validación real son requisitos distintos."
+    },
+    "sources": [
+      {
+        "title": "IEEE RAS · Grand challenges in verification of autonomous systems",
+        "url": "https://arxiv.org/abs/2411.14155"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "financial-crises",
+    "discipline": "economics",
+    "title": {
+      "en": "Anticipating financial crises",
+      "zh-CN": "预判金融危机",
+      "es": "Anticipar crisis financieras"
+    },
+    "question": {
+      "en": "Can we identify systemic fragility early enough for effective intervention without excessive false alarms?",
+      "zh-CN": "能否足够早地识别系统脆弱性以有效干预并避免过多误报？",
+      "es": "¿Es posible identificar fragilidad sistémica con tiempo para intervenir sin falsas alarmas excesivas?"
+    },
+    "frontier": {
+      "en": "Identify systemic fragility early enough for effective intervention without excessive false alarms",
+      "zh-CN": "足够早地识别系统脆弱性以有效干预并避免过多误报",
+      "es": "Identificar fragilidad sistémica con tiempo para intervenir sin falsas alarmas excesivas"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "IMF · Global Financial Stability Report, April 2023",
+        "url": "https://www.imf.org/-/media/Files/Publications/GFSR/2023/April/English/text.ashx"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "inflation-stability",
+    "discipline": "economics",
+    "title": {
+      "en": "Inflation control under shocks",
+      "zh-CN": "冲击下的通胀控制",
+      "es": "Control de inflación ante perturbaciones"
+    },
+    "question": {
+      "en": "Can we stabilize inflation through supply and demand shocks while quantifying employment trade-offs?",
+      "zh-CN": "能否在供需冲击中稳定通胀并量化就业取舍？",
+      "es": "¿Es posible estabilizar inflación ante perturbaciones de oferta y demanda cuantificando efectos sobre el empleo?"
+    },
+    "frontier": {
+      "en": "Stabilize inflation through supply and demand shocks while quantifying employment trade-offs",
+      "zh-CN": "在供需冲击中稳定通胀并量化就业取舍",
+      "es": "Estabilizar inflación ante perturbaciones de oferta y demanda cuantificando efectos sobre el empleo"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "IMF · Global Financial Stability Report, October 2022",
+        "url": "https://www.imf.org/-/media/Files/Publications/GFSR/2022/October/English/ch1.ashx"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "productivity-growth",
+    "discipline": "economics",
+    "title": {
+      "en": "Sustained productivity growth",
+      "zh-CN": "持续生产率增长",
+      "es": "Crecimiento sostenido de productividad"
+    },
+    "question": {
+      "en": "Can we identify interventions that causally raise productivity across firms and economies?",
+      "zh-CN": "能否找出能在企业与经济体中因果性提高生产率的干预？",
+      "es": "¿Es posible identificar intervenciones que aumenten causalmente productividad entre empresas y economías?"
+    },
+    "frontier": {
+      "en": "Identify interventions that causally raise productivity across firms and economies",
+      "zh-CN": "找出能在企业与经济体中因果性提高生产率的干预",
+      "es": "Identificar intervenciones que aumenten causalmente productividad entre empresas y economías"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "IMF · Eliminating the productivity drag",
+        "url": "https://www.imf.org/en/publications/fandd/issues/2024/09/eliminating-the-productivity-drag-li-noureldin"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "recession-forecasting",
+    "discipline": "economics",
+    "title": {
+      "en": "Reliable recession forecasting",
+      "zh-CN": "可靠的衰退预测",
+      "es": "Previsión fiable de recesiones"
+    },
+    "question": {
+      "en": "Can we forecast recession turning points out of sample with useful lead time?",
+      "zh-CN": "能否在样本外以有用的提前量预测衰退转折点？",
+      "es": "¿Es posible prever puntos de giro recesivos fuera de muestra con antelación útil?"
+    },
+    "frontier": {
+      "en": "Forecast recession turning points out of sample with useful lead time",
+      "zh-CN": "在样本外以有用的提前量预测衰退转折点",
+      "es": "Prever puntos de giro recesivos fuera de muestra con antelación útil"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "IMF · What is a recession?",
+        "url": "https://www.imf.org/external/pubs/ft/fandd/2009/03/basics.htm"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "ending-hunger",
+    "discipline": "society",
+    "title": {
+      "en": "Ending hunger sustainably",
+      "zh-CN": "可持续消除饥饿",
+      "es": "Erradicar el hambre de forma sostenible"
+    },
+    "question": {
+      "en": "Can we ensure reliable access to nutritious food through conflict, climate and price shocks?",
+      "zh-CN": "能否在冲突、气候和价格冲击下保障稳定获得营养食物？",
+      "es": "¿Es posible garantizar acceso fiable a alimentos nutritivos ante conflictos y perturbaciones climáticas y de precios?"
+    },
+    "frontier": {
+      "en": "Ensure reliable access to nutritious food through conflict, climate and price shocks",
+      "zh-CN": "在冲突、气候和价格冲击下保障稳定获得营养食物",
+      "es": "Garantizar acceso fiable a alimentos nutritivos ante conflictos y perturbaciones climáticas y de precios"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "United Nations · Sustainable Development Goals",
+        "url": "https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "clean-water",
+    "discipline": "society",
+    "title": {
+      "en": "Universal safe water and sanitation",
+      "zh-CN": "普及安全饮水与卫生设施",
+      "es": "Agua segura y saneamiento universales"
+    },
+    "question": {
+      "en": "Can we provide affordable safe water and sanitation with sustained local maintenance?",
+      "zh-CN": "能否提供可负担的安全饮水与卫生设施并维持长期本地运维？",
+      "es": "¿Es posible proporcionar agua segura y saneamiento asequibles con mantenimiento local sostenido?"
+    },
+    "frontier": {
+      "en": "Provide affordable safe water and sanitation with sustained local maintenance",
+      "zh-CN": "提供可负担的安全饮水与卫生设施并维持长期本地运维",
+      "es": "Proporcionar agua segura y saneamiento asequibles con mantenimiento local sostenido"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "United Nations · Sustainable Development Goals",
+        "url": "https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "affordable-housing",
+    "discipline": "society",
+    "title": {
+      "en": "Adequate affordable housing",
+      "zh-CN": "充足且可负担的住房",
+      "es": "Vivienda adecuada y asequible"
+    },
+    "question": {
+      "en": "Can we expand adequate housing without displacing vulnerable residents or worsening environmental burdens?",
+      "zh-CN": "能否增加适足住房而不驱逐弱势居民或加重环境负担？",
+      "es": "¿Es posible ampliar vivienda adecuada sin desplazar residentes vulnerables ni agravar cargas ambientales?"
+    },
+    "frontier": {
+      "en": "Expand adequate housing without displacing vulnerable residents or worsening environmental burdens",
+      "zh-CN": "增加适足住房而不驱逐弱势居民或加重环境负担",
+      "es": "Ampliar vivienda adecuada sin desplazar residentes vulnerables ni agravar cargas ambientales"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "United Nations · Sustainable Development Goals",
+        "url": "https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "lasting-peace",
+    "discipline": "society",
+    "title": {
+      "en": "Preventing violent conflict",
+      "zh-CN": "预防暴力冲突",
+      "es": "Prevención de conflictos violentos"
+    },
+    "question": {
+      "en": "Can we identify locally legitimate interventions that reduce recurring violence over time?",
+      "zh-CN": "能否找出具有本地正当性且能长期减少暴力复发的干预？",
+      "es": "¿Es posible identificar intervenciones legítimas localmente que reduzcan violencia recurrente a largo plazo?"
+    },
+    "frontier": {
+      "en": "Identify locally legitimate interventions that reduce recurring violence over time",
+      "zh-CN": "找出具有本地正当性且能长期减少暴力复发的干预",
+      "es": "Identificar intervenciones legítimas localmente que reduzcan violencia recurrente a largo plazo"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "United Nations · Sustainable Development Goals",
+        "url": "https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "undeciphered-scripts",
+    "discipline": "humanities",
+    "title": {
+      "en": "Undeciphered writing systems",
+      "zh-CN": "未破译文字系统",
+      "es": "Sistemas de escritura sin descifrar"
+    },
+    "question": {
+      "en": "Can we validate decipherments against independent texts and archaeological context?",
+      "zh-CN": "能否用独立文本和考古背景验证文字破译？",
+      "es": "¿Es posible validar desciframientos con textos independientes y contexto arqueológico?"
+    },
+    "frontier": {
+      "en": "Validate decipherments against independent texts and archaeological context",
+      "zh-CN": "用独立文本和考古背景验证文字破译",
+      "es": "Validar desciframientos con textos independientes y contexto arqueológico"
+    },
+    "boundary": {
+      "en": "Claims require traceable historical evidence and expert interpretation. A plausible reconstruction is not an authenticated original.",
+      "zh-CN": "结论需要可追溯的历史证据和专家解释；看似合理的复原不等于经鉴定的原貌。",
+      "es": "Las afirmaciones requieren evidencia histórica trazable e interpretación experta; una reconstrucción plausible no es un original autenticado."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Digital preservation of indigenous languages",
+        "url": "https://www.unesco.org/en/articles/digital-preservation-indigenous-languages-intersection-technology-and-culture"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "heritage-reconstruction",
+    "discipline": "humanities",
+    "title": {
+      "en": "Reconstructing lost heritage",
+      "zh-CN": "失落文化遗产复原",
+      "es": "Reconstrucción de patrimonio perdido"
+    },
+    "question": {
+      "en": "Can we reconstruct damaged sites while making uncertainty and alternative interpretations explicit?",
+      "zh-CN": "能否复原受损遗址并明确呈现不确定性与替代解释？",
+      "es": "¿Es posible reconstruir sitios dañados explicitando incertidumbre e interpretaciones alternativas?"
+    },
+    "frontier": {
+      "en": "Reconstruct damaged sites while making uncertainty and alternative interpretations explicit",
+      "zh-CN": "复原受损遗址并明确呈现不确定性与替代解释",
+      "es": "Reconstruir sitios dañados explicitando incertidumbre e interpretaciones alternativas"
+    },
+    "boundary": {
+      "en": "Claims require traceable historical evidence and expert interpretation. A plausible reconstruction is not an authenticated original.",
+      "zh-CN": "结论需要可追溯的历史证据和专家解释；看似合理的复原不等于经鉴定的原貌。",
+      "es": "Las afirmaciones requieren evidencia histórica trazable e interpretación experta; una reconstrucción plausible no es un original autenticado."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Culture and digital technologies",
+        "url": "https://www.unesco.org/en/culture-and-digital-technologies"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "artifact-provenance",
+    "discipline": "humanities",
+    "title": {
+      "en": "Tracing artifact provenance",
+      "zh-CN": "文物来源追溯",
+      "es": "Rastrear procedencia de objetos"
+    },
+    "question": {
+      "en": "Can we establish verifiable ownership and movement histories for poorly documented cultural objects?",
+      "zh-CN": "能否为记录不足的文物建立可核验的所有权与流转历史？",
+      "es": "¿Es posible establecer historiales verificables de propiedad y traslado de objetos culturales poco documentados?"
+    },
+    "frontier": {
+      "en": "Establish verifiable ownership and movement histories for poorly documented cultural objects",
+      "zh-CN": "为记录不足的文物建立可核验的所有权与流转历史",
+      "es": "Establecer historiales verificables de propiedad y traslado de objetos culturales poco documentados"
+    },
+    "boundary": {
+      "en": "Claims require traceable historical evidence and expert interpretation. A plausible reconstruction is not an authenticated original.",
+      "zh-CN": "结论需要可追溯的历史证据和专家解释；看似合理的复原不等于经鉴定的原貌。",
+      "es": "Las afirmaciones requieren evidencia histórica trazable e interpretación experta; una reconstrucción plausible no es un original autenticado."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Fight illicit trafficking in cultural property",
+        "url": "https://www.unesco.org/en/fight-illicit-trafficking?hub=169336"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "digital-preservation",
+    "discipline": "humanities",
+    "title": {
+      "en": "Long-term digital heritage preservation",
+      "zh-CN": "数字遗产长期保存",
+      "es": "Preservación duradera del patrimonio digital"
+    },
+    "question": {
+      "en": "Can we keep digital cultural records authentic, accessible and interpretable across technological change?",
+      "zh-CN": "能否在技术变迁中保持数字文化记录真实、可访问且可理解？",
+      "es": "¿Es posible mantener registros culturales digitales auténticos, accesibles e interpretables ante cambios tecnológicos?"
+    },
+    "frontier": {
+      "en": "Keep digital cultural records authentic, accessible and interpretable across technological change",
+      "zh-CN": "在技术变迁中保持数字文化记录真实、可访问且可理解",
+      "es": "Mantener registros culturales digitales auténticos, accesibles e interpretables ante cambios tecnológicos"
+    },
+    "boundary": {
+      "en": "Claims require traceable historical evidence and expert interpretation. A plausible reconstruction is not an authenticated original.",
+      "zh-CN": "结论需要可追溯的历史证据和专家解释；看似合理的复原不等于经鉴定的原貌。",
+      "es": "Las afirmaciones requieren evidencia histórica trazable e interpretación experta; una reconstrucción plausible no es un original autenticado."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Culture and digital technologies",
+        "url": "https://www.unesco.org/en/culture-and-digital-technologies"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "language-revitalization",
+    "discipline": "language",
+    "title": {
+      "en": "Endangered language revitalization",
+      "zh-CN": "濒危语言复兴",
+      "es": "Revitalización de lenguas amenazadas"
+    },
+    "question": {
+      "en": "Can we support community-led intergenerational language transmission with measurable lasting use?",
+      "zh-CN": "能否支持社区主导的代际语言传承并实现可衡量的持续使用？",
+      "es": "¿Es posible apoyar transmisión intergeneracional dirigida por comunidades con uso duradero medible?"
+    },
+    "frontier": {
+      "en": "Support community-led intergenerational language transmission with measurable lasting use",
+      "zh-CN": "支持社区主导的代际语言传承并实现可衡量的持续使用",
+      "es": "Apoyar transmisión intergeneracional dirigida por comunidades con uso duradero medible"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Multilingualism in cyberspace",
+        "url": "https://www.unesco.org/en/multilingualism-linguistic-diversity/multilingualism-cyberspace"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "inclusive-speech",
+    "discipline": "language",
+    "title": {
+      "en": "Inclusive speech technology",
+      "zh-CN": "包容性语音技术",
+      "es": "Tecnología de voz inclusiva"
+    },
+    "question": {
+      "en": "Can we recognize speech reliably across underrepresented accents, languages and speaking conditions?",
+      "zh-CN": "能否在代表性不足的口音、语言与说话条件下可靠识别语音？",
+      "es": "¿Es posible reconocer habla de forma fiable entre acentos, lenguas y condiciones infrarrepresentadas?"
+    },
+    "frontier": {
+      "en": "Recognize speech reliably across underrepresented accents, languages and speaking conditions",
+      "zh-CN": "在代表性不足的口音、语言与说话条件下可靠识别语音",
+      "es": "Reconocer habla de forma fiable entre acentos, lenguas y condiciones infrarrepresentadas"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Multilingualism in cyberspace",
+        "url": "https://www.unesco.org/en/multilingualism-linguistic-diversity/multilingualism-cyberspace"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "code-switching",
+    "discipline": "language",
+    "title": {
+      "en": "Understanding code-switching",
+      "zh-CN": "理解语码转换",
+      "es": "Comprensión de alternancia de códigos"
+    },
+    "question": {
+      "en": "Can we interpret mixed-language speech without losing local meanings or excluding low-resource speakers?",
+      "zh-CN": "能否理解混合语言语音而不丢失本地含义或排斥低资源语言使用者？",
+      "es": "¿Es posible interpretar habla multilingüe sin perder significados locales ni excluir hablantes de lenguas con pocos recursos?"
+    },
+    "frontier": {
+      "en": "Interpret mixed-language speech without losing local meanings or excluding low-resource speakers",
+      "zh-CN": "理解混合语言语音而不丢失本地含义或排斥低资源语言使用者",
+      "es": "Interpretar habla multilingüe sin perder significados locales ni excluir hablantes de lenguas con pocos recursos"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Multilingualism in cyberspace",
+        "url": "https://www.unesco.org/en/multilingualism-linguistic-diversity/multilingualism-cyberspace"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "pragmatic-inference",
+    "discipline": "language",
+    "title": {
+      "en": "Context and implied meaning",
+      "zh-CN": "语境与隐含意义",
+      "es": "Contexto y significado implícito"
+    },
+    "question": {
+      "en": "Can we infer speaker intent across unfamiliar social contexts without treating one culture as universal?",
+      "zh-CN": "能否在陌生社会语境中推断说话意图而不把单一文化当作普遍标准？",
+      "es": "¿Es posible inferir intención del hablante en contextos sociales inéditos sin universalizar una cultura?"
+    },
+    "frontier": {
+      "en": "Infer speaker intent across unfamiliar social contexts without treating one culture as universal",
+      "zh-CN": "在陌生社会语境中推断说话意图而不把单一文化当作普遍标准",
+      "es": "Inferir intención del hablante en contextos sociales inéditos sin universalizar una cultura"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Pragmatics",
+        "url": "https://plato.stanford.edu/entries/pragmatics/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "drought-resilient-crops",
+    "discipline": "agriculture",
+    "title": {
+      "en": "Drought-resilient crops",
+      "zh-CN": "抗旱作物",
+      "es": "Cultivos resistentes a sequía"
+    },
+    "question": {
+      "en": "Can we maintain crop yields under varied drought patterns without sacrificing local adaptation?",
+      "zh-CN": "能否在多样干旱模式下维持产量且不牺牲本地适应性？",
+      "es": "¿Es posible mantener rendimientos bajo sequías variadas sin sacrificar adaptación local?"
+    },
+    "frontier": {
+      "en": "Maintain crop yields under varied drought patterns without sacrificing local adaptation",
+      "zh-CN": "在多样干旱模式下维持产量且不牺牲本地适应性",
+      "es": "Mantener rendimientos bajo sequías variadas sin sacrificar adaptación local"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "FAO · Drought",
+        "url": "https://www.fao.org/land-water/water/drought/en/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "agricultural-water",
+    "discipline": "agriculture",
+    "title": {
+      "en": "More food with less water",
+      "zh-CN": "节水增粮",
+      "es": "Más alimentos con menos agua"
+    },
+    "question": {
+      "en": "Can we increase food production per unit of water without depleting rivers and aquifers?",
+      "zh-CN": "能否提高单位水量粮食产出且不耗竭河流与含水层？",
+      "es": "¿Es posible aumentar producción alimentaria por unidad de agua sin agotar ríos ni acuíferos?"
+    },
+    "frontier": {
+      "en": "Increase food production per unit of water without depleting rivers and aquifers",
+      "zh-CN": "提高单位水量粮食产出且不耗竭河流与含水层",
+      "es": "Aumentar producción alimentaria por unidad de agua sin agotar ríos ni acuíferos"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "FAO · Drought",
+        "url": "https://www.fao.org/land-water/water/drought/en/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "nitrogen-efficiency",
+    "discipline": "agriculture",
+    "title": {
+      "en": "Nitrogen-efficient farming",
+      "zh-CN": "高效氮肥农业",
+      "es": "Agricultura eficiente en nitrógeno"
+    },
+    "question": {
+      "en": "Can we maintain yields while reducing nitrogen losses, water pollution and greenhouse emissions?",
+      "zh-CN": "能否维持产量并减少氮流失、水污染与温室气体排放？",
+      "es": "¿Es posible mantener rendimientos reduciendo pérdidas de nitrógeno, contaminación hídrica y emisiones?"
+    },
+    "frontier": {
+      "en": "Maintain yields while reducing nitrogen losses, water pollution and greenhouse emissions",
+      "zh-CN": "维持产量并减少氮流失、水污染与温室气体排放",
+      "es": "Mantener rendimientos reduciendo pérdidas de nitrógeno, contaminación hídrica y emisiones"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "FAO · Nitrogen use efficiency report",
+        "url": "https://www.fao.org/newsroom/detail/FAO-nitrogen-use-efficiency-report/en"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "soil-restoration",
+    "discipline": "agriculture",
+    "title": {
+      "en": "Restoring degraded agricultural soils",
+      "zh-CN": "退化农田土壤修复",
+      "es": "Restaurar suelos agrícolas degradados"
+    },
+    "question": {
+      "en": "Can we recover soil fertility and function with persistent benefits under local farming conditions?",
+      "zh-CN": "能否在本地农业条件下持久恢复土壤肥力与功能？",
+      "es": "¿Es posible recuperar fertilidad y función del suelo con beneficios persistentes bajo condiciones agrícolas locales?"
+    },
+    "frontier": {
+      "en": "Recover soil fertility and function with persistent benefits under local farming conditions",
+      "zh-CN": "在本地农业条件下持久恢复土壤肥力与功能",
+      "es": "Recuperar fertilidad y función del suelo con beneficios persistentes bajo condiciones agrícolas locales"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "FAO · Soil programmes",
+        "url": "https://www.fao.org/land-water/soils/programmes/en"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "pollinator-recovery",
+    "discipline": "ecology",
+    "title": {
+      "en": "Reversing pollinator decline",
+      "zh-CN": "扭转传粉者衰退",
+      "es": "Revertir el declive de polinizadores"
+    },
+    "question": {
+      "en": "Can we restore diverse pollinator populations and pollination services across landscapes?",
+      "zh-CN": "能否在景观尺度恢复多样传粉者种群及传粉服务？",
+      "es": "¿Es posible restaurar poblaciones diversas de polinizadores y sus servicios a escala de paisaje?"
+    },
+    "frontier": {
+      "en": "Restore diverse pollinator populations and pollination services across landscapes",
+      "zh-CN": "在景观尺度恢复多样传粉者种群及传粉服务",
+      "es": "Restaurar poblaciones diversas de polinizadores y sus servicios a escala de paisaje"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "IPBES · Assessment of pollinators and pollination",
+        "url": "https://www.ipbes.net/sites/default/files/downloads/pdf/individual_chapters_pollination_20170305.pdf"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "invasive-species",
+    "discipline": "ecology",
+    "title": {
+      "en": "Controlling invasive species",
+      "zh-CN": "控制入侵物种",
+      "es": "Control de especies invasoras"
+    },
+    "question": {
+      "en": "Can we prevent and contain harmful invasions without damaging native ecosystems?",
+      "zh-CN": "能否预防和控制有害入侵且不破坏本地生态系统？",
+      "es": "¿Es posible prevenir y contener invasiones dañinas sin perjudicar ecosistemas nativos?"
+    },
+    "frontier": {
+      "en": "Prevent and contain harmful invasions without damaging native ecosystems",
+      "zh-CN": "预防和控制有害入侵且不破坏本地生态系统",
+      "es": "Prevenir y contener invasiones dañinas sin perjudicar ecosistemas nativos"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "IPBES · Assessment scoping report on biodiversity and ecosystem services",
+        "url": "https://files.ipbes.net/ipbes-web-prod-public-files/downloads/pdf/IPBES-4-INF-9_EN.pdf"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "coral-resilience",
+    "discipline": "ecology",
+    "title": {
+      "en": "Resilient coral reefs",
+      "zh-CN": "珊瑚礁韧性恢复",
+      "es": "Arrecifes de coral resilientes"
+    },
+    "question": {
+      "en": "Can we restore self-sustaining reef ecosystems despite warming and repeated bleaching?",
+      "zh-CN": "能否在增温与反复白化下恢复可自我维持的珊瑚礁生态系统？",
+      "es": "¿Es posible restaurar ecosistemas arrecifales autosostenibles pese al calentamiento y blanqueamiento repetido?"
+    },
+    "frontier": {
+      "en": "Restore self-sustaining reef ecosystems despite warming and repeated bleaching",
+      "zh-CN": "在增温与反复白化下恢复可自我维持的珊瑚礁生态系统",
+      "es": "Restaurar ecosistemas arrecifales autosostenibles pese al calentamiento y blanqueamiento repetido"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "NOAA · Restoring coral reefs",
+        "url": "https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "habitat-connectivity",
+    "discipline": "ecology",
+    "title": {
+      "en": "Reconnecting fragmented habitats",
+      "zh-CN": "连接破碎栖息地",
+      "es": "Reconectar hábitats fragmentados"
+    },
+    "question": {
+      "en": "Can we restore functional habitat connections that sustain populations and genetic exchange?",
+      "zh-CN": "能否恢复能维持种群和基因交流的功能性栖息地连接？",
+      "es": "¿Es posible restaurar conexiones funcionales de hábitat que sostengan poblaciones e intercambio genético?"
+    },
+    "frontier": {
+      "en": "Restore functional habitat connections that sustain populations and genetic exchange",
+      "zh-CN": "恢复能维持种群和基因交流的功能性栖息地连接",
+      "es": "Restaurar conexiones funcionales de hábitat que sostengan poblaciones e intercambio genético"
+    },
+    "boundary": {
+      "en": "Local gains must be tested for persistence, ecological side effects and transfer across sites. Monitoring alone does not restore an ecosystem.",
+      "zh-CN": "局部改善必须检验持续性、生态副作用及跨地点适用性；监测本身不等于恢复生态系统。",
+      "es": "Las mejoras locales deben evaluarse en duración, efectos ecológicos y transferencia; observar no equivale a restaurar un ecosistema."
+    },
+    "sources": [
+      {
+        "title": "IPBES · Assessment scoping report on biodiversity and ecosystem services",
+        "url": "https://files.ipbes.net/ipbes-web-prod-public-files/downloads/pdf/IPBES-4-INF-9_EN.pdf"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "free-will",
+    "discipline": "philosophy",
+    "title": {
+      "en": "Free will and responsibility",
+      "zh-CN": "自由意志与责任",
+      "es": "Libre albedrío y responsabilidad"
+    },
+    "question": {
+      "en": "Can we explain the grounds of agency and responsibility under competing accounts of determinism?",
+      "zh-CN": "能否在不同决定论解释下说明能动性与责任的基础？",
+      "es": "¿Es posible explicar fundamentos de agencia y responsabilidad ante distintas concepciones del determinismo?"
+    },
+    "frontier": {
+      "en": "Explain the grounds of agency and responsibility under competing accounts of determinism",
+      "zh-CN": "在不同决定论解释下说明能动性与责任的基础",
+      "es": "Explicar fundamentos de agencia y responsabilidad ante distintas concepciones del determinismo"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Free will",
+        "url": "https://plato.stanford.edu/entries/freewill/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "induction",
+    "discipline": "philosophy",
+    "title": {
+      "en": "The problem of induction",
+      "zh-CN": "归纳问题",
+      "es": "El problema de la inducción"
+    },
+    "question": {
+      "en": "Can we justify inferences from observed cases to unobserved cases without circular assumptions?",
+      "zh-CN": "能否在不循环论证的前提下为从已观察案例到未观察案例的推断辩护？",
+      "es": "¿Es posible justificar inferencias de casos observados a no observados sin supuestos circulares?"
+    },
+    "frontier": {
+      "en": "Justify inferences from observed cases to unobserved cases without circular assumptions",
+      "zh-CN": "在不循环论证的前提下为从已观察案例到未观察案例的推断辩护",
+      "es": "Justificar inferencias de casos observados a no observados sin supuestos circulares"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · The problem of induction",
+        "url": "https://plato.stanford.edu/entries/induction-problem/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "causation",
+    "discipline": "philosophy",
+    "title": {
+      "en": "What makes something a cause?",
+      "zh-CN": "何谓因果？",
+      "es": "¿Qué hace que algo sea una causa?"
+    },
+    "question": {
+      "en": "Can we develop an account of causation that handles counterexamples and competing intuitions?",
+      "zh-CN": "能否建立能处理反例与冲突直觉的因果理论？",
+      "es": "¿Es posible desarrollar una teoría de causalidad que aborde contraejemplos e intuiciones enfrentadas?"
+    },
+    "frontier": {
+      "en": "Develop an account of causation that handles counterexamples and competing intuitions",
+      "zh-CN": "建立能处理反例与冲突直觉的因果理论",
+      "es": "Desarrollar una teoría de causalidad que aborde contraejemplos e intuiciones enfrentadas"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Counterfactual theories of causation",
+        "url": "https://plato.stanford.edu/entries/causation-counterfactual/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "other-minds",
+    "discipline": "philosophy",
+    "title": {
+      "en": "The problem of other minds",
+      "zh-CN": "他心问题",
+      "es": "El problema de otras mentes"
+    },
+    "question": {
+      "en": "Can we justify claims about other minds beyond outward behavioral similarity?",
+      "zh-CN": "能否为超越外在行为相似性的他心判断提供依据？",
+      "es": "¿Es posible justificar afirmaciones sobre otras mentes más allá de similitudes conductuales externas?"
+    },
+    "frontier": {
+      "en": "Justify claims about other minds beyond outward behavioral similarity",
+      "zh-CN": "为超越外在行为相似性的他心判断提供依据",
+      "es": "Justificar afirmaciones sobre otras mentes más allá de similitudes conductuales externas"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Other minds",
+        "url": "https://plato.stanford.edu/entries/other-minds/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "data-privacy",
+    "discipline": "law",
+    "title": {
+      "en": "Privacy with useful data access",
+      "zh-CN": "数据利用与隐私保护",
+      "es": "Privacidad con acceso útil a datos"
+    },
+    "question": {
+      "en": "Can we enable socially useful analysis while enforcing meaningful privacy and individual control?",
+      "zh-CN": "能否在保障实质隐私与个人控制权时实现有社会价值的数据分析？",
+      "es": "¿Es posible permitir análisis socialmente útiles garantizando privacidad efectiva y control individual?"
+    },
+    "frontier": {
+      "en": "Enable socially useful analysis while enforcing meaningful privacy and individual control",
+      "zh-CN": "在保障实质隐私与个人控制权时实现有社会价值的数据分析",
+      "es": "Permitir análisis socialmente útiles garantizando privacidad efectiva y control individual"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Recommendation on the ethics of artificial intelligence",
+        "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics?hub=66778"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "ai-accountability",
+    "discipline": "law",
+    "title": {
+      "en": "Accountability for AI decisions",
+      "zh-CN": "AI 决策问责",
+      "es": "Responsabilidad por decisiones de IA"
+    },
+    "question": {
+      "en": "Can we assign enforceable responsibility and remedies across complex AI deployment chains?",
+      "zh-CN": "能否在复杂 AI 部署链中确立可执行的责任与救济？",
+      "es": "¿Es posible asignar responsabilidad exigible y reparaciones en cadenas complejas de despliegue de IA?"
+    },
+    "frontier": {
+      "en": "Assign enforceable responsibility and remedies across complex AI deployment chains",
+      "zh-CN": "在复杂 AI 部署链中确立可执行的责任与救济",
+      "es": "Asignar responsabilidad exigible y reparaciones en cadenas complejas de despliegue de IA"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Recommendation on the ethics of artificial intelligence",
+        "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics?hub=66778"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "contestable-decisions",
+    "discipline": "law",
+    "title": {
+      "en": "Explainable and contestable decisions",
+      "zh-CN": "可解释且可申诉的决策",
+      "es": "Decisiones explicables e impugnables"
+    },
+    "question": {
+      "en": "Can we provide affected people with faithful explanations and effective routes to challenge decisions?",
+      "zh-CN": "能否为受影响者提供忠实解释及有效的决策申诉途径？",
+      "es": "¿Es posible ofrecer explicaciones fieles y vías eficaces para impugnar decisiones a las personas afectadas?"
+    },
+    "frontier": {
+      "en": "Provide affected people with faithful explanations and effective routes to challenge decisions",
+      "zh-CN": "为受影响者提供忠实解释及有效的决策申诉途径",
+      "es": "Ofrecer explicaciones fieles y vías eficaces para impugnar decisiones a las personas afectadas"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "UNESCO · Recommendation on the ethics of artificial intelligence",
+        "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics?hub=66778"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "access-to-justice",
+    "discipline": "law",
+    "title": {
+      "en": "Equal access to justice",
+      "zh-CN": "平等司法可及性",
+      "es": "Acceso igualitario a la justicia"
+    },
+    "question": {
+      "en": "Can we reduce barriers to effective legal remedies across income, language and geography?",
+      "zh-CN": "能否减少收入、语言与地域造成的有效法律救济障碍？",
+      "es": "¿Es posible reducir barreras a recursos jurídicos efectivos por ingresos, idioma y geografía?"
+    },
+    "frontier": {
+      "en": "Reduce barriers to effective legal remedies across income, language and geography",
+      "zh-CN": "减少收入、语言与地域造成的有效法律救济障碍",
+      "es": "Reducir barreras a recursos jurídicos efectivos por ingresos, idioma y geografía"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "United Nations · Sustainable Development Goals",
+        "url": "https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "foundational-literacy",
+    "discipline": "education",
+    "title": {
+      "en": "Foundational literacy for every learner",
+      "zh-CN": "人人掌握基础读写",
+      "es": "Alfabetización fundamental para todos"
+    },
+    "question": {
+      "en": "Can we achieve lasting reading comprehension gains across languages and disadvantaged learning settings?",
+      "zh-CN": "能否在不同语言与弱势学习环境中实现持久的阅读理解提升？",
+      "es": "¿Es posible lograr mejoras duraderas en comprensión lectora entre lenguas y entornos desfavorecidos?"
+    },
+    "frontier": {
+      "en": "Achieve lasting reading comprehension gains across languages and disadvantaged learning settings",
+      "zh-CN": "在不同语言与弱势学习环境中实现持久的阅读理解提升",
+      "es": "Lograr mejoras duraderas en comprensión lectora entre lenguas y entornos desfavorecidos"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "Institute of Education Sciences · Research programs",
+        "url": "https://ies.ed.gov/funding/research/programs"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "foundational-numeracy",
+    "discipline": "education",
+    "title": {
+      "en": "Foundational numeracy",
+      "zh-CN": "基础数学能力",
+      "es": "Competencia matemática básica"
+    },
+    "question": {
+      "en": "Can we build durable numerical understanding that transfers beyond practiced exercises?",
+      "zh-CN": "能否建立能迁移到练习题之外的持久数字理解能力？",
+      "es": "¿Es posible desarrollar comprensión numérica duradera transferible más allá de ejercicios practicados?"
+    },
+    "frontier": {
+      "en": "Build durable numerical understanding that transfers beyond practiced exercises",
+      "zh-CN": "建立能迁移到练习题之外的持久数字理解能力",
+      "es": "Desarrollar comprensión numérica duradera transferible más allá de ejercicios practicados"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "Institute of Education Sciences · Research programs",
+        "url": "https://ies.ed.gov/funding/research/programs"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "learning-transfer",
+    "discipline": "education",
+    "title": {
+      "en": "Transferring learning to new situations",
+      "zh-CN": "学习迁移到新情境",
+      "es": "Transferir aprendizaje a situaciones nuevas"
+    },
+    "question": {
+      "en": "Can we enable learners to apply knowledge independently to unfamiliar real-world problems?",
+      "zh-CN": "能否使学习者能独立将知识应用于陌生的现实问题？",
+      "es": "¿Es posible permitir aplicar conocimiento de forma independiente a problemas reales desconocidos?"
+    },
+    "frontier": {
+      "en": "Enable learners to apply knowledge independently to unfamiliar real-world problems",
+      "zh-CN": "使学习者能独立将知识应用于陌生的现实问题",
+      "es": "Permitir aplicar conocimiento de forma independiente a problemas reales desconocidos"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "Institute of Education Sciences · Research programs",
+        "url": "https://ies.ed.gov/funding/research/programs"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "accessible-learning",
+    "discipline": "education",
+    "title": {
+      "en": "Accessible education for disabilities",
+      "zh-CN": "残障者教育可及性",
+      "es": "Educación accesible para personas con discapacidad"
+    },
+    "question": {
+      "en": "Can we validate learning supports that meet diverse disability needs in ordinary classrooms?",
+      "zh-CN": "能否验证在普通课堂中满足多样残障需求的学习支持？",
+      "es": "¿Es posible validar apoyos educativos que atiendan necesidades diversas de discapacidad en aulas ordinarias?"
+    },
+    "frontier": {
+      "en": "Validate learning supports that meet diverse disability needs in ordinary classrooms",
+      "zh-CN": "验证在普通课堂中满足多样残障需求的学习支持",
+      "es": "Validar apoyos educativos que atiendan necesidades diversas de discapacidad en aulas ordinarias"
+    },
+    "boundary": {
+      "en": "This is an ongoing societal challenge with contested objectives. Prediction accuracy does not demonstrate causal benefit or resolve trade-offs.",
+      "zh-CN": "这是目标存在争议的持续社会挑战；预测准确不等于产生因果收益，也不能消除价值取舍。",
+      "es": "Es un reto social continuo con objetivos debatidos; la precisión predictiva no demuestra beneficio causal ni resuelve las disyuntivas."
+    },
+    "sources": [
+      {
+        "title": "IES · Special education research grants program",
+        "url": "https://ies.ed.gov/funding/research/programs/special-education-research-grants-program"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "psychology-replication",
+    "discipline": "psychology",
+    "title": {
+      "en": "Reproducible psychological findings",
+      "zh-CN": "心理学结果可重复性",
+      "es": "Resultados psicológicos reproducibles"
+    },
+    "question": {
+      "en": "Can we establish which influential effects replicate across independent teams and populations?",
+      "zh-CN": "能否确定哪些重要效应可跨独立团队与人群重复出现？",
+      "es": "¿Es posible establecer qué efectos influyentes se reproducen entre equipos y poblaciones independientes?"
+    },
+    "frontier": {
+      "en": "Establish which influential effects replicate across independent teams and populations",
+      "zh-CN": "确定哪些重要效应可跨独立团队与人群重复出现",
+      "es": "Establecer qué efectos influyentes se reproducen entre equipos y poblaciones independientes"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIH · Replication and reproducibility",
+        "url": "https://www.nih.gov/replicationandreproducibility"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "mental-health-classification",
+    "discipline": "psychology",
+    "title": {
+      "en": "Mechanism-based mental health categories",
+      "zh-CN": "基于机制的心理健康分类",
+      "es": "Categorías de salud mental basadas en mecanismos"
+    },
+    "question": {
+      "en": "Can we link clinically useful categories to mechanisms without erasing individual variation?",
+      "zh-CN": "能否把临床有用的分类关联到机制且不抹去个体差异？",
+      "es": "¿Es posible vincular categorías clínicamente útiles a mecanismos sin borrar variación individual?"
+    },
+    "frontier": {
+      "en": "Link clinically useful categories to mechanisms without erasing individual variation",
+      "zh-CN": "把临床有用的分类关联到机制且不抹去个体差异",
+      "es": "Vincular categorías clínicamente útiles a mecanismos sin borrar variación individual"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIMH · Cross-cutting research themes",
+        "url": "https://www.nimh.nih.gov/about/strategic-planning-reports/cross-cutting-research-themes"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "mental-health-prevention",
+    "discipline": "psychology",
+    "title": {
+      "en": "Preventing mental illness",
+      "zh-CN": "预防精神障碍",
+      "es": "Prevención de trastornos mentales"
+    },
+    "question": {
+      "en": "Can we identify safe early interventions that reduce future illness in prospective studies?",
+      "zh-CN": "能否在前瞻性研究中找出能减少未来患病的安全早期干预？",
+      "es": "¿Es posible identificar intervenciones tempranas seguras que reduzcan enfermedad futura en estudios prospectivos?"
+    },
+    "frontier": {
+      "en": "Identify safe early interventions that reduce future illness in prospective studies",
+      "zh-CN": "在前瞻性研究中找出能减少未来患病的安全早期干预",
+      "es": "Identificar intervenciones tempranas seguras que reduzcan enfermedad futura en estudios prospectivos"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIMH · Cross-cutting research themes",
+        "url": "https://www.nimh.nih.gov/about/strategic-planning-reports/cross-cutting-research-themes"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "personalized-mental-health",
+    "discipline": "psychology",
+    "title": {
+      "en": "Matching mental health treatment",
+      "zh-CN": "心理健康治疗匹配",
+      "es": "Selección personalizada de tratamiento mental"
+    },
+    "question": {
+      "en": "Can we predict which treatment will produce sustained benefit for an individual patient?",
+      "zh-CN": "能否预测何种治疗能为个体患者带来持续获益？",
+      "es": "¿Es posible predecir qué tratamiento producirá beneficio sostenido para un paciente individual?"
+    },
+    "frontier": {
+      "en": "Predict which treatment will produce sustained benefit for an individual patient",
+      "zh-CN": "预测何种治疗能为个体患者带来持续获益",
+      "es": "Predecir qué tratamiento producirá beneficio sostenido para un paciente individual"
+    },
+    "boundary": {
+      "en": "Success requires prospective validation, safety and clinically meaningful benefit across relevant populations. A prediction or isolated case is insufficient.",
+      "zh-CN": "成功需要前瞻性验证、安全性及相关人群中有临床意义的获益；预测或孤立个案并不足够。",
+      "es": "El éxito exige validación prospectiva, seguridad y beneficio clínico en las poblaciones pertinentes; una predicción o caso aislado no basta."
+    },
+    "sources": [
+      {
+        "title": "NIMH · Cross-cutting research themes",
+        "url": "https://www.nimh.nih.gov/about/strategic-planning-reports/cross-cutting-research-themes"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "creativity",
+    "discipline": "arts",
+    "title": {
+      "en": "Understanding creativity",
+      "zh-CN": "理解创造力",
+      "es": "Comprender la creatividad"
+    },
+    "question": {
+      "en": "Can we explain how originality, value and creative agency relate across artistic practices?",
+      "zh-CN": "能否解释原创性、价值与创造主体性在不同艺术实践中的关系？",
+      "es": "¿Es posible explicar cómo se relacionan originalidad, valor y agencia creativa entre prácticas artísticas?"
+    },
+    "frontier": {
+      "en": "Explain how originality, value and creative agency relate across artistic practices",
+      "zh-CN": "解释原创性、价值与创造主体性在不同艺术实践中的关系",
+      "es": "Explicar cómo se relacionan originalidad, valor y agencia creativa entre prácticas artísticas"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Creativity",
+        "url": "https://plato.stanford.edu/entries/creativity/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "definition-of-art",
+    "discipline": "arts",
+    "title": {
+      "en": "What counts as art?",
+      "zh-CN": "何为艺术？",
+      "es": "¿Qué cuenta como arte?"
+    },
+    "question": {
+      "en": "Can we account for changing artistic practices without excluding important counterexamples?",
+      "zh-CN": "能否解释不断变化的艺术实践且不排除重要反例？",
+      "es": "¿Es posible dar cuenta de prácticas artísticas cambiantes sin excluir contraejemplos importantes?"
+    },
+    "frontier": {
+      "en": "Account for changing artistic practices without excluding important counterexamples",
+      "zh-CN": "解释不断变化的艺术实践且不排除重要反例",
+      "es": "Dar cuenta de prácticas artísticas cambiantes sin excluir contraejemplos importantes"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · The definition of art",
+        "url": "https://plato.stanford.edu/entries/art-definition/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "music-and-emotion",
+    "discipline": "arts",
+    "title": {
+      "en": "How music expresses emotion",
+      "zh-CN": "音乐如何表达情感",
+      "es": "Cómo expresa emociones la música"
+    },
+    "question": {
+      "en": "Can we explain how nonverbal musical structures express and evoke emotions across contexts?",
+      "zh-CN": "能否解释非语言音乐结构如何在不同语境中表达并唤起情感？",
+      "es": "¿Es posible explicar cómo estructuras musicales no verbales expresan y evocan emociones entre contextos?"
+    },
+    "frontier": {
+      "en": "Explain how nonverbal musical structures express and evoke emotions across contexts",
+      "zh-CN": "解释非语言音乐结构如何在不同语境中表达并唤起情感",
+      "es": "Explicar cómo estructuras musicales no verbales expresan y evocan emociones entre contextos"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · The philosophy of music",
+        "url": "https://plato.stanford.edu/entries/music/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
+  },
+  {
+    "id": "musical-work-identity",
+    "discipline": "arts",
+    "title": {
+      "en": "The identity of a musical work",
+      "zh-CN": "音乐作品的同一性",
+      "es": "La identidad de una obra musical"
+    },
+    "question": {
+      "en": "Can we clarify what makes performances and adaptations instances of the same musical work?",
+      "zh-CN": "能否厘清演奏与改编为何属于同一音乐作品？",
+      "es": "¿Es posible aclarar qué hace que interpretaciones y adaptaciones sean instancias de una misma obra musical?"
+    },
+    "frontier": {
+      "en": "Clarify what makes performances and adaptations instances of the same musical work",
+      "zh-CN": "厘清演奏与改编为何属于同一音乐作品",
+      "es": "Aclarar qué hace que interpretaciones y adaptaciones sean instancias de una misma obra musical"
+    },
+    "boundary": {
+      "en": "This is an interpretive or philosophical question, without a universally agreed finish line. Generating a persuasive answer is not a resolution.",
+      "zh-CN": "这是解释性或哲学问题，没有公认的统一终点；生成有说服力的回答不等于解决问题。",
+      "es": "Es una cuestión interpretativa o filosófica sin meta universalmente acordada; generar una respuesta persuasiva no equivale a resolverla."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · The philosophy of music",
+        "url": "https://plato.stanford.edu/entries/music/"
+      }
+    ],
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "reviewed": "2026-09-08",
+    "milestones": [],
+    "humanMilestones": []
   }
 ]

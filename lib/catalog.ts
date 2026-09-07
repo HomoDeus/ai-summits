@@ -5,7 +5,7 @@ export const problems = rawProblems as Problem[];
 export const disciplines = rawDisciplines as Discipline[];
 export const FIRST_YEAR = 2015;
 export const LAST_YEAR = 2026;
-export const REVIEW_DATE = '2026-09-07';
+export const REVIEW_DATE = '2026-09-08';
 export function milestoneAt(problem: Problem, year: number) {
   return problem.milestones
     .filter((m) => m.year <= year)

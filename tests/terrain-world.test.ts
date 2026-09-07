@@ -15,6 +15,10 @@ import { locales } from '../lib/types.ts';
 void test('3D world places every named summit in its discipline with its rated elevation', () => {
   assert.equal(worldPeaks.length, problems.length);
   assert.equal(worldProvinces.length, disciplines.length);
+  assert.equal(
+    new Set(worldPeaks.map((p) => `${p.x},${p.z}`)).size,
+    problems.length,
+  );
   for (const peak of worldPeaks) {
     assert.equal(
       worldProvinces[regionAt(peak.x, peak.z)]?.domain.id,

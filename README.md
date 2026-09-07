@@ -10,7 +10,7 @@ Explore a continuous 3D mountain world you can orbit, tilt, pan and zoom of know
 
 ## First edition
 
-- **30 problems across 23 disciplines:** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology, philosophy, law and justice, education, psychology, and arts and aesthetics.
+- **115 problems across 23 disciplines (at least five per discipline):** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology, philosophy, law and justice, education, psychology, and arts and aesthetics.
 - English by default, with complete Simplified Chinese and Spanish interface and record translations.
 - All challenges share one WebGL mountain world, grouped by discipline. Procedural black mountain ranges extend beyond known provinces, with tiles generated and released as the camera travels. Scroll or pinch to zoom, orbit or pan, and fly directly to a selected peak. Fixed peak locations persist across selections, filters and historical replay. Select any peak for “Where we are” and “What is still ahead”; filters dim other peaks without removing them. A keyboard-accessible challenge list provides an alternative.
 - Year-by-year replay of selected milestones, with shareable language, peak and year query parameters.

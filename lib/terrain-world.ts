@@ -23,14 +23,16 @@ export const worldProvinces = disciplines.map((domain, i) => {
 export const worldPeaks = disciplines.flatMap((d, di) => {
   const region = province(di),
     items = problems.filter((p) => p.discipline === d.id);
+  const columns = Math.ceil(Math.sqrt((items.length * region.width) / 420));
+  const rows = Math.ceil(items.length / columns);
   return items.map((problem, i) => {
+    const row = Math.floor(i / columns);
+    const rowCount = Math.min(columns, items.length - row * columns);
     const px =
-      items.length === 1
-        ? region.width / 2
-        : items.length === 2
-          ? region.width * 0.27 + i * region.width * 0.46
-          : [90, 310, 200][i];
-    const pz = items.length < 3 ? 236 : [165, 165, 310][i];
+      region.width / 2 +
+      ((i % columns) - (rowCount - 1) / 2) *
+        ((region.width - 140) / Math.max(1, columns - 1));
+    const pz = rows === 1 ? 240 : 140 + (row * 200) / (rows - 1);
     const at = toWorld(region.x + px, region.y + pz);
     return {
       problem,
@@ -40,6 +42,29 @@ export const worldPeaks = disciplines.flatMap((d, di) => {
     };
   });
 });
+// A height sample only needs peaks whose footprint touches its spatial bucket.
+// Unknown terrain remains cheap as the curated catalog grows.
+const PEAK_RADIUS = 7.5;
+const BUCKET_SIZE = 8;
+const peakBuckets = new Map<string, typeof worldPeaks>();
+for (const peak of worldPeaks) {
+  for (
+    let bx = Math.floor((peak.x - PEAK_RADIUS) / BUCKET_SIZE);
+    bx <= Math.floor((peak.x + PEAK_RADIUS) / BUCKET_SIZE);
+    bx++
+  ) {
+    for (
+      let bz = Math.floor((peak.z - PEAK_RADIUS) / BUCKET_SIZE);
+      bz <= Math.floor((peak.z + PEAK_RADIUS) / BUCKET_SIZE);
+      bz++
+    ) {
+      const key = `${bx},${bz}`;
+      const bucket = peakBuckets.get(key) ?? [];
+      bucket.push(peak);
+      peakBuckets.set(key, bucket);
+    }
+  }
+}
 function hash(x: number, z: number) {
   const v = Math.sin(x * 127.1 + z * 311.7) * 43758.5453;
   return v - Math.floor(v);
@@ -60,12 +85,15 @@ export function terrainHeight(x: number, z: number) {
   const broad = 1 - Math.abs(noise(x * 0.055, z * 0.055) * 2 - 1),
     ridge = 1 - Math.abs(noise(x * 0.16 + 20, z * 0.16 - 10) * 2 - 1);
   let height = 1 + broad * 7 + ridge * 3 + noise(x * 0.43, z * 0.43) * 1.5;
-  for (const peak of worldPeaks) {
+  const nearby = peakBuckets.get(
+    `${Math.floor(x / BUCKET_SIZE)},${Math.floor(z / BUCKET_SIZE)}`,
+  );
+  for (const peak of nearby ?? []) {
     const dist = Math.hypot(x - peak.x, z - peak.z);
-    if (dist < 7.5)
+    if (dist < PEAK_RADIUS)
       height = Math.max(
         height,
-        peak.height - (peak.height - 2) * Math.pow(dist / 7.5, 0.85),
+        peak.height - (peak.height - 2) * Math.pow(dist / PEAK_RADIUS, 0.85),
       );
   }
   return height;

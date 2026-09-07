@@ -69,8 +69,8 @@ void test('catalog IDs, sources and all three translations are complete', () => 
   }
   for (const d of disciplines)
     assert.ok(
-      problems.some((p) => p.discipline === d.id),
-      `Empty discipline: ${d.id}`,
+      problems.filter((p) => p.discipline === d.id).length >= 5,
+      `Discipline needs at least five problems: ${d.id}`,
     );
 });
 
