@@ -6,13 +6,13 @@
 
 [English](README.md) · [简体中文](docs/README.zh-CN.md) · [Español](docs/README.es.md)
 
-Explore a mountain map you can pan and zoom of known problems across the sciences and humanities. Follow historical AI milestones, inspect their evidence, and see exactly what remains unsolved.
+Explore a continuous 3D mountain world you can orbit, tilt, pan and zoom of known problems across the sciences and humanities. Follow historical AI milestones, inspect their evidence, and see exactly what remains unsolved.
 
 ## First edition
 
 - **30 problems across 23 disciplines:** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology, philosophy, law and justice, education, psychology, and arts and aesthetics.
 - English by default, with complete Simplified Chinese and Spanish interface and record translations.
-- All challenges share one pan-and-zoom mountain atlas, grouped by discipline. Fixed peak locations persist across selections, filters and historical replay. Select any peak for “Where we are” and “What is still ahead”; filters dim other peaks without removing them. A keyboard-accessible challenge list provides an alternative.
+- All challenges share one WebGL mountain world, grouped by discipline. Procedural black mountain ranges extend beyond known provinces, with tiles generated and released as the camera travels. Scroll or pinch to zoom, orbit or pan, and fly directly to a selected peak. Fixed peak locations persist across selections, filters and historical replay. Select any peak for “Where we are” and “What is still ahead”; filters dim other peaks without removing them. A keyboard-accessible challenge list provides an alternative.
 - Year-by-year replay of selected milestones, with shareable language, peak and year query parameters.
 - Original-source links, explicit human/AI attribution and clearly stated limits for each recorded advance.
 
@@ -49,7 +49,7 @@ The GitHub Pages workflow builds and publishes `out/` on pushes to `main`. Enabl
 
 Add a sourced problem, document a new milestone, improve a translation or fix accessibility. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Problem data lives in readable JSON and is validated by automated tests. English is the canonical source language; more locales are welcome.
 
-See [architecture](docs/ARCHITECTURE.md) for implementation details. The core experience uses an SVG mountain atlas with a fully usable text alternative.
+See [architecture](docs/ARCHITECTURE.md) for implementation details. The core experience uses a Three.js terrain mesh with streamed tiles with a fully usable text alternative.
 
 ## Related work
 
