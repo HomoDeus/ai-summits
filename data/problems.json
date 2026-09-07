@@ -29,7 +29,12 @@
       "en": "A general proof",
       "zh-CN": "一般性证明",
       "es": "Una demostración general"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "imo-2024",
@@ -106,7 +111,33 @@
       "en": "Reliable reasoning across new research problems",
       "zh-CN": "在新的研究问题上可靠推理",
       "es": "Razonamiento fiable en nuevos problemas de investigación"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 3
+    },
+    "humanMilestones": [
+      {
+        "year": 2024,
+        "status": "partial",
+        "headline": {
+          "en": "Human contestants earn IMO gold",
+          "zh-CN": "人类选手获得 IMO 金牌",
+          "es": "Participantes humanos obtienen oro IMO"
+        },
+        "summary": {
+          "en": "The 2024 IMO awarded 58 gold medals, with a gold threshold of 29 points. This records a human competition milestone, not a general solution to research mathematics.",
+          "zh-CN": "2024 年 IMO 颁发 58 枚金牌，金牌分数线为 29 分。这是人类在竞赛中的成果记录，不代表解决了普遍的数学研究问题。",
+          "es": "La IMO de 2024 concedió 58 medallas de oro, con un umbral de 29 puntos. Es un hito de competición humana, no una solución general a las matemáticas de investigación."
+        },
+        "sources": [
+          {
+            "title": "IMO · 2024 results",
+            "url": "https://www.imo-official.org/year_info.aspx?language=en&year=2024"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "p-vs-np",
@@ -138,7 +169,12 @@
       "en": "A proof separating or equating P and NP",
       "zh-CN": "证明 P 与 NP 相等或不等",
       "es": "Demostrar si P y NP coinciden"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "matrix-multiplication",
@@ -193,7 +229,12 @@
       "en": "Resolve the general complexity of matrix multiplication",
       "zh-CN": "解决矩阵乘法的一般复杂度",
       "es": "Resolver la complejidad general de multiplicar matrices"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "go",
@@ -248,7 +289,33 @@
       "en": "The stated match target is achieved",
       "zh-CN": "所定义的比赛目标已达成",
       "es": "El objetivo del encuentro está alcanzado"
-    }
+    },
+    "rating": {
+      "difficulty": 3,
+      "importance": 3
+    },
+    "humanMilestones": [
+      {
+        "year": 2016,
+        "status": "achieved",
+        "headline": {
+          "en": "Human world champions defeat elite rivals",
+          "zh-CN": "人类世界冠军已击败顶尖对手",
+          "es": "Campeones humanos vencen a rivales de élite"
+        },
+        "summary": {
+          "en": "DeepMind describes Lee Sedol as a winner of 18 world titles before its 2016 match. Human competition had already met the bounded target of defeating elite human opposition; this does not mean Go was mathematically solved.",
+          "zh-CN": "DeepMind 记载，李世石在 2016 年人机比赛前已获得 18 个世界冠军。人类比赛已经达到了击败顶尖人类对手这一限定目标；不代表围棋已被数学求解。",
+          "es": "DeepMind describe a Lee Sedol como ganador de 18 títulos mundiales antes del encuentro de 2016. La competición humana ya había alcanzado el objetivo de vencer a rivales humanos de élite; no implica resolver matemáticamente el Go."
+        },
+        "sources": [
+          {
+            "title": "Google DeepMind · AlphaGo",
+            "url": "https://deepmind.google/research/alphago/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "navier-stokes",
@@ -280,7 +347,12 @@
       "en": "A global existence or breakdown proof",
       "zh-CN": "全局存在或发生奇异性的证明",
       "es": "Demostrar existencia global o singularidades"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "dark-matter",
@@ -312,7 +384,12 @@
       "en": "Identify the physical nature of dark matter",
       "zh-CN": "确定暗物质的物理本质",
       "es": "Identificar la naturaleza física de la materia oscura"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "exoplanets",
@@ -367,7 +444,12 @@
       "en": "Recover more weak signals with independent confirmation",
       "zh-CN": "发现更多微弱信号并独立确认",
       "es": "Recuperar más señales débiles con confirmación independiente"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "retrosynthesis",
@@ -422,7 +504,12 @@
       "en": "Validate proposed routes in laboratory synthesis",
       "zh-CN": "通过实验合成验证规划路线",
       "es": "Validar las rutas propuestas en el laboratorio"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "crystal-discovery",
@@ -477,7 +564,12 @@
       "en": "Synthesize candidates and verify useful properties",
       "zh-CN": "合成候选材料并验证实用性能",
       "es": "Sintetizar candidatos y verificar propiedades útiles"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "protein-structure",
@@ -554,7 +646,33 @@
       "en": "Capture dynamics and validate difficult targets",
       "zh-CN": "覆盖动态过程并验证困难目标",
       "es": "Captar la dinámica y validar casos difíciles"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 5
+    },
+    "humanMilestones": [
+      {
+        "year": 1971,
+        "status": "partial",
+        "headline": {
+          "en": "Experimental structures archived",
+          "zh-CN": "实验测定的结构已进入数据库",
+          "es": "Estructuras experimentales archivadas"
+        },
+        "summary": {
+          "en": "The Protein Data Bank began with seven structures in 1971. Experimental structure determination provides a human-research reference; it is a different method from AI prediction and is not a head-to-head score.",
+          "zh-CN": "蛋白质数据库于 1971 年建立，最初收录 7 个结构。实验结构测定作为人类研究的参照；它与 AI 预测的方法不同，不是同条件对赛成绩。",
+          "es": "El PDB comenzó con siete estructuras en 1971. La determinación experimental sirve como referencia humana; utiliza un método distinto a la predicción de IA y no es una puntuación competitiva."
+        },
+        "sources": [
+          {
+            "title": "RCSB PDB · History",
+            "url": "https://www.rcsb.org/pages/about-us/history"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "origin-of-life",
@@ -586,7 +704,12 @@
       "en": "Establish a path from chemistry to life",
       "zh-CN": "确立从化学到生命的路径",
       "es": "Establecer una ruta de la química a la vida"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "antibiotics",
@@ -641,7 +764,12 @@
       "en": "Establish safety and benefit in human clinical trials",
       "zh-CN": "在人类临床试验中确立安全性和获益",
       "es": "Establecer seguridad y beneficio en ensayos clínicos"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "alzheimers",
@@ -673,7 +801,12 @@
       "en": "A treatment that prevents or reverses disease",
       "zh-CN": "预防或逆转疾病的治疗方法",
       "es": "Un tratamiento que prevenga o revierta la enfermedad"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "connectomics",
@@ -728,7 +861,12 @@
       "en": "Scale mapping and establish causal explanations",
       "zh-CN": "扩大映射规模并建立因果解释",
       "es": "Ampliar el mapa y establecer explicaciones causales"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "weather",
@@ -805,7 +943,12 @@
       "en": "Validate robustness across extremes and real operations",
       "zh-CN": "验证极端天气与实际运行中的可靠性",
       "es": "Validar robustez en extremos y operaciones reales"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "earthquakes",
@@ -837,7 +980,12 @@
       "en": "Reliable time, location and magnitude prediction",
       "zh-CN": "可靠预测时间、地点与震级",
       "es": "Predecir de forma fiable tiempo, lugar y magnitud"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "plasma-control",
@@ -892,7 +1040,12 @@
       "en": "Integrate control into a viable fusion power system",
       "zh-CN": "将控制集成进可行的聚变发电系统",
       "es": "Integrar el control en un sistema de fusión viable"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "robot-generalization",
@@ -947,7 +1100,12 @@
       "en": "Reliable operation in unfamiliar real environments",
       "zh-CN": "在陌生真实环境中可靠运行",
       "es": "Operar de forma fiable en entornos reales nuevos"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "tax-policy",
@@ -1002,7 +1160,12 @@
       "en": "Validate benefits outside the simulator",
       "zh-CN": "在模拟器之外验证获益",
       "es": "Validar beneficios fuera del simulador"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "poverty",
@@ -1034,7 +1197,12 @@
       "en": "Sustained poverty reduction in the real world",
       "zh-CN": "现实世界中持续减少贫困",
       "es": "Reducción sostenida de la pobreza real"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "ancient-inscriptions",
@@ -1089,7 +1257,12 @@
       "en": "Validate hypotheses against historical evidence",
       "zh-CN": "用历史证据验证修复假设",
       "es": "Validar hipótesis frente a evidencia histórica"
-    }
+    },
+    "rating": {
+      "difficulty": 3,
+      "importance": 3
+    },
+    "humanMilestones": []
   },
   {
     "id": "low-resource-translation",
@@ -1144,7 +1317,12 @@
       "en": "Reliable translation across dialects and contexts",
       "zh-CN": "跨方言和语境的可靠翻译",
       "es": "Traducción fiable entre dialectos y contextos"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "crop-disease",
@@ -1199,7 +1377,12 @@
       "en": "Robust recognition on real field photographs",
       "zh-CN": "在真实田间照片上鲁棒识别",
       "es": "Reconocimiento robusto en fotografías de campo"
-    }
+    },
+    "rating": {
+      "difficulty": 3,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "biodiversity",
@@ -1231,7 +1414,12 @@
       "en": "Demonstrable conservation outcomes",
       "zh-CN": "可验证的生态保护成效",
       "es": "Resultados demostrables de conservación"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "consciousness",
@@ -1263,7 +1451,12 @@
       "en": "Explain how subjective experience arises",
       "zh-CN": "解释主观体验如何产生",
       "es": "Explicar cómo surge la experiencia subjetiva"
-    }
+    },
+    "rating": {
+      "difficulty": 5,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "algorithmic-justice",
@@ -1295,7 +1488,12 @@
       "en": "Justify decisions across competing fairness values",
       "zh-CN": "在不同公平价值间论证决策正当性",
       "es": "Justificar decisiones entre distintos valores de equidad"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 5
+    },
+    "humanMilestones": []
   },
   {
     "id": "personalized-learning",
@@ -1350,7 +1548,12 @@
       "en": "Verify lasting learning across ages and subjects",
       "zh-CN": "验证跨年龄和学科的持久学习效果",
       "es": "Verificar aprendizaje duradero entre edades y materias"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "human-outcomes",
@@ -1382,7 +1585,12 @@
       "en": "Reliable predictions beyond population averages",
       "zh-CN": "超越群体平均的可靠个体预测",
       "es": "Predicciones fiables más allá de promedios"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 4
+    },
+    "humanMilestones": []
   },
   {
     "id": "aesthetic-value",
@@ -1414,6 +1622,11 @@
       "en": "Explain and justify aesthetic judgments",
       "zh-CN": "解释并论证审美判断",
       "es": "Explicar y justificar juicios estéticos"
-    }
+    },
+    "rating": {
+      "difficulty": 4,
+      "importance": 3
+    },
+    "humanMilestones": []
   }
 ]

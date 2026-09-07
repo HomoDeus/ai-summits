@@ -1,6 +1,6 @@
 'use client';
 import { useRef, useState } from 'react';
-import { Minus, Plus, LocateFixed } from 'lucide-react';
+import { Minus, Plus, LocateFixed, PersonStanding, Bot } from 'lucide-react';
 import {
   disciplines,
   problems,
@@ -10,16 +10,90 @@ import {
 } from '@/lib/catalog';
 import { messages } from '@/lib/i18n';
 import { progressCopy } from '@/lib/progress';
+import {
+  MAP_WIDTH,
+  MAP_HEIGHT,
+  province,
+  peakHeight,
+  humanAt,
+  camp,
+  atlasCopy,
+} from '@/lib/map-model';
 import type { Locale } from '@/lib/types';
 
-// Fixed positions preserve the atlas across filters, selections and time.
-const WIDTH = 2520,
-  HEIGHT = 1580;
-const regions = disciplines.map((domain, i) => ({
-  domain,
-  x: 40 + (i % 6) * 415,
-  y: 65 + Math.floor(i / 6) * 370,
-}));
+const WIDTH = MAP_WIDTH,
+  HEIGHT = MAP_HEIGHT;
+const regions = disciplines.map((domain, i) => ({ domain, ...province(i) }));
+function MountainShape({
+  height,
+  ghost = false,
+}: {
+  height: number;
+  ghost?: boolean;
+}) {
+  return (
+    <g opacity={ghost ? 0.38 : 1}>
+      <path
+        d={`M-90 12L-48 ${-height * 0.3}L-27 ${-height * 0.22}L4 ${-height}L38 ${-height * 0.4}L57 ${-height * 0.55}L92 16L18 36Z`}
+        fill={ghost ? '#4d676c' : '#476664'}
+      />
+      <path
+        d={`M-90 12L4 ${-height}L-12 6L18 36Z`}
+        fill={ghost ? '#67827e' : '#819785'}
+      />
+      <path
+        d={`M4 ${-height}L92 16L18 36L-12 6Z`}
+        fill={ghost ? '#3f5a60' : '#365452'}
+      />
+      <path
+        d={`M4 ${-height}L-27 ${-height * 0.22}L-12 6Z`}
+        fill={ghost ? '#8a9b90' : '#b3c1a3'}
+      />
+      {height > 140 && !ghost && (
+        <path
+          d={`M4 ${-height}L-9 ${-height * 0.64}L3 ${-height * 0.72}L12 ${-height * 0.65}L20 ${-height * 0.72}Z`}
+          fill="#e0e8d7"
+        />
+      )}
+    </g>
+  );
+}
+function Climber({
+  kind,
+  height,
+  status,
+  label,
+}: {
+  kind: 'human' | 'ai';
+  height: number;
+  status?: 'partial' | 'achieved';
+  label: string;
+}) {
+  const pos = camp(status),
+    x = -51 + pos * 55 + (kind === 'human' ? -12 : 13),
+    y = 19 - pos * (height + 19),
+    color = kind === 'human' ? '#ffc885' : '#82e5ef';
+  const Icon = kind === 'human' ? PersonStanding : Bot;
+  return (
+    <g transform={`translate(${x} ${y})`} data-climber={kind}>
+      <title>{label}</title>
+      <ellipse cy="3" rx="12" ry="5" fill="#061b26" opacity=".6" />
+      <Icon
+        x={-12}
+        y={-27}
+        width={24}
+        height={27}
+        color={color}
+        strokeWidth={2.8}
+      />
+      {!status && (
+        <text x="9" y="-24" fill={color} fontSize="17" fontWeight="700">
+          ?
+        </text>
+      )}
+    </g>
+  );
+}
 export function Terrain({
   locale,
   year,
@@ -43,11 +117,13 @@ export function Terrain({
     moved: boolean;
   } | null>(null);
   const t = messages[locale],
-    copy = progressCopy[locale];
+    copy = progressCopy[locale],
+    key = atlasCopy[locale];
   const selectedProblem = problems.find((p) => p.id === selected);
   const latest = selectedProblem
     ? milestoneAt(selectedProblem, year)
     : undefined;
+  const human = selectedProblem ? humanAt(selectedProblem, year) : undefined;
   function zoom(delta: number) {
     setCamera((c) => ({
       ...c,
@@ -130,139 +206,164 @@ export function Terrain({
           ry="760"
           fill="url(#world-light)"
         />
-        {regions.map(({ domain, x, y }) => {
+        <g className="province-layer">
+          {regions.map(({ domain, points }, i) => (
+            <polygon
+              key={domain.id}
+              data-province={domain.id}
+              points={points.map((p) => `${p.x},${p.y}`).join(' ')}
+              fill={
+                [
+                  '#203f48',
+                  '#29474c',
+                  '#243d49',
+                  '#344a49',
+                  '#24464a',
+                  '#2e424b',
+                ][i % 6]
+              }
+              stroke="#87a7a1"
+              strokeWidth="2.5"
+              strokeLinejoin="round"
+            />
+          ))}
+        </g>
+        {regions.map(({ domain, x, y, width }, regionIndex) => {
           const peaks = problems.filter((p) => p.discipline === domain.id);
           return (
             <g key={domain.id} transform={`translate(${x} ${y})`}>
-              <path
-                d="M10 105L80 53L230 37L365 100L381 206L289 257L111 243L0 179Z"
-                fill="#183642"
-                stroke="#507883"
-                strokeOpacity=".3"
-              />
-              <path
-                d="M23 115L88 72L225 56L346 107L358 196L284 233L115 225L21 174Z"
-                fill="none"
-                stroke="#7ba4a9"
-                strokeOpacity=".12"
-              />
+              <defs>
+                <clipPath id={`province-${domain.id}`}>
+                  <polygon
+                    points={regions[regionIndex].points
+                      .map((p) => `${p.x - x},${p.y - y}`)
+                      .join(' ')}
+                  />
+                </clipPath>
+              </defs>
+              <g
+                aria-hidden="true"
+                data-unnamed-region={domain.id}
+                clipPath={`url(#province-${domain.id})`}
+              >
+                {[
+                  [55, 90],
+                  [width - 65, 95],
+                  [width * 0.46, 100],
+                  [42, 330],
+                  [width - 45, 330],
+                  [width * 0.35, 360],
+                  [width * 0.66, 360],
+                ].map(([gx, gy], i) => (
+                  <g
+                    key={i}
+                    transform={`translate(${gx} ${gy}) scale(${0.27 + (i % 3) * 0.1})`}
+                  >
+                    <MountainShape
+                      height={80 + ((i * 31 + regionIndex * 13) % 90)}
+                      ghost
+                    />
+                  </g>
+                ))}
+              </g>
               <text
-                x="185"
-                y="-8"
+                x={width / 2}
+                y="34"
                 textAnchor="middle"
-                fill="#93b4bf"
-                fontSize="21"
-                letterSpacing="1.2"
+                fill="#b6ccc8"
+                fontSize="23"
+                letterSpacing="1.1"
               >
                 {domain.name[locale]}
               </text>
               {peaks.map((p, i) => {
                 const px =
                   peaks.length === 1
-                    ? 185
+                    ? width / 2
                     : peaks.length === 2
-                      ? 93 + i * 185
-                      : [75, 285, 180][i];
-                const py = peaks.length < 3 ? 164 : [130, 130, 235][i];
-                const active = p.id === selected;
-                const match = matches.includes(p.id);
-                const status = statusAt(p, year);
-                const color = statusColors[status];
-                const m = milestoneAt(p, year);
+                      ? width * 0.27 + i * width * 0.46
+                      : [100, 300, 200][i];
+                const py = peaks.length < 3 ? 236 : [180, 180, 280][i];
+                const active = p.id === selected,
+                  match = matches.includes(p.id),
+                  status = statusAt(p, year),
+                  m = milestoneAt(p, year),
+                  h = humanAt(p, year),
+                  height = peakHeight(p.rating),
+                  color = statusColors[status];
                 return (
                   <g
                     key={p.id}
                     transform={`translate(${px} ${py})`}
-                    opacity={match || active ? 1 : 0.28}
+                    opacity={match || active ? 1 : 0.25}
+                    data-rated-height={height}
                   >
                     {active && (
                       <ellipse
-                        cy="9"
-                        rx="100"
-                        ry="31"
-                        fill="#87edbd"
-                        opacity=".12"
-                        stroke="#99ffd2"
+                        cy="12"
+                        rx="105"
+                        ry="37"
+                        fill="#91e9c4"
+                        fillOpacity=".12"
+                        stroke="#b4f0cf"
                         strokeWidth="2"
                       />
                     )}
+                    <MountainShape height={height} />
                     <path
-                      d="M-91 8L-39-35L-17-19L5-107L35-49L54-64L92 13L19 35Z"
-                      fill="#274951"
-                    />
-                    <path
-                      d="M-91 8L5-107L-8-3L19 35Z"
-                      fill={
-                        status === 'achieved'
-                          ? '#427f68'
-                          : status === 'partial'
-                            ? '#786644'
-                            : '#46616e'
-                      }
-                    />
-                    <path
-                      d="M5-107L35-49L92 13L19 35L-8-3Z"
-                      fill={
-                        status === 'achieved'
-                          ? '#285948'
-                          : status === 'partial'
-                            ? '#4d493b'
-                            : '#2c4553'
-                      }
-                    />
-                    <path
-                      d="M5-107L-17-19L-8-3Z"
-                      fill={
-                        status === 'achieved'
-                          ? '#7aba94'
-                          : status === 'partial'
-                            ? '#b69c6c'
-                            : '#758d98'
-                      }
-                    />
-                    <path
-                      d="M-45 17L-21-11L-12-44L5-107"
-                      stroke={color}
-                      strokeWidth="2.5"
-                      strokeDasharray={status === 'open' ? '5 6' : undefined}
+                      d={`M-51 19L-28 ${-height * 0.22}L-15 ${-height * 0.51}L4 ${-height}`}
                       fill="none"
+                      stroke="#f4e8c0"
+                      strokeWidth="3"
+                      strokeDasharray="5 5"
                     />
-                    {status === 'partial' && (
-                      <path
-                        d="M-12-44L5-107"
-                        stroke="#203744"
-                        strokeWidth="4"
-                        strokeDasharray="5 5"
-                        fill="none"
-                      />
-                    )}
-                    <circle
-                      cx={
-                        status === 'achieved'
-                          ? 5
-                          : status === 'partial'
-                            ? -12
-                            : -45
-                      }
-                      cy={
-                        status === 'achieved'
-                          ? -107
-                          : status === 'partial'
-                            ? -44
-                            : 17
-                      }
-                      r="5"
-                      fill={color}
+                    <Climber
+                      kind="human"
+                      height={height}
+                      status={h?.status}
+                      label={`${key.human}: ${h ? h.headline[locale] : key.unknown}`}
                     />
-                    {status === 'achieved' && (
-                      <path
-                        d="M5-107V-139L34-131L5-122"
-                        stroke={color}
-                        strokeWidth="3"
-                        fill={color}
-                      />
-                    )}
-                    <foreignObject x="-100" y="28" width="200" height="94">
+                    <Climber
+                      kind="ai"
+                      height={height}
+                      status={m?.status}
+                      label={`${key.ai}: ${m ? m.headline[locale] : key.unknown}`}
+                    />
+                    {(
+                      [
+                        { kind: 'human', result: h, color: '#ffc885' },
+                        { kind: 'ai', result: m, color: '#82e5ef' },
+                      ] as const
+                    )
+                      .filter((actor) => actor.result?.status === 'achieved')
+                      .map((actor) => (
+                        <g key={actor.kind} data-conquered={actor.kind}>
+                          <title>
+                            {`${actor.kind === 'human' ? key.human : key.ai}: ${t.achieved}`}
+                          </title>
+                          <path
+                            d={`M4 ${-height}L${actor.kind === 'human' ? -25 : 16} ${-height - 28}V${-height - 65}`}
+                            stroke={actor.color}
+                            strokeWidth="3"
+                            fill="none"
+                          />
+                          <path
+                            d={`M${actor.kind === 'human' ? -25 : 16} ${-height - 65}h33v25h-33Z`}
+                            fill={actor.color}
+                          />
+                          <text
+                            x={actor.kind === 'human' ? -9 : 32}
+                            y={-height - 46}
+                            textAnchor="middle"
+                            fontSize="23"
+                            fill="#15313a"
+                            fontWeight="800"
+                          >
+                            ✓
+                          </text>
+                        </g>
+                      ))}
+                    <foreignObject x="-101" y="36" width="202" height="90">
                       <button
                         data-peak={p.id}
                         className={`world-peak ${active ? 'active' : ''}`}
@@ -278,7 +379,7 @@ export function Terrain({
                     </foreignObject>
                     <path
                       data-peak={p.id}
-                      d="M-95 20L5-115L96 20Z"
+                      d={`M-95 25L4 ${-height - 12}L96 25Z`}
                       fill="transparent"
                       className="mountain-hit"
                       onClick={() => onSelect(p.id)}
@@ -306,17 +407,86 @@ export function Terrain({
         </button>
         <span>{Math.round(camera.zoom * 100)}%</span>
       </div>
+      <div className="atlas-legend">
+        <span>
+          <PersonStanding size={20} color="#ffc885" />
+          {key.human}
+        </span>
+        <span>
+          <Bot size={20} color="#82e5ef" />
+          {key.ai}
+        </span>
+        <span>⚑ ✓ {t.achieved}</span>
+        <span>{key.height}</span>
+        <span className="unnamed-key">△ △ {key.unnamed}</span>
+        <details>
+          <summary>{key.legend}</summary>
+          <p>{key.unknownText}</p>
+          <p>{key.camp}</p>
+          <p>{key.ratingNote}</p>
+        </details>
+      </div>
       {selectedProblem && (
         <div className="world-selection" aria-live="polite">
-          <a href="#details">
-            <strong>{selectedProblem.title[locale]}</strong>
-            <span>↗</span>
-          </a>
-          <p>
-            <b>{copy.now}</b>
-            {latest ? `${latest.year} · ${latest.headline[locale]}` : copy.none}
-          </p>
-          <p>
+          <div>
+            <a href="#details">
+              <strong>{selectedProblem.title[locale]} ↗</strong>
+            </a>
+            <div className="peak-rating">
+              <span>
+                {key.difficulty} <b>{selectedProblem.rating.difficulty}/5</b>
+              </span>
+              <span>
+                {key.importance} <b>{selectedProblem.rating.importance}/5</b>
+              </span>
+              <small>{key.rating}</small>
+            </div>
+          </div>
+          <div className="climber-record human-record">
+            <b>
+              <PersonStanding size={18} />
+              {key.human}
+            </b>
+            <p>
+              {human
+                ? `${human.year} · ${human.headline[locale]}`
+                : key.unknown}
+            </p>
+            {human && (
+              <details>
+                <summary>{key.detail}</summary>
+                <p>{human.summary[locale]}</p>
+                {human.sources.map((s) => (
+                  <a key={s.url} href={s.url} target="_blank" rel="noreferrer">
+                    {s.title} ↗
+                  </a>
+                ))}
+              </details>
+            )}
+          </div>
+          <div className="climber-record ai-record">
+            <b>
+              <Bot size={18} />
+              {key.ai}
+            </b>
+            <p>
+              {latest
+                ? `${latest.year} · ${latest.headline[locale]}`
+                : key.unknown}
+            </p>
+            {latest && (
+              <details>
+                <summary>{key.detail}</summary>
+                <p>{latest.summary[locale]}</p>
+                {latest.sources.map((s) => (
+                  <a key={s.url} href={s.url} target="_blank" rel="noreferrer">
+                    {s.title} ↗
+                  </a>
+                ))}
+              </details>
+            )}
+          </div>
+          <p className="world-frontier">
             <b>{latest?.status === 'achieved' ? copy.reached : copy.next}</b>
             {selectedProblem.frontier[locale]}
           </p>

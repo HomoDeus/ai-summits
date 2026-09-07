@@ -40,7 +40,7 @@ const en = {
   historical:
     'Curated historical milestones, not a live ranking. Current problem context remains visible during replay.',
   shapeNote:
-    'Terrain is illustrative. Height is not difficulty; color is not percentage complete.',
+    'Terrain is illustrative. Named peak height reflects editorial difficulty and importance estimates; color is not percentage complete.',
   noResults: 'No problems match these filters.',
   clear: 'Clear filters',
   inspect: 'Explore problem',
@@ -53,7 +53,7 @@ const en = {
   discovery: 'Assisted discovery',
   principles: 'A flag needs evidence.',
   method:
-    'Every peak names a specific question. Green marks an achieved, bounded target; amber marks a partial advance; gray marks no recorded AI milestone. A successful benchmark does not settle an entire discipline.',
+    'Every named peak identifies a specific question. Unnamed terrain represents unframed or unlisted questions. Green marks an achieved, bounded target; amber marks a partial advance; gray marks no recorded AI milestone. A successful benchmark does not settle an entire discipline.',
   scope:
     'The first edition samples major disciplines. It is not an exhaustive list, a difficulty ranking, or a claim that every challenge has a single measurable solution.',
   contribute: 'Help chart the next summit',
@@ -109,7 +109,8 @@ const zh: Messages = {
   noMilestone:
     '截至该年份，数据集中尚未收录 AI 里程碑。这表示尚无收录记录，不是断言此前没有进展。',
   historical: '精选历史里程碑，非实时排行榜。回放时仍显示当前问题背景。',
-  shapeNote: '地形仅作示意。山高不代表难度，颜色不代表完成百分比。',
+  shapeNote:
+    '地形仅作示意。有名山高度反映难度与重要性的编辑估计，颜色不代表完成百分比。',
   noResults: '没有符合筛选条件的问题。',
   clear: '清除筛选',
   inspect: '探索问题',
@@ -122,7 +123,7 @@ const zh: Messages = {
   discovery: '辅助发现',
   principles: '每一面旗帜，都要有证据。',
   method:
-    '每座山对应一个具体问题。绿色表示有边界的目标已达成，琥珀色表示局部进展，灰色表示尚未收录 AI 里程碑。通过基准不等于攻克整个学科。',
+    '每座有名山对应一个具体问题，无名山象征尚未定义或收录的问题。绿色表示有边界的目标已达成，琥珀色表示局部进展，灰色表示尚未收录 AI 里程碑。通过基准不等于攻克整个学科。',
   scope:
     '首版选取主要学科的代表性问题，并非穷尽目录或难度排名，也不认为每个挑战都有单一可量化的解答。',
   contribute: '共同绘制下一座山峰',
@@ -179,7 +180,7 @@ const es: Messages = {
   historical:
     'Hitos históricos seleccionados, no una clasificación en directo. El contexto actual sigue visible durante la reproducción.',
   shapeNote:
-    'El terreno es ilustrativo. La altura no indica dificultad; el color no es un porcentaje de avance.',
+    'El terreno es ilustrativo. La altura combina estimaciones editoriales de dificultad e importancia; el color no es un porcentaje de avance.',
   noResults: 'Ningún problema coincide con estos filtros.',
   clear: 'Borrar filtros',
   inspect: 'Explorar problema',
@@ -192,7 +193,7 @@ const es: Messages = {
   discovery: 'Descubrimiento asistido',
   principles: 'Cada bandera necesita evidencia.',
   method:
-    'Cada cima plantea una pregunta concreta. El verde indica un objetivo acotado alcanzado; el ámbar, un avance parcial; el gris, ningún hito de IA registrado. Superar una prueba no resuelve toda una disciplina.',
+    'Cada cima con nombre plantea una pregunta concreta. Las montañas sin nombre representan preguntas sin formular o registrar. El verde indica un objetivo acotado alcanzado; el ámbar, un avance parcial; el gris, ningún hito de IA registrado. Superar una prueba no resuelve toda una disciplina.',
   scope:
     'La primera edición reúne ejemplos de las principales disciplinas. No es una lista exhaustiva, una clasificación de dificultad ni una afirmación de que todo reto tenga una única solución medible.',
   contribute: 'Ayuda a cartografiar la próxima cima',

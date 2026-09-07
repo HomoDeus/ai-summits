@@ -27,3 +27,5 @@ Use Node 24 and `npm ci`. Keep changes focused. Test changes to filtering, repla
 Do not commit credentials, build output, private conversations or copied third-party papers. Source links do not transfer a publisher's copyright to this repository.
 
 Milestones require a concise localized `headline` as well as a detailed `summary`. Each problem also needs a localized `frontier` naming the concrete remaining hurdle (or stating that its bounded target was reached). Add only evidenced historical milestones; do not fabricate intermediate stages, completion percentages, or forecasts.
+
+Each problem has `rating.difficulty` and `rating.importance` (editorial integers 1–5) and a `humanMilestones` array. Human records require dated sources, three-language headlines and summaries, and the same bounded-target standard as AI milestones. Empty human history is allowed and displayed as unknown. Follow the map semantics in the editorial policy; do not convert decorative unnamed mountains into counted factual records.

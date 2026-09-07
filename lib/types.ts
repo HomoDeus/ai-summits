@@ -32,6 +32,11 @@ export interface Problem {
   sources: Source[];
   milestones: Milestone[];
   reviewed: string;
+  rating: { difficulty: number; importance: number };
+  humanMilestones: Pick<
+    Milestone,
+    'year' | 'status' | 'headline' | 'summary' | 'sources'
+  >[];
 }
 export interface Discipline {
   id: string;

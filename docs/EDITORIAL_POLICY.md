@@ -24,7 +24,11 @@ For a disputed result, add the competing primary evidence and explain the uncert
 
 ## Map semantics
 
-Numbered peaks link to exact records. Stable catalog numbers are navigation aids, not ranks. Position, proximity and height are illustrative and may rearrange when filtering. Color encodes the recorded status only. There are no fabricated completion percentages, universal difficulty scores or predictions of a conquest date.
+Named peaks link to exact records and remain in fixed, adjoining discipline provinces. Unnamed background mountains symbolize unframed or unlisted questions; their number, size and height are not estimates of how many unknown problems exist. They are excluded from all catalog counts and never receive fabricated milestones, actors or flags.
+
+Named peak height uses equal weights for two provisional editorial estimates: difficulty and importance, each on a 1–5 scale. Difficulty ranges from routine (1), advanced (2), specialist (3), research frontier (4), to foundational unresolved challenge (5). Importance ranges from narrow (1), local (2), field-wide (3), cross-field (4), to broad scientific or societal impact (5). These are subjective, revisable navigation aids, not community consensus or objective cross-disciplinary rankings. `height = 55 + 26 × (average rating − 1)` in map units. The individual ratings and rubric are visible in the map. Scores refer to the stated challenge, not its latest AI result, and do not rewind with time.
+
+Human and AI-assisted climbers use the same categorical route: no dated record at the base with a question mark, partial result at an illustrative intermediate camp, achieved bounded target at the summit with a checked flag. They are not quantitative progress or speed comparisons. Human research can use tools; AI results can involve human contributions. Different methods (such as experimental structure determination and prediction) are explicitly identified in the evidence descriptions. Human coverage is currently limited to three example records. Missing human records do not imply no human progress. Both actors obey the selected cutoff year. A summit flag requires an eligible `achieved` record for that actor; partial results never receive a flag.
 
 ## Updating the collection
 

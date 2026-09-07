@@ -6,7 +6,7 @@
 
 [English](README.md) · [简体中文](docs/README.zh-CN.md) · [Español](docs/README.es.md)
 
-Explore a rotatable mountain map of known problems across the sciences and humanities. Follow historical AI milestones, inspect their evidence, and see exactly what remains unsolved.
+Explore a mountain map you can pan and zoom of known problems across the sciences and humanities. Follow historical AI milestones, inspect their evidence, and see exactly what remains unsolved.
 
 ## First edition
 
@@ -16,7 +16,7 @@ Explore a rotatable mountain map of known problems across the sciences and human
 - Year-by-year replay of selected milestones, with shareable language, peak and year query parameters.
 - Original-source links, explicit human/AI attribution and clearly stated limits for each recorded advance.
 
-This is a representative collection, **not an exhaustive list or a live frontier ranking**. Mountain height and position are illustrative. No fabricated difficulty or completion scores. “Target achieved” always refers to the exact stated target—not an entire discipline. Read the [editorial policy](docs/EDITORIAL_POLICY.md).
+This is a representative collection, **not an exhaustive list or a live frontier ranking**. Named peak height uses the equal-weight average of provisional editorial difficulty and importance ratings (1–5); these are subjective estimates, not consensus measurements. Unnamed mountains symbolize unframed or unlisted questions and have no ratings. Human and AI climbers indicate dated evidence categories; unknown records carry a question mark, and achieved targets receive a summit flag. No completion percentages are claimed. “Target achieved” always refers to the exact stated target—not an entire discipline. Read the [editorial policy](docs/EDITORIAL_POLICY.md).
 
 ## Run locally
 
@@ -49,7 +49,7 @@ The GitHub Pages workflow builds and publishes `out/` on pushes to `main`. Enabl
 
 Add a sourced problem, document a new milestone, improve a translation or fix accessibility. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Problem data lives in readable JSON and is validated by automated tests. English is the canonical source language; more locales are welcome.
 
-See [architecture](docs/ARCHITECTURE.md) for implementation details. The core experience uses a software-projected 3D height field with a fully usable text alternative.
+See [architecture](docs/ARCHITECTURE.md) for implementation details. The core experience uses an SVG mountain atlas with a fully usable text alternative.
 
 ## Related work
 

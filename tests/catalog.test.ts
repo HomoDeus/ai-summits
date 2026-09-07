@@ -203,3 +203,21 @@ void test('ascent uses dated evidence, without invented intermediate stages', ()
     assert.ok(Object.values(progressCopy[locale]).every((v) => v.trim()));
   }
 });
+
+void test('editorial ratings and human evidence are explicit and replay-safe', () => {
+  for (const p of problems) {
+    for (const rating of Object.values(p.rating))
+      assert.ok(Number.isInteger(rating) && rating >= 1 && rating <= 5);
+    for (const m of p.humanMilestones) {
+      assert.ok(
+        Number.isInteger(m.year) && m.year <= Number(p.reviewed.slice(0, 4)),
+      );
+      assert.ok(['partial', 'achieved'].includes(m.status));
+      for (const locale of locales)
+        assert.ok(m.headline[locale].trim() && m.summary[locale].trim());
+      assert.ok(m.sources.length);
+      for (const source of m.sources)
+        assert.equal(new URL(source.url).protocol, 'https:');
+    }
+  }
+});
