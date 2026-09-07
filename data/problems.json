@@ -988,5 +988,131 @@
     ],
     "milestones": [],
     "reviewed": "2026-09-07"
+  },
+  {
+    "id": "algorithmic-justice",
+    "discipline": "law",
+    "title": {
+      "en": "Fair algorithmic decisions",
+      "zh-CN": "公平的算法决策",
+      "es": "Decisiones algorítmicas justas"
+    },
+    "question": {
+      "en": "How can automated risk assessments respect fairness, due process and competing legal values?",
+      "zh-CN": "自动风险评估如何兼顾公平、正当程序和不同法律价值？",
+      "es": "¿Cómo pueden las evaluaciones automatizadas de riesgo respetar la equidad, el debido proceso y distintos valores jurídicos?"
+    },
+    "boundary": {
+      "en": "Different formal fairness criteria can conflict. Accuracy alone cannot establish justice, and a technical impossibility result is not an AI solution to the normative problem.",
+      "zh-CN": "不同形式化公平标准可能互相冲突。准确率本身不能确立公正，技术上的不可能性结论也不是 AI 对规范性问题的解决方案。",
+      "es": "Distintos criterios formales de equidad pueden entrar en conflicto. La precisión por sí sola no establece justicia, y un resultado de imposibilidad técnica no resuelve el problema normativo mediante IA."
+    },
+    "sources": [
+      {
+        "title": "Kleinberg, Mullainathan & Raghavan · Fair risk scores",
+        "url": "https://arxiv.org/abs/1609.05807"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "personalized-learning",
+    "discipline": "education",
+    "title": {
+      "en": "Effective personalized tutoring",
+      "zh-CN": "有效的个性化辅导",
+      "es": "Tutoría personalizada eficaz"
+    },
+    "question": {
+      "en": "Can accessible individualized tutoring improve learning across students and subjects?",
+      "zh-CN": "普惠的个性化辅导能否改善不同学生和学科的学习效果？",
+      "es": "¿Puede una tutoría individualizada accesible mejorar el aprendizaje de distintos estudiantes y materias?"
+    },
+    "boundary": {
+      "en": "A bounded college-physics trial does not establish long-term retention, benefits for every age group or a replacement for teachers.",
+      "zh-CN": "有边界的大学物理试验不等于证明长期保持效果、适用于所有年龄段，或能够替代教师。",
+      "es": "Un ensayo acotado de física universitaria no demuestra retención a largo plazo, beneficios para todas las edades ni la posibilidad de sustituir al profesorado."
+    },
+    "sources": [
+      {
+        "title": "Kestin et al. · Scientific Reports (2025)",
+        "url": "https://www.nature.com/articles/s41598-025-97652-6"
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2025,
+        "status": "partial",
+        "evidence": "experiment",
+        "system": "Research-designed AI tutor + educators",
+        "summary": {
+          "en": "A randomized trial reported greater immediate learning gains with a deliberately designed AI tutor than with the compared in-class active-learning sessions.",
+          "zh-CN": "一项随机试验报告：经过专门设计的 AI 导师，比所比较的课堂主动学习环节带来更大的即时学习增益。",
+          "es": "Un ensayo aleatorizado comunicó mayores ganancias inmediatas de aprendizaje con un tutor de IA diseñado específicamente que con las sesiones de aprendizaje activo comparadas."
+        },
+        "sources": [
+          {
+            "title": "Kestin et al. · Scientific Reports (2025)",
+            "url": "https://www.nature.com/articles/s41598-025-97652-6"
+          }
+        ]
+      }
+    ],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "human-outcomes",
+    "discipline": "psychology",
+    "title": {
+      "en": "Predicting individual life outcomes",
+      "zh-CN": "预测个体人生结果",
+      "es": "Predecir trayectorias individuales"
+    },
+    "question": {
+      "en": "How much can detailed observations reliably predict about a person’s future life outcomes?",
+      "zh-CN": "详细观测究竟能在多大程度上可靠预测一个人未来的人生结果？",
+      "es": "¿Cuánto pueden predecir de forma fiable las observaciones detalladas sobre el futuro de una persona?"
+    },
+    "boundary": {
+      "en": "The Fragile Families Challenge found limited predictive accuracy despite rich data and many teams. Population patterns do not determine an individual’s future or justify high-stakes automated decisions.",
+      "zh-CN": "Fragile Families 挑战发现，即使数据丰富且有众多团队参与，预测精度仍有限。群体规律不能决定个人未来，也不能为高风险自动决策提供充分理由。",
+      "es": "El reto Fragile Families encontró una precisión predictiva limitada pese a disponer de datos ricos y numerosos equipos. Los patrones poblacionales no determinan el futuro individual ni justifican decisiones automatizadas de alto impacto."
+    },
+    "sources": [
+      {
+        "title": "Salganik et al. · PNAS (2020)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7165437/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
+  },
+  {
+    "id": "aesthetic-value",
+    "discipline": "arts",
+    "title": {
+      "en": "Understanding aesthetic value",
+      "zh-CN": "理解审美价值",
+      "es": "Comprender el valor estético"
+    },
+    "question": {
+      "en": "How can we explain and justify aesthetic judgments across people, works and cultural traditions?",
+      "zh-CN": "如何解释和论证跨越个人、作品与文化传统的审美判断？",
+      "es": "¿Cómo podemos explicar y justificar juicios estéticos entre personas, obras y tradiciones culturales?"
+    },
+    "boundary": {
+      "en": "Producing convincing images or music does not settle what makes a work aesthetically valuable. A popularity score is not a universal account of artistic merit.",
+      "zh-CN": "生成逼真的图像或音乐，无法裁定什么使作品具有审美价值。受欢迎程度的评分不是对艺术价值的普遍解释。",
+      "es": "Producir imágenes o música convincentes no resuelve qué hace valiosa una obra. Una puntuación de popularidad no es una explicación universal del mérito artístico."
+    },
+    "sources": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy · Aesthetic Judgment",
+        "url": "https://plato.stanford.edu/entries/aesthetic-judgment/"
+      }
+    ],
+    "milestones": [],
+    "reviewed": "2026-09-07"
   }
 ]

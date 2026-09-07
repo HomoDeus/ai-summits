@@ -1,6 +1,6 @@
 # Evidence and editorial policy
 
-AI Summits is a curated, community-editable atlas. It mixes research questions, practical challenges and clearly scoped benchmark targets; they are not comparable units of difficulty. The initial 26 entries span 19 editorial discipline groups, not a universal taxonomy or complete census.
+AI Summits is a curated, community-editable atlas. It mixes research questions, practical challenges and clearly scoped benchmark targets; they are not comparable units of difficulty. The initial 30 entries span 23 editorial discipline groups, not a universal taxonomy or complete census.
 
 ## Status
 

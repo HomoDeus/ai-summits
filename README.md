@@ -2,13 +2,15 @@
 
 **An open atlas of human challenges—and the ground AI has gained.**
 
+[Explore the atlas](https://homodeus.github.io/ai-summits/) · [中文地图](https://homodeus.github.io/ai-summits/?lang=zh-CN) · [Explorar en español](https://homodeus.github.io/ai-summits/?lang=es)
+
 [English](README.md) · [简体中文](docs/README.zh-CN.md) · [Español](docs/README.es.md)
 
 Explore a rotatable mountain map of known problems across the sciences and humanities. Follow historical AI milestones, inspect their evidence, and see exactly what remains unsolved.
 
 ## First edition
 
-- **26 problems across 19 disciplines:** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology and philosophy.
+- **30 problems across 23 disciplines:** mathematics, computer science, physics, astronomy, chemistry, materials science, biology, medicine, neuroscience, Earth science, energy engineering, robotics, economics, social sciences, history and archaeology, linguistics, agriculture, ecology, philosophy, law and justice, education, psychology, and arts and aesthetics.
 - English by default, with complete Simplified Chinese and Spanish interface and record translations.
 - Rotatable terrain, keyboard-accessible numbered peaks, search, discipline/status filters and a text index.
 - Year-by-year replay of selected milestones, with shareable language, peak and year query parameters.

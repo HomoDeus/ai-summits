@@ -150,5 +150,37 @@
       "zh-CN": "哲学",
       "es": "Filosofía"
     }
+  },
+  {
+    "id": "law",
+    "name": {
+      "en": "Law & justice",
+      "zh-CN": "法律与司法",
+      "es": "Derecho y justicia"
+    }
+  },
+  {
+    "id": "education",
+    "name": {
+      "en": "Education",
+      "zh-CN": "教育学",
+      "es": "Educación"
+    }
+  },
+  {
+    "id": "psychology",
+    "name": {
+      "en": "Psychology",
+      "zh-CN": "心理学",
+      "es": "Psicología"
+    }
+  },
+  {
+    "id": "arts",
+    "name": {
+      "en": "Arts & aesthetics",
+      "zh-CN": "艺术与美学",
+      "es": "Artes y estética"
+    }
   }
 ]
